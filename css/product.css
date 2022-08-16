@@ -1,0 +1,12 @@
+.col-md-five{
+width: 20%;
+
+}
+.my-btn{
+    background-color:  var(--color-Primary-white-1);
+    font-size: 14px;
+}
+.my-label{
+    font-size: 14px;
+    padding: 5px 0 0 0;
+}

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.0.0/css/bootstrap.min.css" integrity="sha384-P4uhUIGk/q1gaD/NdgkBIl3a6QywJjlsFJFk7SPRdruoGddvRVSwv5qFnvZ73cpz" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/uikit.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/product.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightslider.min.css" />
+
+    <title>NFC | اِنـ‌اِفـ‌سی</title>
+  </head>
+
+  <body>
+    <!-- NavbarStart -->
+    <header class="main-header container1">
+      <nav class="nav1 container1">
+
+
+          <div class="nav1__icon">
+
+              <div class="nav1__toggler"><a onclick="openMenu()"><img src="icons/Hamburger Menu.svg">
+                      <p class="p-icon"></p>
+                  </a>
+              </div>
+              <div class="nav1__search"><a href="#"><img src="icons/Search.svg"></a>
+                  <p class="p-icon">جستجو</p>
+              </div>
+              <div class="nav1__user"><a href="#"><img src="icons/Profile.svg"></a>
+                  <p class="p-icon">ورود/ثبت نام</p>
+              </div>
+
+
+          </div>
+          <div class="nav1-logo">
+              <a href="#"> <img src="icons/NFC Logo (White).png" class="logo" alt="NFC"></a>
+          </div>
+
+
+          <ul id="res-list" class="list  nav1__list" data-open="close">
+              <li class="nav1-item"><a href="Main.html">خانه</a></li>
+              <li class="nav1-item"><a href="product.html">زنانه</a></li>
+              <li class="nav1-item"><a href="product.html">مردانه</a></li>
+              <li class="nav1-item"><a href="#">درباره</a></li>
+          </ul>
+
+      </nav>
+  </header>
+
+    <!-- NavbarEnd -->
+    <div class="container1 " style="overflow-x: hidden;">
+      <div class="col-md-12 row mt-5">
+        <div class=" row col-md-8">
+            
+            <div class="col-md-3 ">
+                <div  class="btn-group">
+                    <button type="button " class="btn my-btn " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      رنگ
+                    </button>
+                    <div  class="dropdown-menu" >
+                      <a class="dropdown-item" href="#">قرمز</a>
+                      <a class="dropdown-item" href="#">بنفش</a>
+                      <a class="dropdown-item" href="#">سبز آبی اقیانوسی</a>
+                      <a class="dropdown-item" href="#">نارنجی روشن</a>
+                      <a class="dropdown-item" href="#">سبز</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="btn-group">
+                    <button type="button" class="btn my-btn " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      سایز
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">XS</a>
+                      <a class="dropdown-item" href="#">S</a>
+                      <a class="dropdown-item" href="#">M</a>
+                      <a class="dropdown-item" href="#">L</a>
+                      <a class="dropdown-item" href="#">XL</a>
+                      <a class="dropdown-item" href="#">XLL</a>
+                  <!--     <div class="dropdown-divider"></div>
+                      -->
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="btn-group">
+                    <button type="button" class="btn my-btn " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      نوع
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">روزمره</a>
+                      <a class="dropdown-item" href="#">اداری</a>
+                      <a class="dropdown-item" href="#">ورزشی</a>
+                      <a class="dropdown-item" href="#">مجلسی</a>
+                      <!-- <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a> -->
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="btn-group">
+                    <button type="button" class="btn my-btn " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      قیمت
+                    </button>
+                    <div  class="dropdown-menu" >
+                     
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </div>
+            </div>
+
+           
+
+              
+        </div>
+      <div class="col-md-4">
+       
+            <div style="margin-right:60% ;" class="btn-group ">
+                <label for="btn5" class="my-label">انتخاب براساس:</label>
+                <button id="btn5" type="button " class="btn my-btn " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  جدیدترین
+                </button>
+                <div class="dropdown-menu" >
+                  <a class="dropdown-item" href="#">جدیدترین</a>
+                  <a class="dropdown-item" href="#">پربازدید ترین</a>
+                  <a class="dropdown-item" href="#">گران ترین</a>
+                  <a class="dropdown-item" href="#">ارزان ترین</a>
+                  
+                </div>
+              </div>
+        
+      </div>
+       </div>
+
+       <div class="row col-12">
+
+        <div class="col-md-4 col-sm-12">
+          <div class="p2-cart ">
+            <div class="cart-img">
+               <a href="./NFC Themplate(single)/singleProduct.html"><img src="images/Cart-img.png" alt="#"></a> 
+            </div>
+
+            <div class="cart-content">
+                <p class="p-product-content">ست تابستانه سیاه و سفید</p>
+                <div class=" price price2">
+                    <del class="del number-font del2">320,000 تومان</del> <span
+                        class="discount number-font del2">20%</span>
+                    <div class="number-price">۶۵۰,۰۰۰ تومان</div>
+                </div>
+            </div>
+
+            <div class="cart-details">
+                <p class="p-cart-details">آبی کاربنی</p>
+                <div class="product-color ">
+
+                </div>
+            </div>
+
+            <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+            <div class="cart-size">
+                <ul class="size-item">
+                    <li>
+                        <p>XS</p>
+                    </li>
+                    <li>
+                        <p>S</p>
+                    </li>
+                    <li>
+                        <p>M</p>
+                    </li>
+                    <li>
+                        <p>L</p>
+                    </li>
+                    <li>
+                        <p>XL</p>
+                    </li>
+                    <li>
+                        <p>XXS</p>
+                    </li>
+                    <li>
+                        <p>XXS</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <div class="p2-cart ">
+            <div class="cart-img">
+                <a href="./NFC Themplate(single)/singleProduct.html"> <img src="images/Cart-img2.png" alt="#"></a>
+            </div>
+
+            <div class="cart-content">
+                <p class="p-product-content">ست تابستانه سیاه و سفید</p>
+                <div class=" price price2">
+                    <del class="del number-font del2">320,000 تومان</del> <span
+                        class="discount number-font del2">20%</span>
+                    <div class="number-price">۶۵۰,۰۰۰ تومان</div>
+                </div>
+            </div>
+
+            <div class="cart-details">
+                <p class="p-cart-details">آبی کاربنی</p>
+                <div class="product-color ">
+
+                </div>
+            </div>
+
+            <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+            <div class="cart-size">
+                <ul class="size-item">
+                    <li>
+                        <p>XS</p>
+                    </li>
+                    <li>
+                        <p>S</p>
+                    </li>
+                    <li>
+                        <p>M</p>
+                    </li>
+                    <li>
+                        <p>L</p>
+                    </li>
+                    <li>
+                        <p>XL</p>
+                    </li>
+                    <li>
+                        <p>XXS</p>
+                    </li>
+                    <li>
+                        <p>XXS</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <div class="p2-cart ">
+            <div class="cart-img">
+                <a href="./NFC Themplate(single)/singleProduct.html"><img src="images/Cart-img3.png" alt="#"></a>
+            </div>
+
+            <div class="cart-content">
+                <p class="p-product-content">ست تابستانه سیاه و سفید</p>
+                <div class=" price price2">
+                    <del class="del number-font del2">320,000 تومان</del> <span
+                        class="discount number-font del2">20%</span>
+                    <div class="number-price">۶۵۰,۰۰۰ تومان</div>
+                </div>
+            </div>
+
+            <div class="cart-details">
+                <p class="p-cart-details">آبی کاربنی</p>
+                <div class="product-color ">
+
+                </div>
+            </div>
+
+            <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+            <div class="cart-size">
+                <ul class="size-item">
+                    <li>
+                        <p>XS</p>
+                    </li>
+                    <li>
+                        <p>S</p>
+                    </li>
+                    <li>
+                        <p>M</p>
+                    </li>
+                    <li>
+                        <p>L</p>
+                    </li>
+                    <li>
+                        <p>XL</p>
+                    </li>
+                    <li>
+                        <p>XXS</p>
+                    </li>
+                    <li>
+                        <p>XXS</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-12">
+          <div class="p2-cart ">
+            <div class="cart-img">
+               <a href="./NFC Themplate(single)/singleProduct.html"><img src="images/Cart-img.png" alt="#"></a> 
+            </div>
+
+            <div class="cart-content">
+                <p class="p-product-content">ست تابستانه سیاه و سفید</p>
+                <div class=" price price2">
+                    <del class="del number-font del2">320,000 تومان</del> <span
+                        class="discount number-font del2">20%</span>
+                    <div class="number-price">۶۵۰,۰۰۰ تومان</div>
+                </div>
+            </div>
+
+            <div class="cart-details">
+                <p class="p-cart-details">آبی کاربنی</p>
+                <div class="product-color ">
+
+                </div>
+            </div>
+
+            <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+            <div class="cart-size">
+                <ul class="size-item">
+                    <li>
+                        <p>XS</p>
+                    </li>
+                    <li>
+                        <p>S</p>
+                    </li>
+                    <li>
+                        <p>M</p>
+                    </li>
+                    <li>
+                        <p>L</p>
+                    </li>
+                    <li>
+                        <p>XL</p>
+                    </li>
+                    <li>
+                        <p>XXS</p>
+                    </li>
+                    <li>
+                        <p>XXS</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+            <div class="  p2-cart">
+                <div class="cart-img">
+                  <img src="images/Cart-img2.png" alt="#" />
+                </div>
+          
+                <div class="cart-content">
+                  <p class="p-product-content">ست تابستانه سیاه و سفید</p>
+                  <div class="price price2">
+                    <del class="del number-font del2">320,000 تومان</del>
+                    <span class="discount number-font del2">20%</span>
+                    <div class="number-price">۶۵۰,۰۰۰ تومان</div>
+                  </div>
+                </div>
+          
+                <div class="cart-details">
+                  <p class="p-cart-details">آبی کاربنی</p>
+                  <div class="product-color"></div>
+                </div>
+          
+                <div class="cart-like">
+                  <a href="#"><img src="icons/Heart.svg" class="heart" /></a>
+                </div>
+                <div class="cart-size">
+                  <ul class="size-item">
+                    <li>
+                      <p>XS</p>
+                    </li>
+                    <li>
+                      <p>S</p>
+                    </li>
+                    <li>
+                      <p>M</p>
+                    </li>
+                    <li>
+                      <p>L</p>
+                    </li>
+                    <li>
+                      <p>XL</p>
+                    </li>
+                    <li>
+                      <p>XXS</p>
+                    </li>
+                    <li>
+                      <p>XXS</p>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+            <div class="  p2-cart">
+                <div class="cart-img">
+                  <img src="images/Cart-img2.png" alt="#" />
+                </div>
+          
+                <div class="cart-content">
+                  <p class="p-product-content">ست تابستانه سیاه و سفید</p>
+                  <div class="price price2">
+                    <del class="del number-font del2">320,000 تومان</del>
+                    <span class="discount number-font del2">20%</span>
+                    <div class="number-price">۶۵۰,۰۰۰ تومان</div>
+                  </div>
+                </div>
+          
+                <div class="cart-details">
+                  <p class="p-cart-details">آبی کاربنی</p>
+                  <div class="product-color"></div>
+                </div>
+          
+                <div class="cart-like">
+                  <a href="#"><img src="icons/Heart.svg" class="heart" /></a>
+                </div>
+                <div class="cart-size">
+                  <ul class="size-item">
+                    <li>
+                      <p>XS</p>
+                    </li>
+                    <li>
+                      <p>S</p>
+                    </li>
+                    <li>
+                      <p>M</p>
+                    </li>
+                    <li>
+                      <p>L</p>
+                    </li>
+                    <li>
+                      <p>XL</p>
+                    </li>
+                    <li>
+                      <p>XXS</p>
+                    </li>
+                    <li>
+                      <p>XXS</p>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-12">
+            <div class="p2-cart ">
+            <div class="cart-img">
+                <a href="./NFC Themplate(single)/singleProduct.html"> <img src="images/Cart-img2.png" alt="#"></a>
+            </div>
+
+            <div class="cart-content">
+                <p class="p-product-content">ست تابستانه سیاه و سفید</p>
+                <div class=" price price2">
+                    <del class="del number-font del2">320,000 تومان</del> <span
+                        class="discount number-font del2">20%</span>
+                    <div class="number-price">۶۵۰,۰۰۰ تومان</div>
+                </div>
+            </div>
+
+            <div class="cart-details">
+                <p class="p-cart-details">آبی کاربنی</p>
+                <div class="product-color ">
+
+                </div>
+            </div>
+
+            <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+            <div class="cart-size">
+                <ul class="size-item">
+                    <li>
+                        <p>XS</p>
+                    </li>
+                    <li>
+                        <p>S</p>
+                    </li>
+                    <li>
+                        <p>M</p>
+                    </li>
+                    <li>
+                        <p>L</p>
+                    </li>
+                    <li>
+                        <p>XL</p>
+                    </li>
+                    <li>
+                        <p>XXS</p>
+                    </li>
+                    <li>
+                        <p>XXS</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+            <div class="  p2-cart">
+                <div class="cart-img">
+                  <img src="images/Cart-img2.png" alt="#" />
+                </div>
+          
+                <div class="cart-content">
+                  <p class="p-product-content">ست تابستانه سیاه و سفید</p>
+                  <div class="price price2">
+                    <del class="del number-font del2">320,000 تومان</del>
+                    <span class="discount number-font del2">20%</span>
+                    <div class="number-price">۶۵۰,۰۰۰ تومان</div>
+                  </div>
+                </div>
+          
+                <div class="cart-details">
+                  <p class="p-cart-details">آبی کاربنی</p>
+                  <div class="product-color"></div>
+                </div>
+          
+                <div class="cart-like">
+                  <a href="#"><img src="icons/Heart.svg" class="heart" /></a>
+                </div>
+                <div class="cart-size">
+                  <ul class="size-item">
+                    <li>
+                      <p>XS</p>
+                    </li>
+                    <li>
+                      <p>S</p>
+                    </li>
+                    <li>
+                      <p>M</p>
+                    </li>
+                    <li>
+                      <p>L</p>
+                    </li>
+                    <li>
+                      <p>XL</p>
+                    </li>
+                    <li>
+                      <p>XXS</p>
+                    </li>
+                    <li>
+                      <p>XXS</p>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <div class="p2-cart ">
+            <div class="cart-img">
+                <a href="./NFC Themplate(single)/singleProduct.html"> <img src="images/Cart-img2.png" alt="#"></a>
+            </div>
+
+            <div class="cart-content">
+                <p class="p-product-content">ست تابستانه سیاه و سفید</p>
+                <div class=" price price2">
+                    <del class="del number-font del2">320,000 تومان</del> <span
+                        class="discount number-font del2">20%</span>
+                    <div class="number-price">۶۵۰,۰۰۰ تومان</div>
+                </div>
+            </div>
+
+            <div class="cart-details">
+                <p class="p-cart-details">آبی کاربنی</p>
+                <div class="product-color ">
+
+                </div>
+            </div>
+
+            <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+            <div class="cart-size">
+                <ul class="size-item">
+                    <li>
+                        <p>XS</p>
+                    </li>
+                    <li>
+                        <p>S</p>
+                    </li>
+                    <li>
+                        <p>M</p>
+                    </li>
+                    <li>
+                        <p>L</p>
+                    </li>
+                    <li>
+                        <p>XL</p>
+                    </li>
+                    <li>
+                        <p>XXS</p>
+                    </li>
+                    <li>
+                        <p>XXS</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+
+
+        
+    </div>
+    </div>
+
+
+    <!-- Filter -->
+
+    
+
+    <!-- Filter -->
+
+
+   
+    <br /><br />
+    <br /><br /><br />
+    <br />
+    <br /><br />
+    <br /><br /><br />
+    <br />
+    <br />
+    <br />
+    <br /><br />
+    <br /><br /><br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/uikit.min.js"></script>
+ 
+    <script src="js/lightslider.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#lightSlider3").lightSlider({
+          rtl: true,
+          item: 5,
+          autoWidth: true,
+          loop: true,
+          pager: false,
+          speed: 1000, //ms'
+          auto: false,
+
+          slideEndAnimation: true,
+        });
+      });
+    </script>
+  </body>
+</html>
