@@ -24,47 +24,49 @@
 <body>
 
     <!-- NavbarStart -->
-    <div class="header-nav">
-        <header class="main-header ">
-            <nav class="nav1 container1">
+    <header class="main-header container1">
+        <nav class="nav1 container1">
 
 
-                <div class="nav1__icon">
+            <div class="nav1__icon">
 
-                    <div class="nav1__toggler"><a onclick="openMenu()"><img src="icons/Hamburger Menu.svg">
-                            <p class="p-icon"></p>
-                        </a>
-                    </div>
-
-                    <div class="nav1__search"><a href="#"><img src="icons/Search.svg"></a>
-                        <p class="p-icon">جستجو</p>
-                    </div>
-                    <div class="nav1__user"><a href="#"><img src="icons/Profile.svg"></a>
-                        <p class="p-icon">ورود/ثبت نام</p>
-                    </div>
-
-
+                <div class="nav1__toggler"><a onclick="openMenu()"><img src="icons/Hamburger Menu.svg">
+                        <p class="p-icon"></p>
+                    </a>
                 </div>
-                <div class="nav1-logo">
-                    <a href="#"> <img src="icons/NFC Logo (White).png" class="logo" alt="NFC"></a>
+
+                <div class="nav1__search"><a href="#"><img src="icons/Search.svg"></a>
+                    <p class="p-icon">جستجو</p>
+                </div>
+                <div class="nav1__user"><a href="#"><img src="icons/Profile.svg"></a>
+                    <p class="p-icon">ورود/ثبت نام</p>
                 </div>
 
 
-                <ul id="res-list" class="list  nav1__list" data-open="close">
-                    <li class="nav1-item"><a href="Main.html">خانه</a></li>
-                    <li class="nav1-item"><a href="product.html">زنانه</a></li>
-                    <li class="nav1-item"><a href="product.html">مردانه</a></li>
-                    <li class="nav1-item"><a href="#">درباره</a></li>
-                </ul>
+            </div>
+            <div class="nav1-logo">
+                <a href="#"> <img src="icons/NFC Logo (White).png" class="logo" alt="NFC"></a>
+            </div>
 
-            </nav>
-        </header>
-    </div>
-     <!-- NavbarEnd -->
+
+            <ul id="res-list" class="list  nav1__list" data-open="close">
+                <li class="nav1-item"><a href="Main.html">خانه</a></li>
+                <li class="nav1-item"><a href="product.html">زنانه</a></li>
+                <li class="nav1-item"><a href="product.html">مردانه</a></li>
+                <li class="nav1-item"><a href="#">درباره</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- NavbarEnd -->
 
     <!-- SliderStart -->
-    <section class="Main-slider1 ">
+
+    <section class="Main-slider1 position-relative" >
         <!-- <div style="width:432px ; height:376px; border: 1px solid aqua ; position: absolute; right:60%; left: 20%; top:200px;z-index: 100;"> -->
+        </div>
         <div class="cart-slider2">
             <ul id="lightSlider3">
                 <li>
@@ -109,49 +111,55 @@
 
 
     </section>
+
+
+
+
+
+
+
     <!-- SliderEnd -->
 
-
-
-
     <!-- TopBannerStart -->
-    <section class="top__banners container1">
+
+    <section class="top__banners container-fluid">
         <div class="Myrow">
-
-             <!-- RightBanner -->
-
             <div class="right-banner">
                 <div class="banner__content">
-                    <p class="h1-cart">کالکشن زنانه</p>
+                    <p class="h1-cart">کالکشن محصولات زنانه</p>
                     <p class="p-cart">۲۳ محصول جدید</p>
                 </div>
-                <div><img class="banner__img" src="images/right-banner.png" alt="کالکشن زنانه"></div>
+                <div><img class="banner__img" src="images/right-banner.png" alt=""></div>
+
                 <div class="banner__btn">
-                    <button class="Mybtn btn--primary1">جدیدترین محصولات زنانه</button>
                     <button class="Mybtn btn--secondary1"> پر فروش ترین ها</button>
+                    <button class="Mybtn btn--primary1">جدیدترین محصولات زنانه</button>
                 </div>
             </div>
 
-            <!-- LeftBanner -->
 
             <div class="left-banner">
                 <div class="banner__content">
-                    <p class="h1-cart">کالکشن مردانه</p>
+                    <p class="h1-cart">کالکشن محصولات مردانه</p>
                     <p class="p-cart">۲۳ محصول جدید</p>
                 </div>
-                <div><img class="banner__img" src="images/left-banner.png" alt="کالکشن مردانه<"></div>
+                <div><img class="banner__img" src="images/left-banner.png" alt=""></div>
+
                 <div class="banner__btn">
-                    <button class="Mybtn btn--primary1">جدیدترین محصولات مردانه </button>
                     <button class="Mybtn btn--secondary1"> پر فروش ترین ها</button>
+                    <button class="Mybtn btn--primary1">جدیدترین محصولات مردانه </button>
                 </div>
             </div>
         </div>
 
     </section>
-    <!-- EndTopBanner -->
+
+
+    <!-- TopBannerEnd -->
 
 
     <!-- Products Start -->
+
     <section class="product container1">
         <div class="h-product">
             <p class="h1-product">محبوب ترین محصولات</p>
@@ -162,71 +170,218 @@
     </section>
 
 
+
     <section class="cart-slider">
-        <div class="box ">
+        <box class="box ">
+
             <ul id="lightSlider">
                 <li>
                     <div class="p2-cart ">
                         <div class="cart-img">
-                            <a href="singleProduct.html"><img src="images/Frame 10.png  " class="img-size"></a>
-                            <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
-                            <div class="cart-Badge-red">۲۰٪</div>
-                            <div class="cart-size">
-                                <ul class="size-item">
-                                    <li>
-                                        <p>XS</p>
-                                    </li>
-                                    <li>
-                                        <p>S</p>
-                                    </li>
-                                    <li>
-                                        <p>M</p>
-                                    </li>
-                                    <li>
-                                        <p>L</p>
-                                    </li>
-                                    <li>
-                                        <p>XL</p>
-                                    </li>
-                                    <li>
-                                        <p>XXS</p>
-                                    </li>
-                                    <li>
-                                        <p>XXS</p>
-                                    </li>
-    
-                                </ul>
-                            </div>
+                            <a href="singleProduct.html"><img src="images/Cart-img.png" alt="#"></a>
                         </div>
 
                         <div class="cart-content">
                             <p class="p-product-content">ست تابستانه سیاه و سفید</p>
-                            <div class="price-cart">
-                                <del class="number-font1 del2">۳۲۰,۰۰۰ تومان</del> <span
-                                    class="discount2 number-font del2">20%</span>
+                            <div class=" price price2">
+                                <del class="del number-font del2">320,000 تومان</del> <span
+                                    class="discount number-font del2">20%</span>
                                 <div class="number-price">۶۵۰,۰۰۰ تومان</div>
                             </div>
-                           
                         </div>
 
                         <div class="cart-details">
                             <p class="p-cart-details">آبی کاربنی</p>
-                            <div class="product-color-cart ">
-                                <ul class="color-ul">
-                                   <a href="#"><li class="color color1"></li></a> 
-                                   <a href="#"><li class="color color2"></li></a> 
-                                   <a href="#"><li class="color color3"></li></a> 
-                                   <a href="#"><li class="color color4"></li></a> 
-                                  
-                                   
-                                </ul>
-                                
+                            <div class="product-color ">
 
                             </div>
-                           
                         </div>
 
-                       
+                        <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                        <div class="cart-size">
+                            <ul class="size-item">
+                                <li>
+                                    <p>XS</p>
+                                </li>
+                                <li>
+                                    <p>S</p>
+                                </li>
+                                <li>
+                                    <p>M</p>
+                                </li>
+                                <li>
+                                    <p>L</p>
+                                </li>
+                                <li>
+                                    <p>XL</p>
+                                </li>
+                                <li>
+                                    <p>XXS</p>
+                                </li>
+                                <li>
+                                    <p>XXS</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="p2-cart ">
+                        <div class="cart-img">
+                            <a href="singleProduct.html"> <img src="images/Cart-img2.png" alt="#"></a>
+                        </div>
+
+                        <div class="cart-content">
+                            <p class="p-product-content">ست تابستانه سیاه و سفید</p>
+                            <div class=" price price2">
+                                <del class="del number-font del2">320,000 تومان</del> <span
+                                    class="discount number-font del2">20%</span>
+                                <div class="number-price">۶۵۰,۰۰۰ تومان</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-details">
+                            <p class="p-cart-details">آبی کاربنی</p>
+                            <div class="product-color ">
+
+                            </div>
+                        </div>
+
+                        <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                        <div class="cart-size">
+                            <ul class="size-item">
+                                <li>
+                                    <p>XS</p>
+                                </li>
+                                <li>
+                                    <p>S</p>
+                                </li>
+                                <li>
+                                    <p>M</p>
+                                </li>
+                                <li>
+                                    <p>L</p>
+                                </li>
+                                <li>
+                                    <p>XL</p>
+                                </li>
+                                <li>
+                                    <p>XXS</p>
+                                </li>
+                                <li>
+                                    <p>XXS</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <div class="p2-cart ">
+                        <div class="cart-img">
+                            <a href=singleProduct.html><img src="images/Cart-img3.png" alt="#"></a>
+                        </div>
+
+                        <div class="cart-content">
+                            <p class="p-product-content">ست تابستانه سیاه و سفید</p>
+                            <div class=" price price2">
+                                <del class="del number-font del2">320,000 تومان</del> <span
+                                    class="discount number-font del2">20%</span>
+                                <div class="number-price">۶۵۰,۰۰۰ تومان</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-details">
+                            <p class="p-cart-details">آبی کاربنی</p>
+                            <div class="product-color ">
+
+                            </div>
+                        </div>
+
+                        <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                        <div class="cart-size">
+                            <ul class="size-item">
+                                <li>
+                                    <p>XS</p>
+                                </li>
+                                <li>
+                                    <p>S</p>
+                                </li>
+                                <li>
+                                    <p>M</p>
+                                </li>
+                                <li>
+                                    <p>L</p>
+                                </li>
+                                <li>
+                                    <p>XL</p>
+                                </li>
+                                <li>
+                                    <p>XXS</p>
+                                </li>
+                                <li>
+                                    <p>XXS</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <div class="p2-cart ">
+                        <div class="cart-img">
+                            <a href=singleProduct.html><img src="images/Cart-img2.png" alt="#"></a>
+                        </div>
+
+                        <div class="cart-content">
+                            <p class="p-product-content">ست تابستانه سیاه و سفید</p>
+                            <div class=" price price2">
+                                <del class="del number-font del2">320,000 تومان</del> <span
+                                    class="discount number-font del2">20%</span>
+                                <div class="number-price">۶۵۰,۰۰۰ تومان</div>
+                            </div>
+                        </div>
+
+                        <div class="cart-details">
+                            <p class="p-cart-details">آبی کاربنی</p>
+                            <div class="product-color ">
+
+                            </div>
+                        </div>
+
+                        <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                        <div class="cart-size">
+                            <ul class="size-item">
+                                <li>
+                                    <p>XS</p>
+                                </li>
+                                <li>
+                                    <p>S</p>
+                                </li>
+                                <li>
+                                    <p>M</p>
+                                </li>
+                                <li>
+                                    <p>L</p>
+                                </li>
+                                <li>
+                                    <p>XL</p>
+                                </li>
+                                <li>
+                                    <p>XXS</p>
+                                </li>
+                                <li>
+                                    <p>XXS</p>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
 
                 </li>
@@ -235,198 +390,52 @@
                 <li>
                     <div class="p2-cart ">
                         <div class="cart-img">
-                            <a href="singleProduct.html"><img src="images/Frame 11.png  " class="img-size"></a>
-                            <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
-                            <div class="cart-Badge-red">۲۰٪</div>
-                            <div class="cart-size">
-                                <ul class="size-item">
-                                    <li>
-                                        <p>XS</p>
-                                    </li>
-                                    <li>
-                                        <p>S</p>
-                                    </li>
-                                    <li>
-                                        <p>M</p>
-                                    </li>
-                                    <li>
-                                        <p>L</p>
-                                    </li>
-                                    <li>
-                                        <p>XL</p>
-                                    </li>
-                                    <li>
-                                        <p>XXS</p>
-                                    </li>
-                                    <li>
-                                        <p>XXS</p>
-                                    </li>
-    
-                                </ul>
-                            </div>
+                            <a href="singleProduct.html"><img src="images/Cart-img.png" alt="#"></a>
                         </div>
 
                         <div class="cart-content">
                             <p class="p-product-content">ست تابستانه سیاه و سفید</p>
-                            <div class="price-cart">
-                                <del class="number-font1 del2">۳۲۰,۰۰۰ تومان</del> <span
-                                    class="discount2 number-font del2">20%</span>
+                            <div class=" price price2">
+                                <del class="del number-font del2">320,000 تومان</del> <span
+                                    class="discount number-font del2">20%</span>
                                 <div class="number-price">۶۵۰,۰۰۰ تومان</div>
                             </div>
-                           
                         </div>
 
                         <div class="cart-details">
                             <p class="p-cart-details">آبی کاربنی</p>
-                            <div class="product-color-cart ">
-                                <ul class="color-ul">
-                                   <a href="#"><li class="color color1"></li></a> 
-                                   <a href="#"><li class="color color2"></li></a> 
-                                   <a href="#"><li class="color color3"></li></a> 
-                                   <a href="#"><li class="color color4"></li></a> 
-                                  
-                                   
-                                </ul>
-                                
+                            <div class="product-color ">
 
-                            </div>
-                           
-                        </div>
-
-                       
-                    </div>
-
-                </li>
-
-                <li>
-                    <div class="p2-cart ">
-                        <div class="cart-img">
-                            <a href="singleProduct.html"><img src="images/Frame 12.png  " class="img-size"></a>
-                            <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
-                            <div class="cart-Badge-red">۲۰٪</div>
-                            <div class="cart-size">
-                                <ul class="size-item">
-                                    <li>
-                                        <p>XS</p>
-                                    </li>
-                                    <li>
-                                        <p>S</p>
-                                    </li>
-                                    <li>
-                                        <p>M</p>
-                                    </li>
-                                    <li>
-                                        <p>L</p>
-                                    </li>
-                                    <li>
-                                        <p>XL</p>
-                                    </li>
-                                    <li>
-                                        <p>XXS</p>
-                                    </li>
-                                    <li>
-                                        <p>XXS</p>
-                                    </li>
-    
-                                </ul>
                             </div>
                         </div>
 
-                        <div class="cart-content">
-                            <p class="p-product-content">ست تابستانه سیاه و سفید</p>
-                            <div class="price-cart">
-                                <del class="number-font1 del2">۳۲۰,۰۰۰ تومان</del> <span
-                                    class="discount2 number-font del2">20%</span>
-                                <div class="number-price">۶۵۰,۰۰۰ تومان</div>
-                            </div>
-                           
+                        <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                        <div class="cart-size">
+                            <ul class="size-item">
+                                <li>
+                                    <p>XS</p>
+                                </li>
+                                <li>
+                                    <p>S</p>
+                                </li>
+                                <li>
+                                    <p>M</p>
+                                </li>
+                                <li>
+                                    <p>L</p>
+                                </li>
+                                <li>
+                                    <p>XL</p>
+                                </li>
+                                <li>
+                                    <p>XXS</p>
+                                </li>
+                                <li>
+                                    <p>XXS</p>
+                                </li>
+
+                            </ul>
                         </div>
-
-                        <div class="cart-details">
-                            <p class="p-cart-details">آبی کاربنی</p>
-                            <div class="product-color-cart ">
-                                <ul class="color-ul">
-                                   <a href="#"><li class="color color1"></li></a> 
-                                   <a href="#"><li class="color color2"></li></a> 
-                                   <a href="#"><li class="color color3"></li></a> 
-                                   <a href="#"><li class="color color4"></li></a> 
-                                  
-                                   
-                                </ul>
-                                
-
-                            </div>
-                           
-                        </div>
-
-                       
-                    </div>
-
-                </li>
-
-
-                <li>
-                    <div class="p2-cart ">
-                        <div class="cart-img">
-                            <a href="singleProduct.html"><img src="images/Frame 10.png  " class="img-size"></a>
-                            <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
-                            <div class="cart-Badge-red">۲۰٪</div>
-                            <div class="cart-size">
-                                <ul class="size-item">
-                                    <li>
-                                        <p>XS</p>
-                                    </li>
-                                    <li>
-                                        <p>S</p>
-                                    </li>
-                                    <li>
-                                        <p>M</p>
-                                    </li>
-                                    <li>
-                                        <p>L</p>
-                                    </li>
-                                    <li>
-                                        <p>XL</p>
-                                    </li>
-                                    <li>
-                                        <p>XXS</p>
-                                    </li>
-                                    <li>
-                                        <p>XXS</p>
-                                    </li>
-    
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="cart-content">
-                            <p class="p-product-content">ست تابستانه سیاه و سفید</p>
-                            <div class="price-cart">
-                                <del class="number-font1 del2">۳۲۰,۰۰۰ تومان</del> <span
-                                    class="discount2 number-font del2">20%</span>
-                                <div class="number-price">۶۵۰,۰۰۰ تومان</div>
-                            </div>
-                           
-                        </div>
-
-                        <div class="cart-details">
-                            <p class="p-cart-details">آبی کاربنی</p>
-                            <div class="product-color-cart ">
-                                <ul class="color-ul">
-                                   <a href="#"><li class="color color1"></li></a> 
-                                   <a href="#"><li class="color color2"></li></a> 
-                                   <a href="#"><li class="color color3"></li></a> 
-                                   <a href="#"><li class="color color4"></li></a> 
-                                  
-                                   
-                                </ul>
-                                
-
-                            </div>
-                           
-                        </div>
-
-                       
                     </div>
 
                 </li>
@@ -436,144 +445,64 @@
                 <li>
                     <div class="p2-cart ">
                         <div class="cart-img">
-                            <a href="singleProduct.html"><img src="images/Frame 11.png  " class="img-size"></a>
-                            <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
-                            <div class="cart-Badge-red">۲۰٪</div>
-                            <div class="cart-size">
-                                <ul class="size-item">
-                                    <li>
-                                        <p>XS</p>
-                                    </li>
-                                    <li>
-                                        <p>S</p>
-                                    </li>
-                                    <li>
-                                        <p>M</p>
-                                    </li>
-                                    <li>
-                                        <p>L</p>
-                                    </li>
-                                    <li>
-                                        <p>XL</p>
-                                    </li>
-                                    <li>
-                                        <p>XXS</p>
-                                    </li>
-                                    <li>
-                                        <p>XXS</p>
-                                    </li>
-    
-                                </ul>
-                            </div>
+                            <a href="singleProduct.html"><img src="images/Cart-img.png" alt="#"></a>
                         </div>
 
                         <div class="cart-content">
                             <p class="p-product-content">ست تابستانه سیاه و سفید</p>
-                            <div class="price-cart">
-                                <del class="number-font1 del2">۳۲۰,۰۰۰ تومان</del> <span
-                                    class="discount2 number-font del2">20%</span>
+                            <div class=" price price2">
+                                <del class="del number-font del2">320,000 تومان</del> <span
+                                    class="discount number-font del2">20%</span>
                                 <div class="number-price">۶۵۰,۰۰۰ تومان</div>
                             </div>
-                           
                         </div>
 
                         <div class="cart-details">
                             <p class="p-cart-details">آبی کاربنی</p>
-                            <div class="product-color-cart ">
-                                <ul class="color-ul">
-                                   <a href="#"><li class="color color1"></li></a> 
-                                   <a href="#"><li class="color color2"></li></a> 
-                                   <a href="#"><li class="color color3"></li></a> 
-                                   <a href="#"><li class="color color4"></li></a> 
-                                  
-                                   
-                                </ul>
-                                
+                            <div class="product-color ">
 
                             </div>
-                           
                         </div>
 
-                       
+                        <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                        <div class="cart-size">
+                            <ul class="size-item">
+                                <li>
+                                    <p>XS</p>
+                                </li>
+                                <li>
+                                    <p>S</p>
+                                </li>
+                                <li>
+                                    <p>M</p>
+                                </li>
+                                <li>
+                                    <p>L</p>
+                                </li>
+                                <li>
+                                    <p>XL</p>
+                                </li>
+                                <li>
+                                    <p>XXS</p>
+                                </li>
+                                <li>
+                                    <p>XXS</p>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
 
                 </li>
-
-
-
-
-                <li>
-                    <div class="p2-cart ">
-                        <div class="cart-img">
-                            <a href="singleProduct.html"><img src="images/Frame 12.png  " class="img-size"></a>
-                            <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
-                            <div class="cart-Badge-red">۲۰٪</div>
-                            <div class="cart-size">
-                                <ul class="size-item">
-                                    <li>
-                                        <p>XS</p>
-                                    </li>
-                                    <li>
-                                        <p>S</p>
-                                    </li>
-                                    <li>
-                                        <p>M</p>
-                                    </li>
-                                    <li>
-                                        <p>L</p>
-                                    </li>
-                                    <li>
-                                        <p>XL</p>
-                                    </li>
-                                    <li>
-                                        <p>XXS</p>
-                                    </li>
-                                    <li>
-                                        <p>XXS</p>
-                                    </li>
-    
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="cart-content">
-                            <p class="p-product-content">ست تابستانه سیاه و سفید</p>
-                            <div class="price-cart">
-                                <del class="number-font1 del2">۳۲۰,۰۰۰ تومان</del> <span
-                                    class="discount2 number-font del2">20%</span>
-                                <div class="number-price">۶۵۰,۰۰۰ تومان</div>
-                            </div>
-                           
-                        </div>
-
-                        <div class="cart-details">
-                            <p class="p-cart-details">آبی کاربنی</p>
-                            <div class="product-color-cart ">
-                                <ul class="color-ul">
-                                   <a href="#"><li class="color color1"></li></a> 
-                                   <a href="#"><li class="color color2"></li></a> 
-                                   <a href="#"><li class="color color3"></li></a> 
-                                   <a href="#"><li class="color color4"></li></a> 
-                                  
-                                   
-                                </ul>
-                                
-
-                            </div>
-                           
-                        </div>
-
-                       
-                    </div>
-
-                </li>
-
             </ul>
 
 
-        </div>
+        </box>
 
     </section>
+
+
+
     <!-- Products End -->
 
 
@@ -841,30 +770,30 @@
 
 
     <section class="suggest-cart cart-slider" style="display:flex ;">
-
-        <div id="move-here"></div>
+       
+       <div id="move-here"></div>
         <ul id="lightSlider4">
+          
 
-
-            <li id="move-this">
-                <div class=" suggest-cart-product">
-                    <div class="suggest-cart-img">
-                        <img src="images/suggest-img1.png" alt="#">
-                    </div>
-                    <div class="suggest-content">
-                        <p class="suggest-cart-details">ست پاییزه مردانه</p>
-                        <div class="cart-like-suggest "><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
-                    </div>
-
-
+             <li id="move-this">
+            <div class=" suggest-cart-product">
+                <div class="suggest-cart-img">
+                    <img src="images/suggest-img1.png" alt="#">
+                </div>
+                <div class="suggest-content">
+                    <p class="suggest-cart-details">ست پاییزه مردانه</p>
+                    <div class="cart-like-suggest "><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
                 </div>
 
-            </li>
 
+            </div>
 
+        </li>
 
+           
 
-
+            
+            
 
 
             <li>

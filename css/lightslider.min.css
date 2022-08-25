@@ -162,34 +162,48 @@
 }
 
 .lSAction>a {
-    width: 32px;
+    width:21px;
+  
     display: block;
     top: 50%;
     height: 32px;
-    background-image: url(/icons/Next.svg);
+    background-image: url();
     cursor: pointer;
     position: absolute;
     z-index: 99;
     margin-top: -16px;
-    opacity: .5;
+    opacity: 1;
     -webkit-transition: opacity .35s linear 0s;
     transition: opacity .35s linear 0s;
-    background-color: rgb(122, 122, 125);
+    background-color: rgb(255, 255, 255);
     
 }
 
 .lSAction>a:hover {
-    opacity: 1
+    background-color: rgb(0, 0, 0);
+    
+   
 }
 
 .lSAction>.lSPrev {
     background-position: 0 0;
-    left: 10px
+    left: 0
 }
 
 .lSAction>.lSNext {
     background-position: -32px 0;
-    right: 10px
+    right:0
+}
+
+@media screen and (min-width: 1024px) {
+
+    .lSAction>a {
+        width:64px;
+        height: 64px;
+    }
+
+  
+
 }
 
 .lSAction>a.disabled {
