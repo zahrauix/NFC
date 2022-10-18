@@ -78,7 +78,15 @@
           url("../fonts/YekanBakh-Black.ttf");
 }
 
-   
+@font-face{
+    font-family: "YekanBakh-noen";
+    font-weight: 900;
+    font-style: normal;
+    src:  url("../fonts/YekanBakhNoEn-Regular.otf"),
+          url("../fonts/YekanBakhNoEn-Regular.ttf"),
+          url("../fonts/YekanBakhNoEn-Regular.woff") ,
+          url("../fonts/YekanBakhNoEn-Regular.woff2");
+}
 body ,
 button{
     font-family:'YekanBakh';

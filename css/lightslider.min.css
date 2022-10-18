@@ -161,7 +161,7 @@
     display: table
 }
 
-.lSAction>a {
+/* .lSAction>a {
     width:21px;
   
     display: block;
@@ -177,7 +177,7 @@
     transition: opacity .35s linear 0s;
     background-color: rgb(255, 255, 255);
     
-}
+} */
 
 .lSAction>a:hover {
     background-color: rgb(0, 0, 0);
