@@ -1,5 +1,5 @@
 
-
+//   Main Slider in index page
 const slides = document.querySelector('.slider-item').children;
 const next = document.querySelector('.next');
 const next2 = document.querySelector('.next-2');
@@ -54,6 +54,7 @@ function slide(direction) {
         }
 
     }
+    
     if (direction == 'next-2') {
         if (index == 0) {
             index = totalSlides - 1;
@@ -98,7 +99,7 @@ let timer = setInterval(autoSlide, duration)
 progress()
 
 
-
+//   Search From 
 const searchForm = document.querySelector('.search-form');
 const search = document.querySelector('.search');
 const nav1 = document.querySelector('.nav1');
@@ -129,24 +130,17 @@ function closeSearch() {
     $(".main-header").css("backgroundColor", "rgba(0, 0, 0, 0.8)");
     show=false;
 }
+//   Search From 
 
 
-
-
-
-
-
-
+//   Mega Menu
 const dropdown = document.querySelector('#dropdown');
 const megaenu = document.querySelector('.mega-menu');
-
-
-
 
 dropdown.addEventListener('click', function(){
     megaenu.classList.toggle('fade')
 })
-
+//   Mega Menu
 
 
 

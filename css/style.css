@@ -141,6 +141,11 @@ h5 {
   margin: auto;
   max-width: 1500px;
 }
+.container3 {
+  margin: auto;
+  max-width: 1500px;
+  padding: 0 3rem;
+}
 
 /*Navbar*/
 .main-header {
@@ -229,7 +234,7 @@ h5 {
 
 
 .search {
-  height: 48rem;
+  height: auto;
   position: absolute;
   top: 0;
   right: 0;
@@ -396,6 +401,10 @@ color: var(--color-Primary-Black-2);
   margin-right: 3rem;
 }
 
+.sd {
+  margin-right: 0;
+}
+
 .suggest-search-products-item-text {
   width: 100%;
   display: flex;
@@ -525,6 +534,11 @@ color: var(--color-Primary-Black-2);
 
 .mega-menu-list-left{
   display: none;
+}
+
+.mega-menu-list-right{
+  padding-right: 2rem;
+  padding-bottom: 1.6rem;
 }
 
 
@@ -757,6 +771,7 @@ color: var(--color-Primary-Black-2);
     flex-direction: row;
     flex-wrap: wrap;
     border-left: 1px solid #fff;
+   
   }
 
   .mega-menu-list-left {
@@ -938,7 +953,7 @@ color: var(--color-Primary-Black-2);
 }
 
 .progress {
-  display: none;
+  /* display: none; */
 }
 
 .slider-button {

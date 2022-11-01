@@ -217,7 +217,7 @@ input[type=number] {
 
 .text-form {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 180%;
     text-align: right;
     letter-spacing: -0.02em;
@@ -227,7 +227,7 @@ input[type=number] {
 
 .text-form-code {
     font-weight: 600;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 180%;
     text-align: right;
     letter-spacing: -0.02em;
@@ -236,7 +236,7 @@ input[type=number] {
 
 .textbtn-form-code {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 180%;
     text-align: right;
     letter-spacing: -0.02em;
@@ -246,7 +246,7 @@ input[type=number] {
 
 .textbtn-form-code-error {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 180%;
     text-align: right;
     letter-spacing: -0.02em;
@@ -259,7 +259,7 @@ input[type=number] {
     border: 1px solid var(--color-Primary-White-1);
     background: var(--color-Primary-White-1);
     font-weight: 400;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 180%;
     text-align: left;
     letter-spacing: -0.02em;
@@ -278,10 +278,10 @@ input[type=number] {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1.6rem 1.6rem;
+    padding: 2rem 2.4rem;
     background-color: var(--color-Primary-Black-1);
     font-weight: 600;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     letter-spacing: -0.02em;
     color: var(--color-Primary-White-1);
@@ -306,8 +306,8 @@ input[type=number] {
     width: 50%;
     border: 1px solid var(--color-Primary-White-1);
     background: var(--color-Primary-White-1);
-    font-weight: 400;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 180%;
     text-align: center;
     letter-spacing: -0.02em;
@@ -321,13 +321,13 @@ input[type=number] {
     width: 50%;
     border: 1px solid var(--color-Primary-White-1);
     background: var(--color-Primary-White-1);
-    font-weight: 400;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 180%;
     text-align: center;
     letter-spacing: -0.02em;
     color: var(--color-Primary-Black-1);
-    padding: .8rem 1.6rem;
+    padding: 1.6rem 1.6rem;
     margin-left: 0;
 
 }
@@ -372,12 +372,12 @@ input[type=number] {
     border: 1px solid var(--color-Primary-White-1);
     background: var(--color-Primary-White-1);
     font-weight: 400;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 180%;
     text-align: right;
     letter-spacing: -0.02em;
     color: var(--color-Primary-Black-1);
-    padding: 1.5rem 1.6rem;
+    padding: 1.6rem ;
     margin-bottom: 1.6rem;
     box-sizing: border-box;
     font-weight: 600;
@@ -396,7 +396,7 @@ input[type=number] {
 
 .form-details {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 180%;
     text-align: right;
     letter-spacing: -0.02em;
@@ -407,7 +407,7 @@ input[type=number] {
 
 .form-details-error {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 180%;
     text-align: right;
     letter-spacing: -0.02em;

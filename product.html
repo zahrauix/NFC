@@ -23,92 +23,265 @@
 <body>
 
 
-  <!-- NavbarStart -->
-  <header class="main-header container1">
+   <!-- NavbarStart -->
+   <header class="main-header container1 fixed-top" >
     <nav class="nav1 container2">
 
 
-      <div class="nav1__icon">
+        <div class="nav1__icon">
 
-        <div class="nav1__toggler"><a onclick="openMenu()"><img src="icons/Hamburger Menu.svg">
-            <p class="p-icon"></p>
-          </a>
+            <div class="nav1__toggler"><a onclick="openMenu()"><img src="icons/Hamburger Menu.svg">
+                    <p class="p-icon"></p>
+                </a>
+            </div>
+            <div class="nav1__search search-form"><a href="#"><img src="icons/Search.svg"></a>
+                <p class="p-icon">جستجو</p>
+            </div>
+            <div class="nav1__user"><a href="Log in, Sign up.html"><img src="icons/Profile.svg"></a>
+                <p class="p-icon">ورود/ثبت نام</p>
+            </div>
+
+
         </div>
-        <div class="nav1__search"><a href="#"><img src="icons/Search.svg"></a>
-          <p class="p-icon">جستجو</p>
-        </div>
-        <div class="nav1__user"><a href="#"><img src="icons/Profile.svg"></a>
-          <p class="p-icon">ورود/ثبت نام</p>
+        <div class="nav1-logo">
+            <a href="index.html"> <img src="icons/NFC Logo (White).png" class="logo" alt="NFC"></a>
         </div>
 
 
-      </div>
-      <div class="nav1-logo">
-        <a href="index.html"> <img src="icons/NFC Logo (White).png" class="logo" alt="NFC"></a>
-      </div>
+        <ul id="res-list" class="list  nav1__list" data-open="close">
+            <li class="nav1-item "><a href="index.html">خانه</a></li>
+            <div class="cf">
+                <li class="nav1-item nav1-item-active" id="dropdown"><a href="#">زنانه</a></li>
+                <div class="item-list">
+                    <div class="mega-menu">
+                        <ul class="mega-menu-list-right">
+                            <li class="menu-item"><a href="product.html" class="item-menu">لباس های مجلسی</a></li>
+                            <li class="menu-item"><a href="product.html" class="item-menu">تیشرت</a></li>
+                            <li class="menu-item"><a href="product.html" class="item-menu">ژاکت و پلیور</a></li>
+                            <li class="menu-item"><a href="product.html" class="item-menu">لباس راحتی</a></li>
+                            <li class="menu-item"><a href="product.html" class="item-menu">مانتو،پانچو و رویه</a>
+                            </li>
+                            <li class="menu-item"><a href="product.html" class="item-menu">شومیز</a></li>
+                            <li class="menu-item"><a href="product.html" class="item-menu">تاپ و نیم تنه</a></li>
+                            <li class="menu-item"><a href="product.html" class="item-menu">تونیک</a></li>
+                            <li class="menu-item"><a href="product.html" class="item-menu">سویشرت</a></li>
+                            <li class="menu-item"><a href="product.html" class="item-menu">پالتو</a></li>
+                            <li class="menu-item"><a href="product.html" class="item-menu">شلوار و سرهمی</a></li>
+                            <li class="menu-item"><a href="product.html" class="item-menu">پالتو و بارانی</a></li>
+                        </ul>
+                        <ul class="mega-menu-list-left">
+                            <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item.jpg "
+                                        class="megamenu-img"> </a></li>
+                            <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item1.jpg"
+                                        class="megamenu-img"> </a></li>
+                            <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item2.jpg"
+                                        class="megamenu-img"> </a></li>
+                            <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item3.jpg"
+                                        class="megamenu-img"> </a></li>
+                            <li class="menu-item"><a href="" class="item-menu all-product">مشاهده همه محصولات
+                                    زنانه<span class="Next-i"><img src="icons/Next2.svg"></span></a></li>
+                        </ul>
+                    </div>
 
 
-      <ul id="res-list" class="list  nav1__list" data-open="close">
-        <li class="nav1-item"><a href="index.html">خانه</a></li>
-        <li class="nav1-item nav1-item-active"><a href="product.html">زنانه</a></li>
-        <li class="nav1-item "><a href="product.html">مردانه</a></li>
-        <li class="nav1-item"><a href="about-us.html">درباره</a></li>
-      </ul>
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="cf">
+                <li class="nav1-item " id="dropdown"><a href="#">مردانه</a>
+                </li>
+                <div class="item-list">
+                    <div class="mega-menu">
+
+                        <ul class="mega-menu-list-right">
+
+                            <li class="menu-item"><a href="" class="item-menu">لباس های مجلسی</a></li>
+                            <li class="menu-item"><a href="" class="item-menu">تیشرت</a></li>
+                            <li class="menu-item"><a href="" class="item-menu">ژاکت و پلیور</a></li>
+                            <li class="menu-item"><a href="" class="item-menu">لباس راحتی</a></li>
+                            <li class="menu-item"><a href="" class="item-menu">مانتو،پانچو و رویه</a></li>
+                            <li class="menu-item"><a href="" class="item-menu">شومیز</a></li>
+                            <li class="menu-item"><a href="" class="item-menu">تاپ و نیم تنه</a></li>
+                            <li class="menu-item"><a href="" class="item-menu">تونیک</a></li>
+                            <li class="menu-item"><a href="" class="item-menu">سویشرت</a></li>
+                            <li class="menu-item"><a href="" class="item-menu">پالتو</a></li>
+                            <li class="menu-item"><a href="" class="item-menu">شلوار و سرهمی</a></li>
+                            <li class="menu-item"><a href="" class="item-menu">پالتو و بارانی</a></li>
+
+
+                        </ul>
+                        <ul class="mega-menu-list-left">
+                            <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item.jpg"
+                                        class="megamenu-img"> </a></li>
+                            <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item2.jpg"
+                                        class="megamenu-img"> </a></li>
+                            <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item3.jpg"
+                                        class="megamenu-img"> </a></li>
+                            <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item4.jpg"
+                                        class="megamenu-img"> </a></li>
+                            <li class="menu-item"><a href="" class="item-menu all-product">مشاهده همه محصولات
+                                    مردانه<span class="Next-i"><img src="icons/Next2.svg"></span></a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+            <li class="nav1-item"><a href="about-us.html">درباره</a></li>
+        </ul>
 
     </nav>
-  </header>
+    <!-- SearchBar Start-->
+    <div class="search">
+        <div class="search-content">
+            <div class="close-i"> <img src="icons/Close.svg" alt=""></div>
+            <form action="">
+                <span class="d-flex"><img src="icons/Search.svg" alt=""></span>
+                <input type="text" placeholder="جستجو میان محصولات، کالکشن ها، دسته بندی ها و...">
+            </form>
+            <!-- محصولات پیشنهادی در قسمت سرچ -->
+            <div class="serach-item d-none">
+                <p class="p-search-item">محبوب ترین های اخیر</p>
 
-  <!-- NavbarEnd -->
+                <ul class="search-item-list">
+                    <a href="#">
+                        <li class="search-item-list-li">شلوار جین مردانه</li>
+                    </a>
+                    <a href="#">
+                        <li class="search-item-list-li">تیشرت بیسیک</li>
+                    </a>
+                    <a href="#">
+                        <li class="search-item-list-li">مانتو پاییزه</li>
+                    </a>
+                    <a href="#">
+                        <li class="search-item-list-li">تیشرت بیسیک</li>
+                    </a>
+                    <a href="#">
+                        <li class="search-item-list-li">مانتو پاییزه</li>
+                    </a>
+                    <a href="#">
+                        <li class="search-item-list-li">مانتو پاییزه</li>
+                    </a>
+                    <a href="#">
+                        <li class="search-item-list-li">تیشرت بیسیک</li>
+                    </a>
+                    <a href="#">
+                        <li class="search-item-list-li">پیراهن پشمی طرح دار</li>
+                    </a>
+
+                </ul>
+            </div>
+
+        </div>
+        <!--  محصولات پیشنهادی در قسمت سرچ در زمان تایپ-->
+        <div class="serach-item-typing ">
+            <div class="suggest-search">
+                <div class="first-suggest">
+                    <img src="icons/Hanger.svg" class="Hanger-i">
+                    <p class="p-search-item-suggest">تمامی محصولات در دسته بندی<span>
+                            <a href="#" class="p-search-item-suggest2">شلوار جین مردانه</a>
+                        </span> </p>
+                </div>
+
+                <a href="#" class="p-search-item-suggest"> <span class="p-search-item-suggest2">شلوار جین
+                        مردانه</span>
+                    در کالکشن تابستانه </a>
+                <a href="#" class="p-search-item-suggest"> <span class="p-search-item-suggest2">شلوار جین
+                        مردانه</span>
+                    در محصولات مردانه </a>
+            </div>
+
+            <div class="suggest-search-products-content">
+                <div id="Pcarousel" class="owl-carousel sc ">
+                    <div class="suggest-search-products">
+                        <a href="#">
+                            <div class="suggest-search-products-item">
+                                <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                <div class="suggest-search-products-item-text">
+                                    <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                    <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                </div>
+                            </div>
+                        </a>
 
 
+                        <a href="#">
+                            <div class="suggest-search-products-item">
+                                <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                <div class="suggest-search-products-item-text">
+                                    <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                    <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                </div>
+                            </div>
+                        </a>
 
 
+                        <a href="#">
+                            <div class="suggest-search-products-item">
+                                <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                <div class="suggest-search-products-item-text">
+                                    <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                    <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                </div>
+                            </div>
+                        </a>
 
+
+                        <a href="#">
+                            <div class="suggest-search-products-item">
+                                <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                <div class="suggest-search-products-item-text">
+                                    <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                    <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+                </div>
+                <p class="a-suggest-search-products"> <a href="#">مشاهده ۱۰۰+ نتیجه دیگر در تمامی محصولات </a></p>
+            </div>
+        </div>
+
+    </div>
+    <!-- SearchBar End-->
+   </header>
+   <!-- NavbarEnd -->
 
 
   <div class="text-filter container2">
     <p class="h1-text-filter">تیشرت های زنانه</p><span class="p-text-filter">( ۱۲۳۴ محصول )</span>
   </div>
-
-
-  <!-- Filter Mobile -->
-
-
-
-  <!-- Filter Mobile -->
-
+ 
 
   <!-- Filter -->
   <div class="filter-button">
-    <button class="filter-button-content">فیلتر <span><img src="icons/Filter.svg"></span></button>
+    <button class="filter-button-content">فیلتر محصولات<span><img src="icons/filter-6546.svg" class="filter-i"></span></button>
   </div>
 
   <section class="filter container2">
-
-
-
-
-
-
     <div class="filter-row">
-
       <div class="filter-item">
-
         <div class="right-filter">
 
           <div class=" h1-filter-top">
             <div class="h1-filter">فیلترها</div>
-            <img src="icons/Close.svg">
+            <img src="icons/Close.svg" id="closeFilter">
             <div class="dropdown-content">
-
-
             </div>
           </div>
 
 
-          <div class="dropdown">
-            <div class="dropbtn">رنگ <span><img src="icons/Down Arrow.svg"></span></div>
-            <div class="dropdown-content">
+          <div id="dropdownColor" class="dropdown" >
+            <div class="dropbtn" onclick="toggleSlide('dropdownColorItem')">رنگ <span><img src="icons/Down Arrow.svg"></span></div>
+            <div id="dropdownColorItem" class="dropdown-content">
               <a href="#" class="d-flex">
                 <div class="list-color" style="background-color:rgba(234, 75, 58, 1);
                 ;"></div>قرمز
@@ -144,9 +317,9 @@
           </div>
 
 
-          <div class="dropdown">
-            <div class="dropbtn">سایز <span><img src="icons/Down Arrow.svg"></span></div>
-            <div class="dropdown-content">
+          <div class="dropdown" >
+            <div class="dropbtn" onclick="toggleSlide('dropdownSizeItem')" >سایز <span><img src="icons/Down Arrow.svg"></span></div>
+            <div id="dropdownSizeItem" class="dropdown-content">
               <a href="#">XS</a>
               <a href="#">S</a>
               <a href="#">M</a>
@@ -157,9 +330,9 @@
             </div>
           </div>
 
-          <div class="dropdown">
-            <div class="dropbtn">نوع<span><img src="icons/Down Arrow.svg"></span></div>
-            <div class="dropdown-content">
+          <div class="dropdown" >
+            <div class="dropbtn" onclick="toggleSlide('dropdownTypeItem')">نوع<span><img src="icons/Down Arrow.svg"></span></div>
+            <div id="dropdownTypeItem" class="dropdown-content">
               <a href="#">روزمره</a>
               <a href="#">ورزشی (هاور)</a>
               <a href="#">اداری</a>
@@ -167,16 +340,16 @@
             </div>
           </div>
 
-          <div class="dropdown">
-            <div class="dropbtn">قیمت<span><img src="icons/Down Arrow.svg"></div></button></button>
-            <div class="dropdown-content">
+          <div class="dropdown" >
+            <div class="dropbtn" onclick="toggleSlide('dropdownPriceItem')">قیمت<span><img src="icons/Down Arrow.svg"></div></button></button>
+            <div id="dropdownPriceItem" class="dropdown-content">
              
                 
               <section class="range-slider" id="facet-price-range-slider">
   
-                <input name="range-1" value="0" min="0" max="1250" step="1" type="range">
+                <input name="range-1" value="100000" min="100000" max="1000000" step="50000" type="range">
                 
-                <input name="range-2" value="1250" min="0" max="1250" step="1" type="range">
+                <input name="range-2" value="1000000" min="100000" max="1000000" step="50000" type="range">
                 
               </section>
 
@@ -190,13 +363,11 @@
           </div>
 
         </div>
-
-        <div class="left-filter">
-
-          <div class="dropdown">
-            <div class="dropbtn"><span class="p-drp-down">نمایش بر اساس:</span>جدیدترین<span><img
+        <div class="left-filter" >
+          <div class="dropdown" >
+            <div class="dropbtn" onclick="toggleSlide('dropdownNewestItem')"><span class="p-drp-down">نمایش بر اساس:</span>جدیدترین<span><img
                   src="icons/Down Arrow.svg"></span></div>
-            <div class="dropdown-content">
+            <div id="dropdownNewestItem" class="dropdown-content">
               <a href="#">جدید ترین</a>
               <a href="#">پر بازدید ترین</a>
               <a href="#">ارزان ترین</a>
@@ -205,25 +376,13 @@
           </div>
 
         </div>
-
-
-
-
-
-
-
-
-
       </div>
-
-
-
+      
     </div>
-
   </section>
+ <!-- Filter -->
 
-
-
+ <!-- Products -->
   <section class="filter-products container2">
     <div class="product-center">
       <div class="z-row">
@@ -754,85 +913,7 @@
     </div>
 
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <br><br>
-  <br><br><br>
-  <br>
-  <br><br>
-  <br><br><br>
-  <br>
-  <br>
-  <br>
-  <br><br>
-  <br><br><br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Products -->
 
 
   <br><br>
@@ -857,9 +938,8 @@
 
   <script src="js/jquery-v1.11.3.js"> </script>
   <script src="js/owl.carousel.js"></script>
-
   <script src="js/count.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery-v1.11.3.js"></script>
   <script src="js/app.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/uikit.min.js"></script>

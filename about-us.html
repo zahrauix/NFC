@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.min.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.rtl.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="css/uikit.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -23,7 +24,7 @@
 <body>
 
     <!-- NavbarStart -->
-    <header class="main-header container1">
+    <header class="main-header container1 fixed-top" >
         <nav class="nav1 container2">
 
 
@@ -33,10 +34,10 @@
                         <p class="p-icon"></p>
                     </a>
                 </div>
-                <div class="nav1__search"><a href="#"><img src="icons/Search.svg"></a>
+                <div class="nav1__search search-form"><a href="#"><img src="icons/Search.svg"></a>
                     <p class="p-icon">جستجو</p>
                 </div>
-                <div class="nav1__user"><a href="#"><img src="icons/Profile.svg"></a>
+                <div class="nav1__user"><a href="Log in, Sign up.html"><img src="icons/Profile.svg"></a>
                     <p class="p-icon">ورود/ثبت نام</p>
                 </div>
 
@@ -48,27 +49,213 @@
 
 
             <ul id="res-list" class="list  nav1__list" data-open="close">
-                <li class="nav1-item"><a href="index.html">خانه</a></li>
-                <li class="nav1-item"><a href="product.html">زنانه</a></li>
-                <li class="nav1-item"><a href="product.html">مردانه</a></li>
+                <li class="nav1-item "><a href="index.html">خانه</a></li>
+                <div class="cf">
+                    <li class="nav1-item" id="dropdown"><a href="#">زنانه</a></li>
+                    <div class="item-list">
+                        <div class="mega-menu">
+                            <ul class="mega-menu-list-right">
+                                <li class="menu-item"><a href="product.html" class="item-menu">لباس های مجلسی</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">تیشرت</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">ژاکت و پلیور</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">لباس راحتی</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">مانتو،پانچو و رویه</a>
+                                </li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">شومیز</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">تاپ و نیم تنه</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">تونیک</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">سویشرت</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">پالتو</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">شلوار و سرهمی</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">پالتو و بارانی</a></li>
+                            </ul>
+                            <ul class="mega-menu-list-left">
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item.jpg "
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item1.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item2.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item3.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item"><a href="" class="item-menu all-product">مشاهده همه محصولات
+                                        زنانه<span class="Next-i"><img src="icons/Next2.svg"></span></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cf">
+                    <li class="nav1-item " id="dropdown"><a href="#">مردانه</a>
+                    </li>
+                    <div class="item-list">
+                        <div class="mega-menu">
+
+                            <ul class="mega-menu-list-right">
+
+                                <li class="menu-item"><a href="" class="item-menu">لباس های مجلسی</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">تیشرت</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">ژاکت و پلیور</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">لباس راحتی</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">مانتو،پانچو و رویه</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">شومیز</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">تاپ و نیم تنه</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">تونیک</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">سویشرت</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">پالتو</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">شلوار و سرهمی</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">پالتو و بارانی</a></li>
+
+
+                            </ul>
+                            <ul class="mega-menu-list-left">
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item2.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item3.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item4.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item"><a href="" class="item-menu all-product">مشاهده همه محصولات
+                                        مردانه<span class="Next-i"><img src="icons/Next2.svg"></span></a></li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
                 <li class="nav1-item nav1-item-active"><a href="about-us.html">درباره</a></li>
             </ul>
 
         </nav>
+        <!-- SearchBar Start-->
+        <div class="search">
+            <div class="search-content">
+                <div class="close-i"> <img src="icons/Close.svg" alt=""></div>
+                <form action="">
+                    <span class="d-flex"><img src="icons/Search.svg" alt=""></span>
+                    <input type="text" placeholder="جستجو میان محصولات، کالکشن ها، دسته بندی ها و...">
+                </form>
+                <!-- محصولات پیشنهادی در قسمت سرچ -->
+                <div class="serach-item d-none">
+                    <p class="p-search-item">محبوب ترین های اخیر</p>
+
+                    <ul class="search-item-list">
+                        <a href="#">
+                            <li class="search-item-list-li">شلوار جین مردانه</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">تیشرت بیسیک</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">مانتو پاییزه</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">تیشرت بیسیک</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">مانتو پاییزه</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">مانتو پاییزه</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">تیشرت بیسیک</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">پیراهن پشمی طرح دار</li>
+                        </a>
+
+                    </ul>
+                </div>
+
+            </div>
+            <!--  محصولات پیشنهادی در قسمت سرچ در زمان تایپ-->
+            <div class="serach-item-typing ">
+                <div class="suggest-search">
+                    <div class="first-suggest">
+                        <img src="icons/Hanger.svg" class="Hanger-i">
+                        <p class="p-search-item-suggest">تمامی محصولات در دسته بندی<span>
+                                <a href="#" class="p-search-item-suggest2">شلوار جین مردانه</a>
+                            </span> </p>
+                    </div>
+
+                    <a href="#" class="p-search-item-suggest"> <span class="p-search-item-suggest2">شلوار جین
+                            مردانه</span>
+                        در کالکشن تابستانه </a>
+                    <a href="#" class="p-search-item-suggest"> <span class="p-search-item-suggest2">شلوار جین
+                            مردانه</span>
+                        در محصولات مردانه </a>
+                </div>
+
+                <div class="suggest-search-products-content">
+                    <div id="Pcarousel" class="owl-carousel sc ">
+                        <div class="suggest-search-products">
+                            <a href="#">
+                                <div class="suggest-search-products-item">
+                                    <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                    <div class="suggest-search-products-item-text">
+                                        <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                        <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <a href="#">
+                                <div class="suggest-search-products-item">
+                                    <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                    <div class="suggest-search-products-item-text">
+                                        <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                        <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <a href="#">
+                                <div class="suggest-search-products-item">
+                                    <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                    <div class="suggest-search-products-item-text">
+                                        <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                        <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <a href="#">
+                                <div class="suggest-search-products-item">
+                                    <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                    <div class="suggest-search-products-item-text">
+                                        <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                        <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <p class="a-suggest-search-products"> <a href="#">مشاهده ۱۰۰+ نتیجه دیگر در تمامی محصولات </a></p>
+                </div>
+            </div>
+
+        </div>
+        <!-- SearchBar End-->
     </header>
 
     <!-- NavbarEnd -->
 
-
+    <!-- about us header Start -->
     <section class="about-us-header">
         <div class="about-us-row   ">
             <div class="h1-header">
-
-
                 <p class="h1-header-about-us">از پنبه تا پوشـــــــاک<br>
                     از ۱۳۷۶ تـا به امروز</p>
-
-
             </div>
             <div class="about-header-content">
                 <div class="about-header-content-right">
@@ -97,20 +284,20 @@
 
                     <div class="statistics">
                         <div class="statistics-detail">
-                            <P class="h1-statistics"> <span class="count">25</span></P>
+                            <P class="h1-statistics"> <span>۲۵+</span></P>
                             <P class="p-statistics">سال تجربه در صنعت تولید
                                 پارچه و پوشاک </P>
                         </div>
                         <div class="statistics-detail z ">
-                            <P class="h1-statistics count"> 1234</P>
+                            <P class="h1-statistics"> ۱۲۳۴+</P>
                             <P class="p-statistics ">محصول منحصر بفرد در وبسایت و شعب حضوری</P>
                         </div>
                         <div class="statistics-detail">
-                            <P class="h1-statistics count"> 5000</P>
+                            <P class="h1-statistics"> ۵۰۰۰+</P>
                             <P class="p-statistics">سفارش آنلاین در هر شبانه روز</P>
                         </div>
                         <div class="statistics-detail ">
-                            <P class="h1-statistics count"> 1000</P>
+                            <P class="h1-statistics"> ۱۰۰۰+</P>
                             <P class="p-statistics">سفارش حضوری در هر شبانه روز</P>
                         </div>
                     </div>
@@ -132,13 +319,6 @@
                         </div>
 
                     </div>
-
-
-
-
-
-
-
                 </div>
 
                 <div class="about-header-content-left">
@@ -148,23 +328,18 @@
                 </div>
             </div>
         </div>
-
-
     </section>
+     <!-- about us header End -->
 
-
-
+     <!-- Feature Start -->
     <section class="feature  container2 ">
         <div class="h1-feature">
             <p class="h1-feature-text">با داستان ان اف سی بیشتر آشنا شوید !</p>
         </div>
-
         <div class="feature-row">
             <diV class="feature-right">
                 <div class="feature-date">
-                    <p class="p-feauter-head">فاز اول </p>
-
-
+                    <p class="p-feauter-head">فاز اول </p><span><img src="icons/Line.svg" class="L-i"></span>
                     <p class="date-feauter-head">۱۳۷۶-۱۳۸۲<span><img src="icons/Calendar.svg"
                                 class="icon-feauter-head"></span></p>
                 </div>
@@ -178,12 +353,9 @@
 
             </diV>
             <diV class="feature-left">
-
                 <div class="feature-left-img">
                     <img src="images/nfc 2.png" alt="" class="feature-img">
                 </div>
-
-
             </diV>
         </div>
 
@@ -192,9 +364,7 @@
         <div class="feature-row-revers">
             <diV class="feature-right">
                 <div class="feature-date">
-                    <p class="p-feauter-head">فاز دوم</p>
-
-
+                    <p class="p-feauter-head">فاز دوم</p><span><img src="icons/Line.svg" class="L-i"></span>
                     <p class="date-feauter-head">۱۳۸۵-۱۳۹۲<span><img src="icons/Calendar.svg"
                                 class="icon-feauter-head"></span></p>
                 </div>
@@ -205,15 +375,11 @@
                     تیراژ تولیدی در حال حاضر: ۵۰۰۰ عدد روزانه
                     تیراژ تولیدی پیش بینی شده برای ۶ ماهه دوم سال ۱۴۰۱ : ۸۰۰۰ عدد روزانه
                 </p>
-
             </diV>
             <diV class="feature-left">
-
                 <div class="feature-left-img">
                     <img src="images/nfc2.png" alt="" class="feature-img-3">
                 </div>
-
-
             </diV>
         </div>
 
@@ -222,9 +388,7 @@
         <div class="feature-row">
             <diV class="feature-right">
                 <div class="feature-date">
-                    <p class="p-feauter-head">فاز سوم</p>
-
-
+                    <p class="p-feauter-head">فاز سوم</p><span><img src="icons/Line.svg" class="L-i"></span>
                     <p class="date-feauter-head">۱۳۹۵-۱۳۹۷<span><img src="icons/Calendar.svg"
                                 class="icon-feauter-head"></span></p>
                 </div>
@@ -237,12 +401,9 @@
 
             </diV>
             <diV class="feature-left">
-
                 <div class="feature-left-img">
                     <img src="images/Nfc3.png" alt="" class="feature-img-3">
                 </div>
-
-
             </diV>
         </div>
 
@@ -250,9 +411,7 @@
         <div class="feature-row-revers">
             <diV class="feature-right">
                 <div class="feature-date">
-                    <p class="p-feauter-head">فاز چهارم</p>
-
-
+                    <p class="p-feauter-head">فاز چهارم</p><span><img src="icons/Line.svg" class="L-i"></span>
                     <p class="date-feauter-head">۱۳۹۸-۱۴۰۰<span><img src="icons/Calendar.svg"
                                 class="icon-feauter-head"></span></p>
                 </div>
@@ -261,15 +420,11 @@
                 <p class="feature-text">بعد از موفقیت های پی در پی و تبدیل شدن به یکی از بازو های مهم تولید پارچه و
                     پوشاک عمده، در سال ۱۳۹۸ این برند تولید پارچه های تخت باف را آغاز نمود و در روز های پایانی همین سال،
                     فروشگاه پارچه خود را در بازار بزرگ تهران افتتاح کرد.</p>
-
             </diV>
             <diV class="feature-left">
-
                 <div class="feature-left-img">
                     <img src="images/nfc4.png" alt="" class="feature-img-3">
                 </div>
-
-
             </diV>
         </div>
 
@@ -278,9 +433,7 @@
             <diV class="feature-right phas-5">
                 <div>
                     <div class="feature-date">
-                        <p class="p-feauter-head">فاز پنجم</p>
-
-
+                        <p class="p-feauter-head">فاز پنجم</p><span><img src="icons/Line.svg" class="L-i"></span>
                         <p class="date-feauter-head">۱۴۰۰-۱۴۰۱<span><img src="icons/Calendar.svg"
                                     class="icon-feauter-head"></span></p>
                     </div>
@@ -289,47 +442,32 @@
                         تهران، اصفهان و مشهد فعالیت مستقل خود را به عنوان یک تولید کننده و تامین کننده پوشاک روزانه آغاز
                         کرد.</p>
                 </div>
-
                 <div class="phas-5-button">
-
                     <button class="feature-btn">
                         مشاهده آدرس شعب حضوری
                     </button>
-
                     <button class="feature-btn-secondry">
                         اینجا یه دکمه Secondary باید بذاریم !
                     </button>
-
                 </div>
-
-
-
-
             </diV>
             <diV class="feature-left">
-
                 <div class="feature-left-img">
                     <img src="images/nfc5.png" alt="" class="feature-img-5">
                 </div>
-
-
             </diV>
         </div>
-
-
-
     </section>
+     <!-- Feature End -->
 
-
-   <section class="FAQ  container2">
+     <!-- FAQ Start -->
+    <section class="FAQ  container2">
         <div class="h1-feature">
             <p class="h1-feature-text">سوالات پرتکراری که از ما می پرسید !</p>
         </div>
-
         <div class="FAQ-drop-down">
             <div id="accordion" class="accordion">
-             
-                <div class="link"><i class="fa fa-database"></i>
+                <div class="link">
                     <P class="question-text">چگونه می توانم سفارشاتم را ثبت کنم؟</P><i class="fa fa-chevron-down"></i>
                 </div>
                 <div class="submenu">
@@ -343,47 +481,107 @@
                         سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد محصولات، تاریخ
                         سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند.</P>
                     </li>
-
                 </div>
-
-            </div>
-
-            <div id="accordion" class="accordion">
-             
-                <div class="link"><i class="fa fa-database"></i>
-                    <P class="question-text">چگونه می توانم سفارشاتم را ثبت کنم؟</P><i class="fa fa-chevron-down"></i>
-                </div>
-                <div class="submenu">
-                    <P class="answer-text">شما پس از ورود یا ثبت نام در وبسایت ان اف سی، می توانید در هر لحظه و مکان
-                        به پنل کاربری خود
-                        دسترسی داشته باشید. در پنل کاربری با انتخاب گزینه پیگیری سفارشات می توانید تمامی اطلاعات
-                        مربوط به آخرین سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد
-                        محصولات، تاریخ سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند. شما پس از ورود یا
-                        ثبت نام در وبسایت ان اف سی، می توانید در هر لحظه و مکان به پنل کاربری خود دسترسی داشته
-                        باشید. در پنل کاربری با انتخاب گزینه پیگیری سفارشات می توانید تمامی اطلاعات مربوط به آخرین
-                        سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد محصولات، تاریخ
-                        سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند.</P>
-                    </li>
-
-                </div>
-
             </div>
 
             
+            <div id="accordion" class="accordion">
+                <div class="link">
+                    <P class="question-text"> چگونه می توانم هزینه سفارشاتم را پرداخت کنم؟ </P><i class="fa fa-chevron-down"></i>
+                </div>
+                <div class="submenu">
+                    <P class="answer-text">شما پس از ورود یا ثبت نام در وبسایت ان اف سی، می توانید در هر لحظه و مکان
+                        به پنل کاربری خود
+                        دسترسی داشته باشید. در پنل کاربری با انتخاب گزینه پیگیری سفارشات می توانید تمامی اطلاعات
+                        مربوط به آخرین سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد
+                        محصولات، تاریخ سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند. شما پس از ورود یا
+                        ثبت نام در وبسایت ان اف سی، می توانید در هر لحظه و مکان به پنل کاربری خود دسترسی داشته
+                        باشید. در پنل کاربری با انتخاب گزینه پیگیری سفارشات می توانید تمامی اطلاعات مربوط به آخرین
+                        سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد محصولات، تاریخ
+                        سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند.</P>
+                    </li>
+                </div>
+            </div>
+
+            <div id="accordion" class="accordion">
+                <div class="link">
+                    <P class="question-text"> چگونه می توانم سفارشاتم را پیگیری کنم؟</P><i class="fa fa-chevron-down"></i>
+                </div>
+                <div class="submenu">
+                    <P class="answer-text">شما پس از ورود یا ثبت نام در وبسایت ان اف سی، می توانید در هر لحظه و مکان
+                        به پنل کاربری خود
+                        دسترسی داشته باشید. در پنل کاربری با انتخاب گزینه پیگیری سفارشات می توانید تمامی اطلاعات
+                        مربوط به آخرین سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد
+                        محصولات، تاریخ سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند. شما پس از ورود یا
+                        ثبت نام در وبسایت ان اف سی، می توانید در هر لحظه و مکان به پنل کاربری خود دسترسی داشته
+                        باشید. در پنل کاربری با انتخاب گزینه پیگیری سفارشات می توانید تمامی اطلاعات مربوط به آخرین
+                        سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد محصولات، تاریخ
+                        سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند.</P>
+                    </li>
+                </div>
+            </div>
+
+            <div id="accordion" class="accordion">
+                <div class="link">
+                    <P class="question-text"> آیا می توانم پس از دریافت محصول آن را مرجوع کنم؟</P><i class="fa fa-chevron-down"></i>
+                </div>
+                <div class="submenu">
+                    <P class="answer-text">شما پس از ورود یا ثبت نام در وبسایت ان اف سی، می توانید در هر لحظه و مکان
+                        به پنل کاربری خود
+                        دسترسی داشته باشید. در پنل کاربری با انتخاب گزینه پیگیری سفارشات می توانید تمامی اطلاعات
+                        مربوط به آخرین سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد
+                        محصولات، تاریخ سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند. شما پس از ورود یا
+                        ثبت نام در وبسایت ان اف سی، می توانید در هر لحظه و مکان به پنل کاربری خود دسترسی داشته
+                        باشید. در پنل کاربری با انتخاب گزینه پیگیری سفارشات می توانید تمامی اطلاعات مربوط به آخرین
+                        سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد محصولات، تاریخ
+                        سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند.</P>
+                    </li>
+                </div>
+            </div>
+
+            <div id="accordion" class="accordion">
+                <div class="link">
+                    <P class="question-text">سفارشات پس از چه مدت به دستم می رسد؟</P><i class="fa fa-chevron-down"></i>
+                </div>
+                <div class="submenu">
+                    <P class="answer-text">شما پس از ورود یا ثبت نام در وبسایت ان اف سی، می توانید در هر لحظه و مکان
+                        به پنل کاربری خود
+                        دسترسی داشته باشید. در پنل کاربری با انتخاب گزینه پیگیری سفارشات می توانید تمامی اطلاعات
+                        مربوط به آخرین سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد
+                        محصولات، تاریخ سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند. شما پس از ورود یا
+                        ثبت نام در وبسایت ان اف سی، می توانید در هر لحظه و مکان به پنل کاربری خود دسترسی داشته
+                        باشید. در پنل کاربری با انتخاب گزینه پیگیری سفارشات می توانید تمامی اطلاعات مربوط به آخرین
+                        سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد محصولات، تاریخ
+                        سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند.</P>
+                    </li>
+                </div>
+            </div>
+
+
+            <div id="accordion" class="accordion">
+                <div class="link">
+                    <P class="question-text"> آیا محصولات ان اف سی دارای ضمانت کیفیت کالا هستند؟ </P><i class="fa fa-chevron-down"></i>
+                </div>
+                <div class="submenu">
+                    <P class="answer-text">شما پس از ورود یا ثبت نام در وبسایت ان اف سی، می توانید در هر لحظه و مکان
+                        به پنل کاربری خود
+                        دسترسی داشته باشید. در پنل کاربری با انتخاب گزینه پیگیری سفارشات می توانید تمامی اطلاعات
+                        مربوط به آخرین سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد
+                        محصولات، تاریخ سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند. شما پس از ورود یا
+                        ثبت نام در وبسایت ان اف سی، می توانید در هر لحظه و مکان به پنل کاربری خود دسترسی داشته
+                        باشید. در پنل کاربری با انتخاب گزینه پیگیری سفارشات می توانید تمامی اطلاعات مربوط به آخرین
+                        سفارشات خود را ببینید و آن ها را بررسی نمایید. اطلاعات شامل نام محصولات، کد محصولات، تاریخ
+                        سفارشات، وضعیت سفارشات و کد رهگیری ۱۶ رقمی پست می باشند.</P>
+                    </li>
+                </div>
+            </div>
+
         </div>
     </section> 
+      <!-- FAQ End -->
 
-    
-
-   
-
-        
-
-
-
-
+      <!-- Map Start -->
     <section class="Map  container2">
-
         <div class="h1-IranMap">
             <p class="h1-feature-text">شعب حضوری ان اف سی در سراسر ایران !</p>
             <p class="p-IranMap-text">انتخاب شما، خرید حضوری است؟ پیشنهاد ما به شما مراجعه به شعب ان اف سی در سراسر
@@ -393,10 +591,7 @@
                 و اینا... انتخاب شما، خرید حضوری است؟ پیشنهاد ما به شما مراجعه به شعب ان اف سی در سراسر ایران است ! یه
                 سری توضیح درمورد خرید حضوری و اینا...</p>
         </div>
-
-
         <div class="IranMap  container2">
-
             <div class="Map-svg">
                 <svg width="1000" height="908" viewBox="0 0 1000 908" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_432_12379)">
@@ -594,46 +789,35 @@
 
 
             </div>
-
-
-
-
-
-
     </section>
+       <!-- Map End -->
 
-
-
-
-
+        <!-- NFC address Start -->
     <section class="nfc-address  container2">
-
-
-
         <div class="nfc-address-content">
             <div class="location-icon">
                 <img src="icons/location.svg" class="location-i">
             </div>
-
             <div class="nfc-address-text">
                 <p class="nfc-address-h1">آدرس دفتر مرکزی</p>
                 <p class="nfc-address-p">فلان شهر، فلان منطقه، فلان خیابان، فلان بلوار، جنب فلان، پلاک ۱۲۳۴۵۶۷۸۹</p>
 
             </div>
-
-
-
         </div>
 
         <div class="nfc-address-content">
             <div class="location-icon">
-                <img src="icons/location.svg" class="location-i">
+                <img src="icons/Call.svg" class="location-i">
             </div>
 
             <div class="nfc-address-text">
                 <p class="nfc-address-h1">تلفن تماس دفتر مرکزی</p>
-                <p class="nfc-address-p">۰۱۲۳ - ۴۵۶۷۸۹۰ ۰۱۲۳ - ۴۵۶۷۸۹۰ ۰۱۲۳ - ۴۵۶۷۸۹۰</p>
-
+                <div class="phone-numbers">
+                    <p class="nfc-address-p">۰۱۲۳ - ۴۵۶۷۸۹۰</p>
+                    <p class="nfc-address-p">۰۱۲۳ - ۴۵۶۷۸۹۰</p>
+                    <p class="nfc-address-p">۰۱۲۳ - ۴۵۶۷۸۹۰</p>
+                </div>
+               
             </div>
 
 
@@ -641,87 +825,13 @@
         </div>
 
     </section>
-
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <br><br>
-    <br><br><br>
-    <br>
-    <br><br>
-    <br><br><br>
-    <br>
-    <br>
-    <br>
-    <br><br>
-    <br><br><br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-
-
+         <!-- NFC address End -->
+    
 
     <script src="js/jquery-v1.11.3.js"> </script>
     <script src="js/owl.carousel.js"></script>
-
     <script src="js/count.js"></script>
+    <script src="js/all.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/bootstrap.min.js"></script>
