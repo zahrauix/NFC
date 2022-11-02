@@ -3482,11 +3482,11 @@ select.uk-form-width-xsmall {
 }
 
 .uk-grid {
-    margin-left: -30px
+    margin-left: 54px;
 }
 
 .uk-grid>* {
-    padding-left: 30px
+    padding-left: 0px
 }
 
 *+.uk-grid-margin,
