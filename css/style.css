@@ -578,6 +578,7 @@ color: var(--color-Primary-Black-2);
     height: auto;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(44px);
+    -webkit-backdrop-filter: blur(88px);
     justify-content: center;
     align-items: center;
     position: -webkit-sticky;
@@ -950,6 +951,7 @@ color: var(--color-Primary-Black-2);
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.64);
   backdrop-filter: blur(88px);
+  -webkit-backdrop-filter: blur(88px);
 }
 
 .progress {
@@ -1861,6 +1863,7 @@ color: var(--color-Primary-Black-2);
   height: 4.8rem;
   background-color: #ffffffa4;
   backdrop-filter: blur(88px);
+  -webkit-backdrop-filter: blur(88px);
   position: absolute;
   z-index: 1;
   top: .8rem;
@@ -1897,6 +1900,7 @@ color: var(--color-Primary-Black-2);
   flex-direction: row;
   background-color: #ffffffa8;
   backdrop-filter: blur(88px);
+  -webkit-backdrop-filter: blur(88px);
   align-items: center;
   padding-top: 2rem;
   width: 100%;
