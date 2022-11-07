@@ -602,9 +602,89 @@ $('.main-carousel').flickity({
 
 
 
+// /range slider
+
+
+
+  document.querySelectorAll(".__range-step").forEach(function(ctrl) {
+	var el = ctrl.querySelector('input');        
+	var output = ctrl.querySelector('output'); 
+	var newPoint, newPlace, offset;
+	el.oninput =function(){ 
+		// colorize step options
+		ctrl.querySelectorAll("option").forEach(function(opt) {
+			if(opt.value<=el.valueAsNumber)                
+				opt.style.backgroundColor = 'black';
+			else
+				opt.style.backgroundColor = '#aaa';
+		});           
+		// colorize before and after
+		var valPercent = (el.valueAsNumber  - parseInt(el.min)) / (parseInt(el.max) - parseInt(el.min));            
+		var style = 'background-image: -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop('+
+		valPercent+', black), color-stop('+
+		valPercent+', #aaa));';
+		el.style = style;
+
+		// Popup
+    if((' ' + ctrl.className + ' ').indexOf(' ' + '__range-step-popup' + ' ') > -1)
+    {
+			var selectedOpt=ctrl.querySelector('option[value="'+el.value+'"]');
+			output.innerText= selectedOpt.text;
+			output.style.left = "50%"; 
+			output.style.left = ((selectedOpt.offsetLeft + selectedOpt.offsetWidth/2) - output.offsetWidth/2) + 'px'; 
+    }           
+	};
+	el.oninput();    
+});
+
+window.onresize = function(){
+	document.querySelectorAll(".__range").forEach(function(ctrl) {
+		var el = ctrl.querySelector('input');    
+		el.oninput();    
+	});
+};
+
+// /range slider
 
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Get the modal
+var ebModal = document.getElementById('mySizeChartModal');
+
+// Get the button that opens the modal
+var ebBtn = document.getElementById("mySizeChart");
+
+// Get the <span> element that closes the modal
+var ebSpan = document.getElementsByClassName("ebcf_close")[0];
+
+// When the user clicks the button, open the modal 
+ebBtn.onclick = function() {
+    ebModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+ebSpan.onclick = function() {
+    ebModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == ebModal) {
+        ebModal.style.display = "none";
+    }
+}
   

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.rtl.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/product.css" />
+    <link rel="stylesheet" type="text/css" href="css/singleproduct.css" />
+    <link rel="stylesheet" type="text/css" href="css/about-us.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+
+
+    <title>NFC | اِنـ‌اِفـ‌سی </title>
+</head>
+
+<body>
+
+    <!-- NavbarStart -->
+    <header class="main-header container1 fixed-top">
+        <nav class="nav1 container2">
+
+
+            <div class="nav1__icon">
+
+                <div class="nav1__toggler"><a onclick="openMenu()"><img src="icons/Hamburger Menu.svg">
+                        <p class="p-icon"></p>
+                    </a>
+                </div>
+                <div class="nav1__search search-form"><a href="#"><img src="icons/Search.svg"></a>
+                    <p class="p-icon">جستجو</p>
+                </div>
+                <div class="nav1__user"><a href="Log in, Sign up.html"><img src="icons/Profile.svg"></a>
+                    <p class="p-icon">ورود/ثبت نام</p>
+                </div>
+
+
+            </div>
+            <div class="nav1-logo">
+                <a href="index.html"> <img src="icons/NFC Logo (White).png" class="logo" alt="NFC"></a>
+            </div>
+
+
+            <ul id="res-list" class="list  nav1__list" data-open="close">
+                <li class="nav1-item nav1-item-active"><a href="index.html">خانه</a></li>
+                <div class="cf">
+                    <li class="nav1-item" id="dropdown"><a href="#">زنانه</a></li>
+                    <div class="item-list">
+                        <div class="mega-menu">
+                            <ul class="mega-menu-list-right">
+                                <li class="menu-item"><a href="product.html" class="item-menu">لباس های مجلسی</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">تیشرت</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">ژاکت و پلیور</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">لباس راحتی</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">مانتو،پانچو و رویه</a>
+                                </li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">شومیز</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">تاپ و نیم تنه</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">تونیک</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">سویشرت</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">پالتو</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">شلوار و سرهمی</a></li>
+                                <li class="menu-item"><a href="product.html" class="item-menu">پالتو و بارانی</a></li>
+                            </ul>
+                            <ul class="mega-menu-list-left">
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item.jpg "
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item1.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item2.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item3.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item"><a href="" class="item-menu all-product">مشاهده همه محصولات
+                                        زنانه<span class="Next-i"><img src="icons/Next2.svg"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cf">
+                    <li class="nav1-item" id="dropdown"><a href="#">مردانه</a>
+                    </li>
+                    <div class="item-list">
+                        <div class="mega-menu">
+
+                            <ul class="mega-menu-list-right">
+                                <li class="menu-item"><a href="" class="item-menu">لباس های مجلسی</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">تیشرت</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">ژاکت و پلیور</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">لباس راحتی</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">مانتو،پانچو و رویه</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">شومیز</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">تاپ و نیم تنه</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">تونیک</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">سویشرت</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">پالتو</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">شلوار و سرهمی</a></li>
+                                <li class="menu-item"><a href="" class="item-menu">پالتو و بارانی</a></li>
+                            </ul>
+                            <ul class="mega-menu-list-left">
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item2.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item3.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item4.jpg"
+                                            class="megamenu-img"> </a></li>
+                                <li class="menu-item"><a href="" class="item-menu all-product">مشاهده همه محصولات
+                                        مردانه<span class="Next-i"><img src="icons/Next2.svg"></span></a></li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+                <li class="nav1-item"><a href="about-us.html">درباره</a></li>
+            </ul>
+
+        </nav>
+        <!-- SearchBar Start-->
+        <div class="search">
+            <div class="search-content">
+                <div class="close-i"> <img src="icons/Close.svg" alt=""></div>
+                <form action="">
+                    <span class="d-flex"><img src="icons/Search.svg" alt=""></span>
+                    <input type="text" placeholder="جستجو میان محصولات، کالکشن ها، دسته بندی ها و...">
+                </form>
+                <!-- محصولات پیشنهادی در قسمت سرچ -->
+                <div class="serach-item d-none">
+                    <p class="p-search-item">محبوب ترین های اخیر</p>
+
+                    <ul class="search-item-list">
+                        <a href="#">
+                            <li class="search-item-list-li">شلوار جین مردانه</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">تیشرت بیسیک</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">مانتو پاییزه</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">تیشرت بیسیک</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">مانتو پاییزه</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">مانتو پاییزه</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">تیشرت بیسیک</li>
+                        </a>
+                        <a href="#">
+                            <li class="search-item-list-li">پیراهن پشمی طرح دار</li>
+                        </a>
+
+                    </ul>
+                </div>
+
+            </div>
+            <!--  محصولات پیشنهادی در قسمت سرچ در زمان تایپ-->
+            <div class="serach-item-typing ">
+                <div class="suggest-search">
+                    <div class="first-suggest">
+                        <img src="icons/Hanger.svg" class="Hanger-i">
+                        <p class="p-search-item-suggest">تمامی محصولات در دسته بندی<span>
+                                <a href="#" class="p-search-item-suggest2">شلوار جین مردانه</a>
+                            </span> </p>
+                    </div>
+
+                    <a href="#" class="p-search-item-suggest"> <span class="p-search-item-suggest2">شلوار جین
+                            مردانه</span>
+                        در کالکشن تابستانه </a>
+                    <a href="#" class="p-search-item-suggest"> <span class="p-search-item-suggest2">شلوار جین
+                            مردانه</span>
+                        در محصولات مردانه </a>
+                </div>
+
+                <div class="suggest-search-products-content">
+                    <div id="Pcarousel" class="owl-carousel sc ">
+                        <div class="suggest-search-products">
+                            <a href="#">
+                                <div class="suggest-search-products-item">
+                                    <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                    <div class="suggest-search-products-item-text">
+                                        <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                        <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <a href="#">
+                                <div class="suggest-search-products-item">
+                                    <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                    <div class="suggest-search-products-item-text">
+                                        <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                        <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <a href="#">
+                                <div class="suggest-search-products-item">
+                                    <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                    <div class="suggest-search-products-item-text">
+                                        <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                        <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <a href="#">
+                                <div class="suggest-search-products-item">
+                                    <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                    <div class="suggest-search-products-item-text">
+                                        <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                        <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <p class="a-suggest-search-products"> <a href="#">مشاهده ۱۰۰+ نتیجه دیگر در تمامی محصولات </a></p>
+                </div>
+            </div>
+
+        </div>
+        <!-- SearchBar End-->
+    </header>
+    <!-- NavbarEnd -->
+
+
+ 
+
+
+    <section class="top-single-product container2 overflow-hidden ">
+        <div class="single-product-right container4  w-100 ">
+            <div class="top-icon2">
+                <a href="Singleproduct.html"><img src="icons/Back-Arrow.svg"></a>
+            </div>
+        </div>
+    </section>
+
+   
+
+
+    <div class="col-md-12 container3 " id="comments">
+
+        <div class="w-100 ">
+            <div class="comment-title-desk comment-title2  ">
+                <div class="w-50 ">
+                    <h2 class="comment-title">24 نظر کاربران </h2>
+                    <p class="text-muted">امتیازات :</p>
+                </div>
+                <div class="w-50 comment-title-desk-btn  comment-title-desk2 d-flex">
+                    <div class="comment-range-rating range-rating2 w-100 ">
+                       
+                         <div class="w-70">
+                            <span class="fas fa-star ml-1"></span>
+                            <span class="fas fa-star ml-1"></span>
+                            <span class="fas fa-star ml-1"></span>
+                            <span class="fal fa-star ml-1"></span>
+                            <span class="fal fa-star ml-1"></span>
+                         </div>
+
+                         <div class="w-30">
+                            <h3><span class="b-rate">4.5</span>از <span
+                                    class="t-rate">5</span> </h3>
+                        </div>
+                       
+    
+                   
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+  
+
+        <div class=" col-md-12">
+
+            <div class="row top-68 d-flex flex-column ">
+
+                <dl class="d-flex w-100">
+                    <dt>
+                        <div class="cirle"><span class="text">4</span>
+                        </div>
+                    </dt>
+                    <dd class="text title-show-commnet w-75">لطفا راهنمای سایز
+                        بگذارید
+                    </dd>
+
+                </dl>
+
+                <div class="w-100">
+                    <div class="d-flex w-100 comment-col">
+                        <div class="comment-detail-right d-flex">
+                            <div class="comment-detail-right-1">
+                                <p class="text text-muted user-comment"><span class="pl-2"><img
+                                            src="icons/user.svg"></span>کاربر ان اف سی
+                                </p>
+
+                            </div>
+                            <div class="comment-detail-right-2">
+                                <p class="text text-muted  mr-5"><span class="pl-2"><img
+                                            src="icons/date.svg"></span>۱۴۰۰/۵/۱۷</p>
+                            </div>
+                        </div>
+                        <div class="comment-detail-right-left">
+                            <div class="w-100">
+                                <p class="text3 "><span><img
+                                            src="icons/Like.svg"></span>خرید این محصول
+                                    را
+                                    پیشنهاد می‌کنم </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="w-100">
+                    <p class="text-c text-comment">کار اورسایز هست طراحى زیبایى
+                        داره و پارچه خوبى استفاده شده به راهنماى سایز دقت کنین
+                    </p>
+                </div>
+            </div>
+
+            <div class="row top-68 d-flex flex-column ">
+
+                <dl class="d-flex w-100">
+                    <dt>
+                        <div class="cirle cirle-2-color"><span class="text">3</span>
+                        </div>
+                    </dt>
+                    <dd class="text title-show-commnet w-75">لطفا راهنمای سایز
+                        بگذارید
+                    </dd>
+
+                </dl>
+
+                <div class="w-100">
+                    <div class="d-flex w-100 comment-col">
+                        <div class="comment-detail-right d-flex">
+                            <div class="comment-detail-right-1">
+                                <p class="text text-muted user-comment"><span class="pl-2"><img
+                                            src="icons/user.svg"></span>کاربر ان اف سی
+                                </p>
+
+                            </div>
+                            <div class="comment-detail-right-2">
+                                <p class="text text-muted  mr-5"><span class="pl-2"><img
+                                            src="icons/date.svg"></span>۱۴۰۰/۵/۱۷</p>
+                            </div>
+                        </div>
+                        <div class="comment-detail-right-left">
+                            <div class="w-100">
+                                <p class="text3 "><span><img
+                                    src="icons/nLike.svg"></span>درباره
+                            خرید این محصول مطمئن نیستم</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="">
+                    <p class="text-c text-comment">کار اورسایز هست طراحى زیبایى
+                        داره و پارچه خوبى استفاده شده به راهنماى سایز دقت کنین
+                    </p>
+                </div>
+            </div>
+
+            <div class="row top-68 d-flex flex-column ">
+
+                <dl class="d-flex w-100">
+                    <dt>
+                        <div class="cirle cirle-3-color"><span class="text">2</span>
+                        </div>
+                    </dt>
+                    <dd class="text title-show-commnet w-75">لطفا راهنمای سایز
+                        بگذارید
+                    </dd>
+
+                </dl>
+
+                <div class="w-100">
+                    <div class="d-flex w-100 comment-col">
+                        <div class="comment-detail-right d-flex">
+                            <div class="comment-detail-right-1">
+                                <p class="text text-muted user-comment"><span class="pl-2"><img
+                                            src="icons/user.svg"></span>کاربر ان اف سی
+                                </p>
+
+                            </div>
+                            <div class="comment-detail-right-2">
+                                <p class="text text-muted  mr-5"><span class="pl-2"><img
+                                            src="icons/date.svg"></span>۱۴۰۰/۵/۱۷</p>
+                            </div>
+                        </div>
+                        <div class="comment-detail-right-left">
+                            <div class="w-100">
+                                <p class="text3 "><span><img
+                                    src="icons/dLike.svg"></span>خرید
+                            این محصول را
+                            پیشنهاد نمی‌کنم </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="">
+                    <p class="text-c text-comment">کار اورسایز هست طراحى زیبایى
+                        داره و پارچه خوبى استفاده شده به راهنماى سایز دقت کنین
+                    </p>
+                </div>
+            </div>
+
+
+          
+
+
+
+        </div>
+    </div>
+
+    <div class="container3">
+       <div class="comment-btn3">
+       <a href="#">نظر خود را بنویسید</a>
+       </div>
+    </div>
+
+
+ 
+
+
+
+
+
+  
+   </div>
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <script src="js/jquery-3.6.1.min.js"> </script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).on('ready', function() {
+        $(".vertical-center-4").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+          slidesToShow: 4,
+          slidesToScroll: 2
+        });
+        $(".vertical-center-3").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+          slidesToShow: 3,
+          slidesToScroll: 3
+        });
+        $(".vertical-center-2").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+          slidesToShow: 2,
+          slidesToScroll: 2
+        });
+        $(".vertical-center").slick({
+          dots: true,
+          vertical: true,
+          centerMode: true,
+        });
+        $(".vertical").slick({
+          dots: true,
+          vertical: true,
+          slidesToShow: 3,
+          slidesToScroll: 3
+        });
+        $(".regular").slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3
+        });
+        $(".center").slick({
+          dots: true,
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 5,
+          slidesToScroll: 3
+        });
+        $(".variable").slick({
+          dots: true,
+          infinite: true,
+          variableWidth: true
+        });
+        $(".lazy").slick({
+          lazyLoad: 'ondemand', // ondemand progressive anticipated
+          infinite: true
+        });
+      });
+  </script>
+  
+
+
+
+
+
+
+</body>
+
+</html>
