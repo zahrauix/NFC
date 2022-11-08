@@ -1042,6 +1042,7 @@ h1 {
   background-color: #000;
 
 }
+
 .r-like-click svg {
   stroke: rgb(255, 255, 255);
 
@@ -1533,7 +1534,7 @@ h1 {
   text-align: right;
   letter-spacing: -0.02em;
   color: #676767;
-  
+
 }
 
 .smart-size {
@@ -1645,7 +1646,7 @@ h1 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
- 
+
 }
 
 .size-table2 {
@@ -1676,7 +1677,7 @@ h1 {
 }
 
 .close {
- 
+
   font-size: 2rem;
   font-weight: 700;
   line-height: 1;
@@ -1721,8 +1722,9 @@ h1 {
   margin: -1rem auto -1rem -1rem;
   background-color: #f8f8f8;
 }
+
 .p-address2 {
-  
+
   padding: 1rem 0;
 }
 
@@ -1749,6 +1751,284 @@ h1 {
 
 .branch-img-product {
   display: none;
+}
+
+.Comment-reponsive {
+  display: flex;
+  flex-direction: column;
+}
+
+.xz {
+  width: 100%;
+}
+
+.xc {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+
+.__range input {
+  outline: none;
+  -webkit-appearance: none;
+  background-color: #CCCCCC;
+  ;
+  height: 8px;
+  width: 100%;
+  margin: 10px auto;
+  /* direction: ltr; */
+}
+
+.__range input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  direction: ltr;
+}
+
+.__range input::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.__range input::-ms-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.__range-step {
+  position: relative;
+}
+
+.__range-max {
+  float: right;
+}
+
+.__range-step input::-webkit-slider-thumb {
+  background: transparent;
+}
+
+.__range-step input::-moz-range-thumb {
+  background: transparent;
+}
+
+.__range-step input::-ms-thumb {
+  background: transparent;
+}
+
+.__range-step datalist {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  bottom: 22px;
+  /* disable text selection */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+  /* disable click events */
+  pointer-events: none;
+}
+
+.__range-step datalist option {
+  width: 16px;
+  height: 16px;
+  min-height: 16px;
+  border-radius: 100px;
+  /* hide text */
+  white-space: nowrap;
+  padding: 0;
+  line-height: 46px;
+}
+
+
+.__range-step-popup output {
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  width: 50px !important;
+  height: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 100px;
+  display: inline-block;
+  font-size: 10px;
+  bottom: 100%;
+  left: 0;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+.__range-step-popup .__range-output-square {
+  padding: 0;
+  min-width: 50px;
+  width: auto !important;
+  border-radius: 0px !important;
+}
+
+.__range-step-popup output:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid rgb(0, 0, 0);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: 90%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -1px;
+}
+
+.__range-output-square {
+  top: 3rem;
+}
+
+.__range-step-popup datalist {
+  overflow: hidden;
+}
+
+.__range-step {
+  /* margin:0 40px; */
+}
+
+.__range-step-popup {
+  /* margin:40px 40px; */
+}
+
+
+
+.text4 {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #ACACAC;
+}
+
+.user-comment-i {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-comment-icon {
+  width: 100%;
+}
+
+.form-control {
+  background: #EEEE !important;
+  border-radius: 0 !important;
+  padding: 2.4rem 1rem !important;
+  border: 0 !important;
+  font-size: 1.4rem !important;
+}
+
+.add-commnet-btn3 {
+  background: #000000;
+  border: 1px solid #000000;
+  color: #fff !important;
+  padding: 1.6rem 8.2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.add-commnet-btn3 {
+  width: 100%;
+
+}
+
+.modal-footer-btn {
+  width: 100%;
+  margin: 0 !important;
+  padding: 2rem 0;
+}
+
+.progress-title {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.col-form-label2 {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #000000;
+  padding-bottom: 0.8rem;
+}
+
+.comment-range {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-rating img {
+  width: 80px;
+  height: 112px;
+  object-fit: cover;
+}
+
+.text-rate2 {
+  display: none;
+}
+
+.comment-range {
+  margin-top: 20px;
+  height: auto;
+}
+
+.text-rate3 {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #ACACAC;
+  padding-right: 1.6rem;
+  padding-top: 2rem;
+  margin: 0 !important;
+
+}
+
+.text-rate4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #000000;
+  padding-right: 1.6rem;
+  margin: 0 !important;
+
+}
+
+.bg-r{
+  background-color: #fff;
+  margin-bottom: 7.2rem;
+ 
 }
 
 /* external css: flickity.css */
@@ -1845,6 +2125,46 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
+  .Comment-reponsive {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .user-comment-icon {
+    width: 33.33%;
+  }
+
+  .add-commnet-btn3 {
+    width: 25%;
+
+  }
+
+  .modal-footer-btn {
+    width: 100%;
+    margin: 0 !important;
+    padding: 2rem 0;
+  }
+
+
+  .comment-range {
+
+    flex-direction: row;
+  }
+
+  .text-rate2 {
+    display: flex;
+  }
+
+  .text-rate-title {
+    display: none;
+  }
+  .bg-r{
+    background-color: #f8f8f8;
+    margin-bottom: 0;
+   
+  }
+
+
 
   .guarantee {
 
@@ -2252,10 +2572,13 @@ h1 {
 
   .xz {
     padding-left: 6rem;
+    width: 50%;
   }
 
   .xc {
     padding-right: 6rem;
+    margin-top: 0;
+    width: 50%;
   }
 
   .w-90 {
@@ -2311,7 +2634,7 @@ h1 {
 
   .modal-body {
 
-    padding:0 9rem;
+    padding: 0 9rem;
   }
 
   .branch-address-detail {
@@ -2375,13 +2698,13 @@ h1 {
     margin-bottom: 0.8rem;
     margin-right: 1rem;
     display: flex;
-    padding:1rem;
+    padding: 1rem;
     align-items: center;
     justify-content: center;
     font-size: 18px;
     border: 0.7px solid #E0E0E0;
     margin-left: 0;
-}
+  }
 
 
   .text-rate2 {
@@ -3034,7 +3357,7 @@ h1 {
     align-items: center;
     justify-content: center;
     background-color: #000;
-  
+
   }
 }
 
