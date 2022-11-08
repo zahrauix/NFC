@@ -659,7 +659,7 @@ window.onresize = function(){
 
 
 function changeBg(id) {
-    $(".size-table2").css("background-color","#f8f8f8")
+    $(".size-table2").css("background-color","#fff")
     $(".size-table2").css("color","#000")
     $(`#${id}`).css("background-color","#000");
     $(`#${id}`).css("color","#fff");

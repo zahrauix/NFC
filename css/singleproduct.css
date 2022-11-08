@@ -1644,7 +1644,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
  
 }
 
@@ -1658,11 +1658,12 @@ h1 {
   font-size: 14px;
   border: 0.7px solid #E0E0E0;
   cursor: pointer;
+  margin-left: .4rem;
 }
 
 .branch-address {
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem 1.6rem .8rem 1.6rem;
   border: 1px solid #E0E0E0;
   margin-top: 2.4rem;
 
@@ -1672,6 +1673,16 @@ h1 {
   background: #F8F8F8;
   border: 1px solid #E0E0E0;
 
+}
+
+.close {
+ 
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 !important;
+  opacity: 1;
 }
 
 .avaible-p1 {
@@ -1703,6 +1714,16 @@ h1 {
 
 .modal-content {
   padding: 4.2rem 1rem;
+}
+
+.modal-header .close {
+  padding: 1.2rem 1.6rem;
+  margin: -1rem auto -1rem -1rem;
+  background-color: #f8f8f8;
+}
+.p-address2 {
+  
+  padding: 1rem 0;
 }
 
 .branch-address-text {
@@ -2357,8 +2378,9 @@ h1 {
     padding:1rem;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 18px;
     border: 0.7px solid #E0E0E0;
+    margin-left: 0;
 }
 
 
