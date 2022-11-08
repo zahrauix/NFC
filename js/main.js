@@ -647,17 +647,43 @@ window.onresize = function(){
 // /range slider
 
 
+  
+
+//   $(".size-table2").click(()=>{
+//     console.log($(this.className));
+//     $(this).css("background-color","#000");
+// });
+  
 
 
 
 
+function changeBg(id) {
+    $(".size-table2").css("background-color","#f8f8f8")
+    $(".size-table2").css("color","#000")
+    $(`#${id}`).css("background-color","#000");
+    $(`#${id}`).css("color","#fff");
+}
 
 
 
 
+// like btn
 
 
 
+function likeBhChange() {
+    var element=document.querySelector(".likebtn-click")
+    if(element.classList.contains("r-like")){
+        $(".likebtn-click").addClass( "r-like-click" );
+        $(".likebtn-click").removeClass( "r-like" );
+    }else{
+        $(".likebtn-click").addClass( "r-like" );
+        $(".likebtn-click").removeClass( "r-like-click" );
+    }
+    
+    
+}
 
 
 
@@ -688,3 +714,6 @@ window.onclick = function(event) {
     }
 }
   
+
+
+
