@@ -570,6 +570,7 @@ for (let i = 0; i < dropDownContent.length; i++) {
     }
 }
   $(`#${dropDownContentId}`).slideToggle();
+  $("#Arrow-b").css("transform", "rotate: revert");
 }
 
 //   Dropdown Filter button in product page End
@@ -715,5 +716,15 @@ window.onclick = function(event) {
 }
   
 
+
+
+function dropD(text) {
+
+    $("#drMain").html(`${text}<span><img src="icons/Down Arrow.svg" id="Arrow-b" ></span>`);
+    $(".dropdown-content-modal").css("display","none");
+    
+
+    
+}
 
 
