@@ -348,12 +348,7 @@
                         <div class="number-price-2">۶۵۰,۰۰۰ تومان</div>
                     </div>
 
-
-                    <div class="">
-
-
-
-
+                    <div>
                         <div class="single-product-cta btn-order text-center">
                             <div class=" btn-order-a r-cta"><a class="btn1"> <span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -601,7 +596,7 @@
 
                     <div class="single-product-cta btn-order text-center">
                         <div class=" btn-order-a r-cta">
-                            <a class="btn1" data-toggle="modal" data-target="#exampleModalLong" onclick="return false">
+                            <a class="btn1" onclick="return false">
                                 <span>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -615,38 +610,7 @@
 
                             </a>
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="d-flex flex-column Notify-when-available">
-                                                <img src="icons/Mail-big.svg">
-                                                <p>سایز و رنگ دلخواه خود را وارد کنید ، در صورت موجود شدن به شما اطلاع
-                                                    رسانی میشود !</p>
-                                            </div>
-
-
-                                            <select class="form-select My-form-select"
-                                                aria-label="Default select example">
-                                                <option value="1">XS</option>
-                                                <option value="2">S</option>
-                                                <option value="3">M</option>
-                                                <option value="4">XL</option>
-                                                <option value="5">XXL</option>
-                                                <option value="6">XXXL</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                          
 
                         </div>
 
@@ -664,6 +628,7 @@
                 </div>
             </div>
             <div class="top-column">
+
                 <div class="">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 product-color">
                         <span class="product-color-span1">رنگ انتخابی : <span class="product-color-span">سفید</span>
@@ -782,19 +747,19 @@
                                             </div>
                                             <div class="right-modal-content">
                                                 <p>لطفا قد و وزن خود را وارد کنید</p>
-                                                <label class="col-sm-2 col-form-label my-form-label">قد</label>
-                                                <input class="form-control my-form-control" type="text" maxlength="3"
+                                                <label class="col-sm-2 col-form-label my-form-label" >قد</label>
+                                                <input maxlength="3" type="text" pattern="\d*" id="height-1"  class="form-control my-form-control"  
                                                     placeholder=" بهcm">
-                                                <label class="col-sm-2 col-form-label my-form-label">وزن</label>
-                                                <input class="form-control my-form-control" type="text" maxlength="3"
+                                                <label class="col-sm-2 col-form-label my-form-label"  >وزن</label>
+                                                <input id="weight-1" type="text" pattern="\d*" maxlength="3" class="form-control my-form-control" 
                                                     placeholder=" بهkg">
                                                 <!-- For Women Modal -->
-                                                <button type="button" class="smart-size-btn d-none" data-toggle="modal"
-                                                    data-target="#second-Modal" data-dismiss="modal">انتخاب فرم
+                                                <button type="button" class="smart-size-btn  d-none " data-toggle="modal"
+                                                    data-target="#second-Modal" data-dismiss="modal" >انتخاب فرم
                                                     بدن</button>
                                                   <!-- For Men Modal -->
-                                                 <button type="button" class="smart-size-btn" data-toggle="modal"
-                                                    data-target="#second-Modal-for-Men" data-dismiss="modal">انتخاب فرم
+                                                 <button type="button" disabled class="smart-size-btn " data-toggle="modal"
+                                                    data-target="#second-Modal-for-Men" data-dismiss="modal" id="btn-smart-size" >انتخاب فرم
                                                  بدن</button>
 
 
@@ -1018,7 +983,7 @@
                                                         data-target="#Four-Modal" data-dismiss="modal"> مرحله
                                                         بعد</button>
                                                     <button type="button" class="prev-modal" data-toggle="modal"
-                                                        data-target="#second-Modal" data-dismiss="modal">بازگشت</button>
+                                                        data-target="#second-Modal-for-Men" data-dismiss="modal">بازگشت</button>
                                                 </div>
                                                 <h3 class="pt-5"> 3/5</h3>
                                             </div>
@@ -1081,8 +1046,12 @@
                                                     <button type="button" class="next-modal" data-toggle="modal"
                                                         data-target="#Five-Modal" data-dismiss="modal"> مرحله
                                                         بعد</button>
-                                                    <button type="button" class="prev-modal" data-toggle="modal"
+                                                    <!-- Prev btn For Women Modal -->
+                                                   <button type="button" class="prev-modal d-none" data-toggle="modal"
                                                         data-target="#thered-Modal" data-dismiss="modal">بازگشت</button>
+                                                   <!-- Prev btn For Men Modal -->
+                                                    <button type="button" class="prev-modal" data-toggle="modal"
+                                                        data-target="#thered-Modal-Men" data-dismiss="modal">بازگشت</button>
                                                 </div>
                                                 <h3 class="pt-5"> 4/5</h3>
                                             </div>
@@ -1119,7 +1088,7 @@
                                                                 <div
                                                                     class="d-flex align-items-center justify-content-center">
                                                                     <div class="my-progress w-100">
-                                                                        <div class="my-progress-bar" role="progressbar"
+                                                                        <div id="progressB1" class="my-progress-bar" role="progressbar"
                                                                             style="width:60%;" aria-valuenow="80"
                                                                             aria-valuemin="0" aria-valuemax="100">
                                                                             <h3 class="text-white">80%</h3>
@@ -1131,12 +1100,12 @@
                                                                     </div>
                                                                 </div>
                                                                 <br>
-                                                                <p class="balck-color pt-3">پیشنهاد دوم : <span>سایز
+                                                                <p  class="balck-color pt-3">پیشنهاد دوم : <span>سایز
                                                                         S</span></p>
                                                                 <div
                                                                     class="d-flex align-items-center justify-content-center">
                                                                     <div class="my-progress w-100">
-                                                                        <div class="my-progress-bar" role="progressbar"
+                                                                        <div id="progressB2" class="my-progress-bar" role="progressbar"
                                                                             style="width:30%;" aria-valuenow="80"
                                                                             aria-valuemin="0" aria-valuemax="100">
                                                                             <h3 class="text-white">30%</h3>
@@ -1153,7 +1122,7 @@
                                                     <div class="modal-footer d-flex flex-column w-100 ">
                                                         <div class="d-flex  w-100  my-modal-footer4 ">
                                                             <button type="button" class="next-modal" data-toggle="modal"
-                                                                data-target="#myModal" data-dismiss="modal"> ادامه خرید </button>
+                                                                data-dismiss="modal"> ادامه خرید </button>
                                                             <button type="button" class="prev-modal" data-toggle="modal"
                                                                 data-target="#myModal" data-dismiss="modal">تلاش مجدد</button>
                                                         </div>

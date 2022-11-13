@@ -689,31 +689,9 @@ function likeBhChange() {
 
 
 
-// Get the modal
-var ebModal = document.getElementById('mySizeChartModal');
 
-// Get the button that opens the modal
-var ebBtn = document.getElementById("mySizeChart");
 
-// Get the <span> element that closes the modal
-var ebSpan = document.getElementsByClassName("ebcf_close")[0];
 
-// When the user clicks the button, open the modal 
-ebBtn.onclick = function() {
-    ebModal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-ebSpan.onclick = function() {
-    ebModal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == ebModal) {
-        ebModal.style.display = "none";
-    }
-}
   
 
 
@@ -728,3 +706,50 @@ function dropD(text) {
 }
 
 
+
+
+
+
+
+// btn smart size
+
+
+
+
+$("#height-1 , #weight-1").keyup(()=> {
+    
+    var hInput=$("#height-1").val();
+    var wInput=$("#weight-1").val();
+    if (hInput.length>=3 && wInput.length>= 2) {
+       
+        
+        $("#btn-smart-size").prop('disabled', false);
+        $("#btn-smart-size").removeClass("smart-size-btn");
+        $("#btn-smart-size").addClass("smart-size-btn-active");
+
+
+    }else{
+        
+        $("#btn-smart-size").prop('disabled', true);
+        $("#btn-smart-size").addClass("smart-size-btn");
+        $("#btn-smart-size").removeClass("smart-size-btn-active");
+
+    }
+   
+})
+console.log("tghfbch")
+
+// modal 5
+$("#progressB2").css("background-color","#acacac");
+$('input[type=radio][name=featured]').change(function() {
+    var radio1=$("#featured-1").prop("checked");
+    var radio2=$("#featured-2").prop("checked");
+    
+    if (radio1 , !radio2) {
+        $("#progressB1").css("background-color","#32CD8C");
+        $("#progressB2").css("background-color","#acacac");
+    }else{
+        $("#progressB1").css("background-color","#acacac");
+        $("#progressB2").css("background-color","#32CD8C");
+    }
+})
