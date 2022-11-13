@@ -2263,6 +2263,91 @@ input[type=checkbox]:checked+label::after {
 
 }
 
+.right-modal-content h1 {
+  font-weight: 900;
+  font-size: 16px;
+
+}
+
+.right-modal-content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #CCCCCC;
+  margin: 0 !important;
+  padding-right: 0 !important;
+
+}
+
+.my-progress {
+  background-color: #EEEEEE;;
+  margin-top: 8px;
+  border-radius: 0;
+  height: 2rem;
+  
+}
+
+.my-progress .my-progress-bar {
+  height:2rem;
+  background-color: #32CD8C;
+}
+
+
+
+
+
+.custom_radio{
+  /* margin: 20px; */
+}
+.custom_radio input[type="radio"]{
+ display: none;
+
+}
+.custom_radio input[type="radio"] + label{
+ position: relative;
+ display: inline-block;
+ padding-left: 1.5em;
+ margin-right: 2em;
+ cursor: pointer;
+ line-height: 1em;
+ -webkit-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+}
+.custom_radio input[type="radio"] + label:before,
+.custom_radio input[type="radio"] + label:after{
+ content: '';
+ position: absolute;
+ top: -10px;
+ left: 0;
+ width: 2em;
+ height: 2em;
+ text-align: center;
+ color: white;
+ font-family: Times;
+ border-radius: 50%;
+ -webkit-transition: all .3s ease;
+ transition: all .3s ease;
+}
+.custom_radio input[type="radio"] + label:before {
+ -webkit-transition: all .3s ease;
+ transition: all .3s ease;
+ box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 3em white;
+}
+.custom_radio input[type="radio"] + label:before {
+ -webkit-transition: all .3s ease;
+ transition: all .3s ease;
+ box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 3em #c6c6c6;
+}
+.custom_radio input[type="radio"]:checked + label:before {
+ -webkit-transition: all .3s ease;
+ transition: all .3s ease;
+ box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 3em #32CD8C;
+}
+
+
 
 @media screen and (min-width: 420px) {
 
@@ -2412,13 +2497,15 @@ input[type=checkbox]:checked+label::after {
     display: flex;
     justify-content: space-between;
   }
-  .my-modal-dialog{
-    max-width:879px !important;
-   max-height: 634px;
+
+  .my-modal-dialog {
+    max-width: 879px !important;
+    max-height: 634px;
   }
-.my-modal-content{
-  padding: 3rem 2rem !important;
-}
+
+  .my-modal-content {
+    padding: 3rem 2rem !important;
+  }
 
   .comment-range {
 
