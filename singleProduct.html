@@ -309,7 +309,7 @@
             <!--Img Slider End-->
         </div>
         <!--Img & Carosel End-->
-        <!--Product price and colors-->
+        <!--Product price,Modals and colors-->
         <div class="single-product-left container5 ">
             <div class="top-icon-desk">
                 <div class="d-flex w-100 align-items-center justify-content-between ">
@@ -643,12 +643,6 @@
                                                 <option value="6">XXXL</option>
                                             </select>
                                         </div>
-                                        <!-- Note the missing multiple attribute! -->
-
-
-
-
-
                                     </div>
 
                                 </div>
@@ -676,17 +670,12 @@
                         </span>
                     </div>
                 </div>
-
-
                 <div class="available-news-content">
                     <div class=" available-news ">
                         <span>موجود شد خبرم کن!
                         </span>
                     </div>
                 </div>
-
-
-
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div id="Slider">
@@ -744,11 +733,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
                 <div class="mb-2">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 size margin-right-15">
                         <span class="float-left p-select-size">سایز انتخابی: <span class="h-select-size"></span>
@@ -758,12 +742,12 @@
                     </div>
 
                 </div>
-
-
                 <div class="select-size">
+                    <!-- DROPDOWN SELECT SIZE -->
                     <div class="dropdown right-size">
                         <div class="dropbtn smart-size" onclick="toggleSlide('dropdownSizeItem')" id="drMain">سایز
-                            <span><img src="icons/Down Arrow.svg" id="Arrow-b"></span></div>
+                            <span><img src="icons/Down Arrow.svg" id="Arrow-b"></span>
+                        </div>
                         <div id="dropdownSizeItem" class="dropdown-content2 dropdown-content-modal">
                             <a href="#" onclick="dropD(this.textContent);return false;" id="dr1">XS</a>
                             <a href="#" onclick="dropD(this.textContent);return false;" id="dr1">S</a>
@@ -775,303 +759,424 @@
                         </div>
                     </div>
 
-
+                    <!-- SMART SIZE -->
                     <div class="left-size">
                         <div class="choise-size">
                             <a href="#" type="button" data-toggle="modal" data-target="#myModal">
                                 <p class="float-left text-center">تعیین سایز هوشمند</p>
                             </a>
-                              <!-- Modal1 -->
-                              <div class="modal" id="myModal">
-                              <div class="modal-dialog modal-dialog-centered my-modal-dialog">
-                                  <div class="modal-content my-modal-content">
-                                      <div class="modal-header modal-header-smart-size w-100">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                            
-                                          </button>
-                                          
-                                      </div>
-                                      <div class="modal-body smart-size-modal w-100">
-                                        <div class="left-modal-content">
-                                            <img src="images/3.png " alt="">
-                                        </div>
-                                        <div class="right-modal-content">
-                                            <p>لطفا قد و وزن خود را وارد کنید</p>
-                                            <label  class="col-sm-2 col-form-label my-form-label">قد</label>
-                                            <input class="form-control my-form-control" type="text" maxlength="3" placeholder=" بهcm">
-                                            <label  class="col-sm-2 col-form-label my-form-label">وزن</label>
-                                            <input class="form-control my-form-control" type="text"  maxlength="3" placeholder=" بهkg">
-
-                                            <button type="button" class="smart-size-btn"
-                                            data-toggle="modal" data-target="#second-Modal" data-dismiss="modal">انتخاب فرم بدن</button>
-                                           
-                                       
-                                      </div>
-                                     
-                                      
-                                  </div>
-                                  <div class="modal-footer  d-flex align-items-center justify-content-center ">
-                                          
-                                    <h3 class="pt-5"> 1/5</h3>
-                                   </div>
-                                     
-                                  </div>
-                              </div>
-                              </div>
-
-                              <!-- Modal2 -->
-                              <div class="modal" id="second-Modal">
+                            <!-- Modal1 -->
+                            <div class="modal" id="myModal">
                                 <div class="modal-dialog modal-dialog-centered my-modal-dialog">
                                     <div class="modal-content my-modal-content">
                                         <div class="modal-header modal-header-smart-size w-100">
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                              <span aria-hidden="true">&times;</span>
-                                              
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+
                                             </button>
-                                            
+
                                         </div>
-                                        <div class="modal-body smart-size-modal w-100 d-flex flex-column">
-                                          <div class="w-100 d-flex align-items-center justify-content-center flex-column">
-                                              <p>فرم بدن خود را از بین تصاویر انتخاب کنید</p>
-                                              <p class="h1-rating pt-3 pb-5">فرم شکم</p>
-                                              <div class="body-img">
-                                                <div class="d-flex flex-column align-items-center ">
-                                                    <a href="#" onclick="return false" class="body-img-item"><img src="images/smooth-body.png" alt="صاف"></a>
-                                                    <p class="pt-3">صاف</p>
-                                                </div>
-                                             
-                                                <div class="d-flex flex-column align-items-center">
-                                                    <a href="#" onclick="return false" class="body-img-item"><img src="images/medium-body.png" alt="متوسط"></a>
-                                                    <p class="pt-3">متوسط</p>
-                                                </div>
-                                                <div class="d-flex flex-column align-items-center">
-                                                    <a href="#" onclick="return false" class="body-img-item"><img src="images/hourglass-body.png" alt="برامده"></a>
-                                                    <p class="pt-3">برامده</p>
-                                                </div>
-                                              </div>
-                                             
-                                          </div>
-                                        
-                                        <div class="modal-footer d-flex flex-column w-100">
-                                            <div class="d-flex  w-100  my-modal-footer ">
-                                                <button type="button" class="next-modal"
-                                                data-toggle="modal" data-target="#thered-Modal" data-dismiss="modal"> مرحله بعد</button>
-                                                <button type="button" class="prev-modal"
-                                                data-toggle="modal" data-target="#myModal" data-dismiss="modal">بازگشت</button>
+                                        <div class="modal-body smart-size-modal w-100">
+                                            <div class="left-modal-content">
+                                                <img src="images/3.png " alt="">
                                             </div>
-                                            <h3 class="pt-5"> 2/5</h3>
-                                         </div>
-                                           
+                                            <div class="right-modal-content">
+                                                <p>لطفا قد و وزن خود را وارد کنید</p>
+                                                <label class="col-sm-2 col-form-label my-form-label">قد</label>
+                                                <input class="form-control my-form-control" type="text" maxlength="3"
+                                                    placeholder=" بهcm">
+                                                <label class="col-sm-2 col-form-label my-form-label">وزن</label>
+                                                <input class="form-control my-form-control" type="text" maxlength="3"
+                                                    placeholder=" بهkg">
+                                                <!-- For Women Modal -->
+                                                <button type="button" class="smart-size-btn d-none" data-toggle="modal"
+                                                    data-target="#second-Modal" data-dismiss="modal">انتخاب فرم
+                                                    بدن</button>
+                                                  <!-- For Men Modal -->
+                                                 <button type="button" class="smart-size-btn" data-toggle="modal"
+                                                    data-target="#second-Modal-for-Men" data-dismiss="modal">انتخاب فرم
+                                                 بدن</button>
+
+
+                                            </div>
+
+
                                         </div>
-                                      
+                                        <div class="modal-footer  d-flex align-items-center justify-content-center my-modal-footer6 ">
+
+                                            <h3 class="pt-5"> 1/5</h3>
+                                        </div>
+
                                     </div>
                                 </div>
-                                </div>
+                            </div>
 
-                                  <!-- Modal3 -->
-                              <div class="modal" id="thered-Modal">
+                            <!-- Modal2 For Women -->
+                            <div class="modal" id="second-Modal">
                                 <div class="modal-dialog modal-dialog-centered my-modal-dialog">
                                     <div class="modal-content my-modal-content">
                                         <div class="modal-header modal-header-smart-size w-100">
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                              <span aria-hidden="true">&times;</span>
-                                              
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+
                                             </button>
-                                            
+
                                         </div>
                                         <div class="modal-body smart-size-modal w-100 d-flex flex-column">
-                                            <div class="w-100 d-flex align-items-center justify-content-center flex-column">
+                                            <div
+                                                class="w-100 d-flex align-items-center justify-content-center flex-column">
+                                                <p>فرم بدن خود را از بین تصاویر انتخاب کنید</p>
+                                                <p class="h1-rating pt-3 pb-5">فرم شکم</p>
+                                                <div class="body-img">
+                                                    <div class="d-flex flex-column align-items-center ">
+                                                        <a href="#" onclick="return false" class="body-img-item"><img
+                                                                src="images/smooth-body.png" alt="صاف"></a>
+                                                        <p class="pt-3">صاف</p>
+                                                    </div>
+
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <a href="#" onclick="return false" class="body-img-item"><img
+                                                                src="images/medium-body.png" alt="متوسط"></a>
+                                                        <p class="pt-3">متوسط</p>
+                                                    </div>
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <a href="#" onclick="return false" class="body-img-item"><img
+                                                                src="images/hourglass-body.png" alt="برامده"></a>
+                                                        <p class="pt-3">برامده</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer d-flex flex-column w-100">
+                                                <div class="d-flex  w-100  my-modal-footer ">
+                                                    <button type="button" class="next-modal" data-toggle="modal"
+                                                        data-target="#thered-Modal" data-dismiss="modal"> مرحله
+                                                        بعد</button>
+                                                    <button type="button" class="prev-modal" data-toggle="modal"
+                                                        data-target="#myModal" data-dismiss="modal">بازگشت</button>
+                                                </div>
+                                                <h3 class="pt-5"> 2/5</h3>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- Modal2 For Men -->
+                             <div class="modal" id="second-Modal-for-Men">
+                                <div class="modal-dialog modal-dialog-centered my-modal-dialog">
+                                    <div class="modal-content my-modal-content">
+                                        <div class="modal-header modal-header-smart-size w-100">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+
+                                            </button>
+
+                                        </div>
+                                        <div class="modal-body smart-size-modal w-100 d-flex flex-column">
+                                            <div
+                                                class="w-100 d-flex align-items-center justify-content-center flex-column">
+                                                <p>فرم بدن خود را از بین تصاویر انتخاب کنید</p>
+                                                <p class="h1-rating pt-3 pb-5">فرم شکم</p>
+                                                <div class="body-img">
+                                                    <div class="d-flex flex-column align-items-center ">
+                                                        <a href="#" onclick="return false" class="body-img-item"><img
+                                                                src="images/Flat-body-man.png" alt="صاف"></a>
+                                                        <p class="pt-3">صاف</p>
+                                                    </div>
+
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <a href="#" onclick="return false" class="body-img-item"><img
+                                                                src="images/Medium-body-Man.png" alt="متوسط"></a>
+                                                        <p class="pt-3">متوسط</p>
+                                                    </div>
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <a href="#" onclick="return false" class="body-img-item"><img
+                                                                src="images/Extur-body-Man.png" alt="برامده"></a>
+                                                        <p class="pt-3">برامده</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="modal-footer d-flex flex-column w-100">
+                                                <div class="d-flex  w-100  my-modal-footer ">
+                                                    <button type="button" class="next-modal" data-toggle="modal"
+                                                        data-target="#thered-Modal-Men" data-dismiss="modal"> مرحله
+                                                        بعد</button>
+                                                    <button type="button" class="prev-modal" data-toggle="modal"
+                                                        data-target="#myModal" data-dismiss="modal">بازگشت</button>
+                                                </div>
+                                                <h3 class="pt-5"> 2/5</h3>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                         
+                            <!-- Modal3 For Women -->
+                            <div class="modal" id="thered-Modal">
+                                <div class="modal-dialog modal-dialog-centered my-modal-dialog">
+                                    <div class="modal-content my-modal-content">
+                                        <div class="modal-header modal-header-smart-size w-100">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+
+                                            </button>
+
+                                        </div>
+                                        <div class="modal-body smart-size-modal w-100 d-flex flex-column">
+                                            <div
+                                                class="w-100 d-flex align-items-center justify-content-center flex-column">
                                                 <p>فرم بدن خود را از بین تصاویر انتخاب کنید</p>
                                                 <p class="h1-rating pt-3 pb-5">فرم باسن و لگن </p>
                                                 <div class="body-img">
-                                                  <div class="d-flex flex-column align-items-center ">
-                                                      <a href="#" onclick="return false" class="body-img-item"><img src="images/Flat.png" alt="صاف"></a>
-                                                      <p class="pt-3">تخت</p>
-                                                  </div>
-                                               
-                                                  <div class="d-flex flex-column align-items-center">
-                                                      <a href="#" onclick="return false" class="body-img-item"><img src="images/Medium2.png" alt="متوسط"></a>
-                                                      <p class="pt-3">متوسط</p>
-                                                  </div>
-                                                  <div class="d-flex flex-column align-items-center">
-                                                      <a href="#" onclick="return false" class="body-img-item"><img src="images/hourglass2.png" alt="ساعت شنی"></a>
-                                                      <p class="pt-3">ساعت شنی</p>
-                                                  </div>
+                                                    <div class="d-flex flex-column align-items-center ">
+                                                        <a href="#" onclick="return false" class="body-img-item"><img
+                                                                src="images/Flat.png" alt="صاف"></a>
+                                                        <p class="pt-3">تخت</p>
+                                                    </div>
+
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <a href="#" onclick="return false" class="body-img-item"><img
+                                                                src="images/Medium2.png" alt="متوسط"></a>
+                                                        <p class="pt-3">متوسط</p>
+                                                    </div>
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <a href="#" onclick="return false" class="body-img-item"><img
+                                                                src="images/hourglass2.png" alt="ساعت شنی"></a>
+                                                        <p class="pt-3">ساعت شنی</p>
+                                                    </div>
                                                 </div>
-                                               
+
                                             </div>
-                                          
-                                          <div class="modal-footer d-flex flex-column w-100">
-                                              <div class="d-flex  w-100  my-modal-footer ">
-                                                  <button type="button" class="next-modal"
-                                                  data-toggle="modal" data-target="#Four-Modal" data-dismiss="modal"> مرحله بعد</button>
-                                                  <button type="button" class="prev-modal"
-                                                  data-toggle="modal" data-target="#second-Modal" data-dismiss="modal">بازگشت</button>
-                                              </div>
-                                              <h3 class="pt-5"> 3/5</h3>
-                                           </div>
-                                             
-                                          </div>
-                                       
+
+                                            <div class="modal-footer d-flex flex-column w-100">
+                                                <div class="d-flex  w-100  my-modal-footer ">
+                                                    <button type="button" class="next-modal" data-toggle="modal"
+                                                        data-target="#Four-Modal" data-dismiss="modal"> مرحله
+                                                        بعد</button>
+                                                    <button type="button" class="prev-modal" data-toggle="modal"
+                                                        data-target="#second-Modal" data-dismiss="modal">بازگشت</button>
+                                                </div>
+                                                <h3 class="pt-5"> 3/5</h3>
+                                            </div>
+
+                                        </div>
+
                                     </div>
-                                 </div>
-                               </div>
+                                </div>
+                            </div>
 
+                              <!-- Modal3 For Men -->
+                              <div class="modal" id="thered-Modal-Men">
+                                <div class="modal-dialog modal-dialog-centered my-modal-dialog">
+                                    <div class="modal-content my-modal-content">
+                                        <div class="modal-header modal-header-smart-size w-100">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
 
-                             <!-- Modal4 -->
-                               <div class="modal" id="Four-Modal">
-                                    <div class="modal-dialog modal-dialog-centered my-modal-dialog">
-                                        <div class="modal-content my-modal-content">
-                                            <div class="modal-header modal-header-smart-size w-100">
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                  <span aria-hidden="true">&times;</span>
-                                                </button>
+                                            </button>
+
+                                        </div>
+                                        <div class="modal-body smart-size-modal w-100 d-flex flex-column">
+                                            <div
+                                                class="w-100 d-flex align-items-center justify-content-center flex-column">
+                                                <p>فرم بدن خود را از بین تصاویر انتخاب کنید</p>
+                                                <p class="h1-rating pt-3 pb-5">فرم  شانه  </p>
+                                                <div class="body-img">
+                                                    <div class="d-flex flex-column align-items-center ">
+                                                        <a href="#" onclick="return false" class="body-img-item"><img
+                                                                src="images/flat-shoulder.png" alt="صاف"></a>
+                                                        <p class="pt-3">تخت</p>
+                                                    </div>
+
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <a href="#" onclick="return false" class="body-img-item"><img
+                                                                src="images/Medium-shoulder.png" alt="متوسط"></a>
+                                                        <p class="pt-3">متوسط</p>
+                                                    </div>
+                                                    <div class="d-flex flex-column align-items-center">
+                                                        <a href="#" onclick="return false" class="body-img-item"><img
+                                                                src="images/Extru-shoulder.png" alt=" برامده"></a>
+                                                        <p class="pt-3"> برامده</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
-                                           <div class="modal-body smart-size-modal w-100 d-flex flex-column">
+
+                                            <div class="modal-footer d-flex flex-column w-100">
+                                                <div class="d-flex  w-100  my-modal-footer ">
+                                                    <button type="button" class="next-modal" data-toggle="modal"
+                                                        data-target="#Four-Modal" data-dismiss="modal"> مرحله
+                                                        بعد</button>
+                                                    <button type="button" class="prev-modal" data-toggle="modal"
+                                                        data-target="#second-Modal" data-dismiss="modal">بازگشت</button>
+                                                </div>
+                                                <h3 class="pt-5"> 3/5</h3>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Modal4 -->
+                            <div class="modal" id="Four-Modal">
+                                <div class="modal-dialog modal-dialog-centered my-modal-dialog">
+                                    <div class="modal-content my-modal-content">
+                                        <div class="modal-header modal-header-smart-size w-100">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body smart-size-modal w-100 d-flex flex-column">
+                                            <div
+                                            class="w-100 d-flex align-items-center justify-content-center flex-column">
+                                            <p>ترجیح میدهید لباس تا چه اندازه فیت باشد؟</p>
+                                            <p class="h1-rating pt-3 pb-5">  میزان فیت بودن لباس  </p>
+                                            </div>
                                             <div class="w-90  d-flex  flex-column align-items-lg-start ">
-                                            <div  class="w-100  d-flex  flex-row b-bottom">
-                                                <div class="w-100 ">
-                                                    <div class="col-md-12 top-40">
-                                                        <div  class="d-flex justify-content-between">
-                                                            <div><span class="progress-title number-font2 pull-left">کیپ</span>
+                                                <div class="w-100  d-flex  flex-row">
+                                                    <div class="w-100 ">
+                                                        <div class="col-md-12 top-40">
+                                                            <div class="d-flex justify-content-between">
+                                                                <div><span
+                                                                        class="progress-title number-font2 pull-left">کیپ</span>
+                                                                </div>
+                                                                <div><span class="progress-title"> آزاد</span>
+                                                                </div>
                                                             </div>
-                                                            <div><span class="progress-title"> آزاد</span>
+                                                            <div class="__range __range-step __range-step-popup"
+                                                                style="direction:ltr ;">
+                                                                <input value="1" type="range" max="4" min="1" step="1"
+                                                                    list="ticks2">
+                                                                <datalist id="ticks2">
+                                                                    <option value="1">آزاد
+                                                                    </option>
+                                                                    <option value="2">کمی ازاد
+                                                                    </option>
+                                                                    <option value="3">متوسط
+                                                                    </option>
+                                                                    <option value="4">کیپ
+                                                                    </option>
+                                                                </datalist>
+                                                                <output class="__range-output-square"></output>
                                                             </div>
-                                                        </div>
-                                                        <div class="__range __range-step __range-step-popup"
-                                                            style="direction:ltr ;">
-                                                            <input value="1"
-                                                                type="range" max="4"
-                                                                min="1" step="1"
-                                                                list="ticks2">
-                                                            <datalist id="ticks2">
-                                                                <option value="1">آزاد
-                                                                </option>
-                                                                <option value="2">کمی ازاد
-                                                                </option>
-                                                                <option value="3">متوسط
-                                                                </option>
-                                                                <option value="4">کیپ
-                                                                </option>
-                                                            </datalist>
-                                                            <output class="__range-output-square"></output>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="modal-footer d-flex flex-column w-100 ">
+                                                <div class="d-flex  w-100  my-modal-footer5 pt-20 ">
+                                                    <button type="button" class="next-modal" data-toggle="modal"
+                                                        data-target="#Five-Modal" data-dismiss="modal"> مرحله
+                                                        بعد</button>
+                                                    <button type="button" class="prev-modal" data-toggle="modal"
+                                                        data-target="#thered-Modal" data-dismiss="modal">بازگشت</button>
+                                                </div>
+                                                <h3 class="pt-5"> 4/5</h3>
+                                            </div>
+                                        </div>
+                                    
 
-                                           
+                                    </div>
+                                </div>
+                            </div>
 
-                                          
+                            <!-- Modal5 -->
+                            <div class="modal" id="Five-Modal">
+                                <div class="modal-dialog modal-dialog-centered my-modal-dialog">
+                                    <div class="modal-content my-modal-content">
+                                        <div class="modal-header modal-header-smart-size w-100">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
 
                                         </div>
-                                             <div class="modal-footer d-flex flex-column w-100">
-                                                 <div class="d-flex  w-100  my-modal-footer ">
-                                                     <button type="button" class="next-modal"
-                                                     data-toggle="modal" data-target="#Five-Modal" data-dismiss="modal"> مرحله بعد</button>
-                                                     <button type="button" class="prev-modal"
-                                                     data-toggle="modal" data-target="#thered-Modal" data-dismiss="modal">بازگشت</button>
-                                                 </div>
-                                                 <h3 class="pt-5"> 4/5</h3>
-                                              </div>
-                                                
-                                           </div>
-                                       </div>
-                                    </div>
-                               </div>
-
-                              <!-- Modal5 -->
-                                <div class="modal" id="Five-Modal">
-                                    <div class="modal-dialog modal-dialog-centered my-modal-dialog">
-                                        <div class="modal-content my-modal-content">
-                                            <div class="modal-header modal-header-smart-size w-100">
-                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                  <span aria-hidden="true">&times;</span>
-                                                  
-                                                </button>
-                                                
-                                            </div>
-                                            <div class="modal-body smart-size-modal w-100">
-                                              <div class="left-modal-content">
-                                                  <img src="images/3.png " alt="">
-                                              </div>
-                                              <div class="right-modal-content">
-                                                  <h3> مناسب ترین سایز  پیشنهادی برای شما :<span>M</span> </h3>
-                                                  <p>سایز M توسط 80 % از خریداران با قد و وزن تقریبی شما انتخاب شده و پس داده نشده است.</p>
-                                                  <div>
-                                                    <p class="balck-color pt-3">پیشنهاد اول : <span>سایز M</span></p>
-                                                    
-                                                    <div class="w-100">
-                                                       
-                                                        <div class="custom_radio w-100 ">
-                                                            <div class="d-flex align-items-center justify-content-center">
-                                                                <div class="my-progress w-100">
-                                                                    <div class="my-progress-bar" role="progressbar"
-                                                                        style="width:60%;" aria-valuenow="80" aria-valuemin="0"
-                                                                        aria-valuemax="100"><h3 class="text-white">80%</h3>
+                                        <div class="modal-body smart-size-modal w-100 d-flex flex-column">
+                                            <div class="Modal-5-content ">
+                                                <div class="left-modal-content ">
+                                                    <img src="images/3.png " alt="">
+                                                </div>
+                                                <div class="right-modal-content">
+                                                    <h3> مناسب ترین سایز پیشنهادی برای شما :<span>M</span> </h3>
+                                                    <p>سایز M توسط 80 % از خریداران با قد و وزن تقریبی شما انتخاب شده و پس
+                                                        داده نشده است.</p>
+                                                    <div>
+                                                        <p class="balck-color pt-3">پیشنهاد اول : <span>سایز M</span></p>
+                                                        <div class="w-100">
+                                                            <div class="custom_radio w-100 ">
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-center">
+                                                                    <div class="my-progress w-100">
+                                                                        <div class="my-progress-bar" role="progressbar"
+                                                                            style="width:60%;" aria-valuenow="80"
+                                                                            aria-valuemin="0" aria-valuemax="100">
+                                                                            <h3 class="text-white">80%</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class=" d-flex justify-content-end">
+                                                                        <input type="radio" id="featured-1" name="featured"
+                                                                            checked><label for="featured-1"></label>
                                                                     </div>
                                                                 </div>
-                                                                <div class=" d-flex justify-content-end">
-                                                                    <input type="radio" id="featured-1" name="featured" checked><label for="featured-1"></label>
-                                                                </div>
-                                                              
-                                                               
-                                                            </div>
-                                                           
-    
-                                                            <br>
-                                                            <p class="balck-color pt-3">پیشنهاد دوم : <span>سایز S</span></p>
-                                                            <div class="d-flex align-items-center justify-content-center">
-                                                                <div class="my-progress w-100">
-                                                                    <div class="my-progress-bar" role="progressbar"
-                                                                        style="width:30%;" aria-valuenow="80" aria-valuemin="0"
-                                                                        aria-valuemax="100"><h3 class="text-white">30%</h3>
+                                                                <br>
+                                                                <p class="balck-color pt-3">پیشنهاد دوم : <span>سایز
+                                                                        S</span></p>
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-center">
+                                                                    <div class="my-progress w-100">
+                                                                        <div class="my-progress-bar" role="progressbar"
+                                                                            style="width:30%;" aria-valuenow="80"
+                                                                            aria-valuemin="0" aria-valuemax="100">
+                                                                            <h3 class="text-white">30%</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class=" d-flex justify-content-end">
+                                                                        <input type="radio" id="featured-2"
+                                                                            name="featured"><label for="featured-2"></label>
                                                                     </div>
                                                                 </div>
-                                                                <div class=" d-flex justify-content-end">
-                                                                    <input type="radio" id="featured-2" name="featured"><label for="featured-2"></label>
-                                                                </div>
-                                                              
-                                                               
                                                             </div>
-                                                            <br>
-                                                            
-                                                          </div>
                                                         </div>
-
+                                                    </div>
+                                                    <div class="modal-footer d-flex flex-column w-100 ">
+                                                        <div class="d-flex  w-100  my-modal-footer4 ">
+                                                            <button type="button" class="next-modal" data-toggle="modal"
+                                                                data-target="#myModal" data-dismiss="modal"> ادامه خرید </button>
+                                                            <button type="button" class="prev-modal" data-toggle="modal"
+                                                                data-target="#myModal" data-dismiss="modal">تلاش مجدد</button>
+                                                        </div>
                                                       
                                                     </div>
-                                                  
-                                               
-                                                  
-                                             
+                                                </div>
+                                              
                                             </div>
-                                            
-                                               
-                                            
-                                        </div>
-                                        <div class="modal-footer d-flex flex-column w-100">
-                                            <div class="d-flex  w-100  my-modal-footer ">
-                                                <button type="button" class="next-modal"
-                                                data-toggle="modal" data-target="#myModal" data-dismiss="modal"> ادامه خرید </button>
-                                                <button type="button" class="prev-modal"
-                                                data-toggle="modal" data-target="#myModal" data-dismiss="modal">تلاش مجدد</button>
+                                             <div class="w-100 d-flex align-items-center justify-content-center my-modal-footer6">
+                                                <h3 class="pt-5"> 5/5</h3>
                                             </div>
-                                            <h3 class="pt-5"> 5/5</h3>
-                                         </div>
-                                       
-                                          
-                                           </div>
-                                       </div>
+                                             </div>
+                                           
+                                      
                                     </div>
-                               </div>
-
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+        
     </section>
     <!--Guarantee Icon,Tabs and UserComment in Mobile & Desktop Version Start-->
     <section class="bottom-single-product container2 overflow-hidden">
