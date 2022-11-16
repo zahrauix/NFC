@@ -185,7 +185,19 @@
 
 @media only screen and (min-width: 1024px) {
   .slide li {
-    margin-right: -58px !important;
+    margin-right: -24px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .slide li {
+    margin-right: -57px !important;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .slide li {
+    margin-right: -62px !important;
   }
 }
 
@@ -2190,6 +2202,7 @@ input[type=checkbox]:checked+label::after {
   padding: 1.6rem 0;
   margin-top: 3.8rem;
 }
+
 .smart-size-btn-active {
   width: 100%;
   background-color: #000000;
@@ -2200,6 +2213,7 @@ input[type=checkbox]:checked+label::after {
   padding: 1.6rem 0;
   margin-top: 3.8rem;
 }
+
 .my-form-control {
   background: #F8F8F8 !important;
   color: #000000;
@@ -2298,15 +2312,16 @@ input[type=checkbox]:checked+label::after {
 }
 
 .my-progress {
-  background-color: #EEEEEE;;
+  background-color: #EEEEEE;
+  ;
   margin-top: 8px;
   border-radius: 0;
   height: 2rem;
-  
+
 }
 
 .my-progress .my-progress-bar {
-  height:2rem;
+  height: 2rem;
   background-color: #32CD8C;
 }
 
@@ -2314,61 +2329,74 @@ input[type=checkbox]:checked+label::after {
 
 
 
-.custom_radio{
+.custom_radio {
   /* margin: 20px; */
 }
-.custom_radio input[type="radio"]{
- display: none;
+
+.custom_radio input[type="radio"] {
+  display: none;
 
 }
-.custom_radio input[type="radio"] + label{
- position: relative;
- display: inline-block;
- padding-left: 1.5em;
- margin-right: 2em;
- cursor: pointer;
- line-height: 1em;
- -webkit-transition: all 0.3s ease-in-out;
- transition: all 0.3s ease-in-out;
+
+.custom_radio input[type="radio"]+label {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.5em;
+  margin-right: 2em;
+  cursor: pointer;
+  line-height: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.custom_radio input[type="radio"] + label:before,
-.custom_radio input[type="radio"] + label:after{
- content: '';
- position: absolute;
- top: -10px;
- left: 0;
- width: 2em;
- height: 2em;
- text-align: center;
- color: white;
- font-family: Times;
- border-radius: 50%;
- -webkit-transition: all .3s ease;
- transition: all .3s ease;
+
+.custom_radio input[type="radio"]+label:before,
+.custom_radio input[type="radio"]+label:after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  color: white;
+  font-family: Times;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
-.custom_radio input[type="radio"] + label:before {
- -webkit-transition: all .3s ease;
- transition: all .3s ease;
- box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 3em white;
+
+.custom_radio input[type="radio"]+label:before {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 3em white;
 }
-.custom_radio input[type="radio"] + label:before {
- -webkit-transition: all .3s ease;
- transition: all .3s ease;
- box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 3em #c6c6c6;
+
+.custom_radio input[type="radio"]+label:before {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 3em #c6c6c6;
 }
-.custom_radio input[type="radio"]:checked + label:before {
- -webkit-transition: all .3s ease;
- transition: all .3s ease;
- box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 3em #32CD8C;
+
+.custom_radio input[type="radio"]:checked+label:before {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 3em #32CD8C;
 }
 
 .my-modal-footer4 {
   justify-content: space-between;
   margin-top: 4rem;
 }
-.my-modal-footer5{
+
+.my-modal-footer5 {
   justify-content: space-between;
-  margin-top:2.4rem;
+  margin-top: 2.4rem;
+}
+
+
+.zoom-product {
+  display: none;
+
 }
 
 @media screen and (min-width: 420px) {
@@ -2463,15 +2491,29 @@ input[type=checkbox]:checked+label::after {
 }
 
 @media screen and (min-width: 1024px) {
-  .my-modal-footer5{
+  .product-img-carosel {
+    position: relative;
+  }
+
+  .zoom-product {
+    display: flex;
+    position: absolute;
+    top: 92px;
+    right: 64px;
+    z-index: 99;
+    cursor: pointer;
+  }
+
+  .my-modal-footer5 {
     justify-content: space-between;
-    margin-top:19.5rem;
+    margin-top: 19.5rem;
     padding: 0 9rem;
   }
 
-  .my-modal-footer6{
+  .my-modal-footer6 {
     margin-top: 9rem;
   }
+
   .smart-size-modal {
     display: flex;
     flex-direction: row;
@@ -2532,6 +2574,17 @@ input[type=checkbox]:checked+label::after {
   .my-modal-dialog {
     max-width: 879px !important;
     max-height: 634px;
+  }
+  .my-modal-dialog2 {
+    max-width: 100% !important;
+  }
+
+ 
+
+  .product-zoom img {
+    width: 656px !important;
+    height: 760px;
+    object-fit: cover;
   }
 
   .my-modal-content {
@@ -2973,6 +3026,18 @@ input[type=checkbox]:checked+label::after {
     padding-top: 2rem;
   }
 
+  .modal-zoom {
+    background: rgb(255, 255, 255) !important;
+    backdrop-filter: blur(0) !important;
+    padding-top: 0 !important;
+    margin-top: 9.90rem !important;
+  }
+
+  .modal-backdrop {
+    background-color:rgba(0, 0, 0, 0) !important;
+    top:80px !important;
+  }
+
   .xz {
     padding-left: 6rem;
     width: 50%;
@@ -3039,17 +3104,21 @@ input[type=checkbox]:checked+label::after {
 
     padding: 0 4rem;
   }
-  .my-modal-footer{
+
+  .my-modal-footer {
     padding: 0 9rem;
   }
-  .my-modal-footer2{
+
+  .my-modal-footer2 {
     padding: 0 9rem;
   }
+
   .my-modal-footer4 {
     justify-content: space-between;
     margin-top: 4rem;
-}
-  .Modal-5-content{
+  }
+
+  .Modal-5-content {
     display: flex;
   }
 

@@ -753,3 +753,12 @@ $('input[type=radio][name=featured]').change(function() {
         $("#progressB2").css("background-color","#32CD8C");
     }
 })
+
+
+
+
+
+
+
+
+
