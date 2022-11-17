@@ -768,7 +768,7 @@ $(".close").click(()=> {
     $("#myModal2").css("display","none");
 })
 //zoom
-wheelzoom(document.querySelector('#zoom-item'));
+wheelzoom(document.querySelector('#zoom-item'),{maxZoom: 2});
 
 var wheelImg=document.querySelector("#zoom-item");
 wheelImg.addEventListener('wheel', (event) => {
