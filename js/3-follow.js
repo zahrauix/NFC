@@ -1,13 +1,13 @@
 // CREDITS : https://www.cssscript.com/image-zoom-pan-hover-detail-view/
 var addZoom = (target) => {
   // (A) GET CONTAINER + IMAGE SOURCE
-  let container = document.getElementById(target),
-      imgsrc = container.currentStyle || window.getComputedStyle(container, false);
-      imgsrc = imgsrc.backgroundImage.slice(4, -1).replace(/"/g, "");
+  // let container = document.getElementById(target),
+  //     imgsrc = container.currentStyle || window.getComputedStyle(container, false);
+  //     imgsrc =" ../images/1.png"
 
   // (B) LOAD IMAGE + ATTACH ZOOM
   let img = new Image();
-  img.src = imgsrc;
+  img.src = "../images/1.png";
   img.onload = () => {
     // (B1) CALCULATE ZOOM RATIO
     let ratio = img.naturalHeight / img.naturalWidth,

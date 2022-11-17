@@ -283,34 +283,34 @@
                     <div class="modal-dialog modal-dialog-centered my-modal-dialog my-modal-dialog2 ">
                         <div class="modal-content my-modal-content ">
                             <div class="modal-header modal-header-smart-size w-100 container3">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <button  type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <!-- <div class="modal-body smart-size-modal w-100 d-flex flex-column product-zoom " >
-                                <img src="images/1.png" >
-                            </div> -->
-                            <div id="zoomC"></div>
+                            <div class="modal-body smart-size-modal w-100 d-flex flex-column product-zoom " >
+                                <img  src="" id="zoom-item" style="cursor: zoom-in;" >
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel vf carousel-main main-carousel" data-flickity='{"pageDots": false }'>
-                    <div class="carousel-cell"><img id="12" src="images/1.png"
+                    <div class="carousel-cell"><img onclick="zoomFunction(this.src)" id="12" src="images/1.png"
                             alt="ست ورزشی مردانه اسپرت مدل نایکی 2022 کد 7202" /></div>
-                    <div class="carousel-cell"><img src="images/2.png"
+                    <div class="carousel-cell"><img onclick="zoomFunction(this.src)" src="images/2.png"
                             alt="ست ورزشی مردانه اسپرت مدل نایکی 2022 کد 7202" /></div>
-                    <div class="carousel-cell"><img src="images/3.png"
+                    <div class="carousel-cell"><img onclick="zoomFunction(this.src)" src="images/3.png"
                             alt="ست ورزشی مردانه اسپرت مدل نایکی 2022 کد 7202" /></div>
-                    <div class="carousel-cell"><img src="images/4.png"
+                    <div class="carousel-cell"><img onclick="zoomFunction(this.src)" src="images/4.png"
                             alt="ست ورزشی مردانه اسپرت مدل نایکی 2022 کد 7202" /></div>
-                    <div class="carousel-cell"><img src="images/5.png"
+                    <div class="carousel-cell"><img onclick="zoomFunction(this.src)" src="images/5.png"
                             alt="ست ورزشی مردانه اسپرت مدل نایکی 2022 کد 7202" /></div>
-                    <div class="carousel-cell"><img src="images/3.png"
+                    <div class="carousel-cell"><img onclick="zoomFunction(this.src)" src="images/3.png"
                             alt="ست ورزشی مردانه اسپرت مدل نایکی 2022 کد 7202" /></div>
-                    <div class="carousel-cell"><img src="images/4.png"
+                    <div class="carousel-cell"><img onclick="zoomFunction(this.src)" src="images/4.png"
                             alt="ست ورزشی مردانه اسپرت مدل نایکی 2022 کد 7202" /></div>
-                    <div class="carousel-cell"><img src="images/5.png"
+                    <div class="carousel-cell"><img onclick="zoomFunction(this.src)" src="images/5.png"
                             alt="ست ورزشی مردانه اسپرت مدل نایکی 2022 کد 7202" /></div>
 
                 </div>
@@ -3102,6 +3102,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.min.js.map"></script>
     <script src="js/uikit.min.js"></script>
+    <script src="js/wheelzoom.js"></script>
     <script src="js/main.js"></script>
     <script src="js/3-follow.js"></script>
 

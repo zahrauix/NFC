@@ -757,10 +757,27 @@ $('input[type=radio][name=featured]').change(function() {
 
 
 
+//open modal
+function zoomFunction(src) {
+    
+    console.log(src);
+    $("#zoom-item").attr("src", src);
+    $("#myModal2").css("display","block");
+}
+$(".close").click(()=> {
+    $("#myModal2").css("display","none");
+})
+//zoom
+wheelzoom(document.querySelector('#zoom-item'));
 
-
-
-
-
+var wheelImg=document.querySelector("#zoom-item");
+wheelImg.addEventListener('wheel', (event) => {
+    
+    if (event.deltaY > 0) {
+        wheelImg.style.cursor = "zoom-out";
+    }else  {
+        wheelImg.style.cursor = "zoom-in";
+    }
+});
 
 
