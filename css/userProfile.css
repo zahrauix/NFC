@@ -1,0 +1,595 @@
+/*Reset*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*root variable*/
+:root {
+    --color-Primary-White-1: rgba(255, 255, 255, 1);
+    --color-Primary-White-2: rgba(248, 248, 248, 1);
+    --color-Primary-White-3: rgba(238, 238, 238, 1);
+    --color-Primary-White-4: rgba(224, 224, 224, 1);
+    --color-Primary-White-5: rgba(204, 204, 204, 1);
+    --color-Primary-White-6: rgba(172, 172, 172, 1);
+
+    --color-Primary-Black-1: rgba(0, 0, 0, 1);
+    --color-Primary-Black-2: rgba(103, 103, 103, 1);
+    --color-Primary-Black-3: rgba(74, 74, 74, 1);
+    --color-Primary-Black-4: rgba(58, 58, 58, 1);
+    --color-Primary-Black-5: rgba(44, 44, 44, 1);
+    --color-Primary-Black-6: rgba(31, 31, 31, 1);
+
+    --color-Semantic-Green: rgba(50, 205, 140, 1);
+    --color-Semantic-Red: rgba(233, 28, 65, 1);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+
+    font-size: 1.2rem;
+    background-color: var(--color-Primary-White-2);
+    overflow-x: hidden !important;
+}
+
+#menu-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(62, 153, 228, 0.2);
+    border: none;
+    opacity: 0;
+
+    /* opacity: 0;
+    visibility: hidden; */
+}
+
+.sidebar {
+    position: fixed;
+    width: 340px;
+    height: 650px;
+    /* right:0; */
+    top: 162px;
+    bottom: 0;
+    padding: 3.2rem;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+
+
+}
+
+
+
+.sidebar-container {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 3rem 5rem 3rem;
+    background-color: var(--color-Primary-White-1);
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.09);
+}
+
+.avatar-img img {
+    width: 78px;
+    height: 78px;
+}
+
+.sidebar-avatar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #EEEEEE;
+    padding-top: 3.4rem;
+
+}
+
+.sidebar-avatar p {
+    margin-bottom: 0;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: -0.02em;
+    padding-bottom: .4rem;
+
+}
+
+.sidebar-avatar small {
+    font-weight: 200;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #ACACAC;
+
+
+
+}
+
+.avatar-text {
+    padding-right: .8rem;
+}
+
+.sidebar-menu {
+    margin-top: 4rem;
+}
+
+.sidebar-menu li {
+    padding-bottom: 2.4rem;
+}
+
+.sidebar-menu li a {
+    color: #676767;
+}
+
+.active-menu span {
+    color: #000000;
+    font-weight: 900;
+}
+
+.active-menu svg {
+    fill: #000000 !important;
+}
+
+.sidebar-menu svg {
+    fill: #676767;
+}
+
+
+
+.sidebar-menu svg {
+    fill: #676767;
+}
+
+.sidebar-menu span {
+    padding-right: 1rem;
+}
+
+.log-out-menu {
+    margin-top: 9.2rem;
+    padding-top: 3.2rem;
+    border-top: 1px solid #EEEEEE;
+}
+
+.bn {
+    height: 100%;
+}
+
+.main-content {
+    margin-right: 340px;
+    padding: 2rem;
+    margin-top: 95px;
+    height: 100%;
+    padding-bottom: 10rem;
+    background-color: var(--color-Primary-White-1);
+}
+
+.hamber {
+    display: flex;
+}
+
+.hamber-text p {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #000000;
+    padding-right: .8rem;
+}
+
+
+.address-content-text {
+    border-bottom: 1px solid #EEEEEE;
+
+}
+
+.address-content-text p {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #000000;
+    padding-right: 9rem;
+    padding-top: 3rem;
+
+
+}
+
+
+.add-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #000000;
+    padding-right: 9rem;
+    padding-top: 2.4rem;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.add-text a {
+    color: #000000;
+}
+
+.more-address {
+    text-align: left;
+}
+
+.more-address svg {
+    cursor: pointer;
+}
+
+.address-detils2 {
+    padding: 1.6rem 9rem 3rem 1rem;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.address-detils2 li {
+    padding-bottom: 2.4rem;
+}
+
+.address-detils2 span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 180%;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #000000;
+    padding-right: .8rem;
+
+
+}
+
+.address-detils-3 {
+    color: #ACACAC !important;
+    font-weight: 400 !important;
+}
+
+.edit-address a {
+    color: #000;
+}
+
+.address-content-text::before {
+    /* content: '';
+    width: 150px;
+    height: 2px;
+    background-color: var(--color-Primary-Black-1);
+    position: absolute;
+    bottom: 0;
+    right: 680px;
+    top:290px */
+}
+
+.active-menu ::before {
+    content: '';
+    width: 3px;
+    height: 30px;
+    background-color: var(--color-Primary-Black-1);
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+    top: 240px
+}
+
+
+.active-menu2 span {
+    color: #000000;
+    font-weight: 900;
+}
+
+.active-menu2 svg {
+    fill: #000000 !important;
+}
+
+.active-menu2 ::before {
+    content: '';
+    width: 3px;
+    height: 30px;
+    background-color: var(--color-Primary-Black-1);
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+    top: 285px
+}
+
+.active-menu3 span {
+    color: #000000;
+    font-weight: 900;
+}
+
+.active-menu3 svg {
+    fill: #000000 !important;
+}
+
+.active-menu3 ::before {
+    content: '';
+    width: 3px;
+    height: 30px;
+    background-color: var(--color-Primary-Black-1);
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+    top: 330px
+}
+
+.active-menu4 span {
+    color: #000000;
+    font-weight: 900;
+}
+
+.active-menu4 svg {
+    fill: #000000 !important;
+}
+
+.active-menu4 ::before {
+    content: '';
+    width: 3px;
+    height: 30px;
+    background-color: var(--color-Primary-Black-1);
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+    top: 380px
+}
+
+
+.sidebar-avatar::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    background-color: var(--color-Semantic-Green);
+    position: absolute;
+    bottom: 0;
+    right: 64px;
+    top: 95px
+}
+
+.close-side {
+    text-align: left;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid #EEEEEE;
+    padding-right: 9rem;
+    display: none;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    margin-left: 3rem;
+    color: #ACACAC;
+    ;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    border-bottom: 1px solid #000000;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.btn-num {
+    background-color: #CCCCCC;
+    color: rgb(0, 0, 0);
+    padding: .7rem 1rem;
+    border-radius: 100%;
+    margin-left: .8rem;
+}
+
+.deliver-icon{
+    background-color: var(--color-Semantic-Green);
+    padding: .4rem .8rem;
+    border-radius: 100%;
+    margin-left: .8rem;
+}
+
+.cancel-icon{
+    background-color: var(--color-Semantic-Red);
+    padding: .4rem .7rem .4rem .4rem;
+    border-radius: 100%;
+    margin-left: .8rem;
+}
+
+.Awaiting-Payment {
+    padding: 1rem 9rem 5rem 9rem;
+    width: 100%;
+}
+
+.Awaiting-Payment img {
+    width: 81px;
+    height: 103px;
+    object-fit: cover;
+}
+
+.Awaiting-Payment-details {
+    padding-right: 1.6rem;
+    padding-top: 2.4rem;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.Awaiting-Payment-text p {
+    font-weight: 200;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #FF9921;
+    padding-right: .8rem;
+
+}
+
+.gray{
+    color:#676767 !important;
+}
+
+.green{
+    color:var(--color-Semantic-Green) !important;
+}
+
+.red{
+    color:var(--color-Semantic-Red) !important;
+}
+
+.Awaiting-Payment-btn {
+    padding: .8rem 8rem;
+    border: 1px solid #000000;
+    background-color: #fff;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.Awaiting-Payment-btn:hover {
+    border: 1px solid #000000;
+    background-color: rgb(0, 0, 0);
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.Awaiting-Payment-details2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Awaiting-Payment-details2 p {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #676767;
+    padding-right: 1.6rem;
+}
+
+.Awaiting-Payment-details2 span{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+@media screen and (min-width: 1024px) {
+    .hamber {
+        display: none;
+    }
+
+    .close-side {
+        display: none;
+    }
+
+    .sidebar-container {
+
+        box-shadow: none;
+    }
+
+    .tab {
+
+        display: flex;
+    }
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        display: none;
+        top: 87px;
+        right: 0;
+    }
+
+
+
+    .main-content {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .address-detils2 {
+        padding: 1.6rem 3rem 3rem 1rem;
+        border-bottom: 1px solid #EEEEEE;
+    }
+
+    .address-content-text p {
+        font-weight: 600;
+        font-size: 14px;
+        text-align: right;
+        letter-spacing: -0.02em;
+        color: #000000;
+        padding-right: 3rem;
+        padding-top: 3rem;
+    }
+
+    .add-text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 180%;
+        text-align: right;
+        letter-spacing: -0.02em;
+        color: #000000;
+        padding-right: 3rem;
+        padding-top: 2.4rem;
+        border-bottom: 1px solid #EEEEEE;
+    }
+
+    .address-detils2 span {
+        font-size: 12px;
+        padding-right: 0.8rem;
+    }
+
+    .main-content {
+
+        margin-top: 53px;
+
+    }
+
+    .sidebar {
+        display: none;
+        top: 40px;
+        right: 0;
+    }
+}
