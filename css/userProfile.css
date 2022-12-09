@@ -894,6 +894,7 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #EEEEEE;
+    flex-wrap: wrap;
 }
 
 .code-date p {
@@ -1262,6 +1263,28 @@ input[type=number] {
     .sidebar {
         display: none;
         top: 40px;
-        right: 0;
+        right: -350px;
+    }
+
+    .active-menu2 ::before {
+        content: '';
+        width: 3px;
+        height: 30px;
+        background-color: var(--color-Primary-Black-1);
+        position: absolute;
+        bottom: 0;
+        right: 32px;
+        top: 303px;
+    }
+
+    .active-menu4 ::before {
+        content: '';
+        width: 3px;
+        height: 30px;
+        background-color: var(--color-Primary-Black-1);
+        position: absolute;
+        bottom: 0;
+        right: 32px;
+        top: 398px;
     }
 }

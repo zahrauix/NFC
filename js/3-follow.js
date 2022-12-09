@@ -4,7 +4,7 @@ var addZoom = (target) => {
   // let container = document.getElementById(target),
   //     imgsrc = container.currentStyle || window.getComputedStyle(container, false);
   //     imgsrc =" ../images/1.png"
-
+ 
   // (B) LOAD IMAGE + ATTACH ZOOM
   let img = new Image();
   img.src = "../images/1.png";

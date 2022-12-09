@@ -83,9 +83,9 @@ if (window.innerWidth > 1024) {
     $( "#Pcarousel" ).removeClass( "owl-carousel" );
   }
 
-$(document).ready(function () {
 
-   var owl= $('.owl-carousel').owlCarousel({
+
+   $('.owl-carousel').owlCarousel({
         rtl: true,
         loop: true,
         margin: 0,
@@ -97,18 +97,8 @@ $(document).ready(function () {
     });
     
 
-    //  owl.on('mousewheel', '.owl-stage', function (e) {
-    //     console.log(e.deltaY);
-    //    if (e.deltaY>0) {
-    //        owl.trigger('next.owl');
-    //     } else {
-    //        owl.trigger('prev.owl');
-    //     }
-    //      e.preventDefault();
-    //  });
-  
 
-});
+
 
 // Product cart in index page End
 
@@ -543,7 +533,8 @@ output: {
 
 // Filter button in product page
 
-  $(".filter-button").click(()=> {
+  $(".filter-button-content").click(()=> {
+    console.log("fgb");
     $(".filter").css("display","flex");
   })
 
@@ -812,3 +803,4 @@ function openCity(evt, cityName) {
 
 
 
+  

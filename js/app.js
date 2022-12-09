@@ -1,4 +1,5 @@
-
+window.addEventListener("load", () => {
+    "use strict";
 //   Main Slider in index page
 const slides = document.querySelector('.slider-item').children;
 const next = document.querySelector('.next');
@@ -145,5 +146,5 @@ dropdown.addEventListener('click', function(){
 
 
 
-
+})
 
