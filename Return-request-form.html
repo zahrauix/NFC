@@ -286,7 +286,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="orders.html">
+                            <a href="orders.html" class="active-menu2">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -314,7 +314,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="info.html" class="active-menu4">
+                            <a href="info.html">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -364,7 +364,7 @@
             </header>
             <div class="address-content-text">
                 <div class="h1-address-content">
-                    <p> ادرس تحویل گیرنده</p>
+                    <p>فرم درخواست مرجوعی </p>
                 </div>
             </div>
 
@@ -381,23 +381,9 @@
                                             fill="#E91C41" />
                                     </svg>
                                 </span>
-                                نام
+                                نام و نام خانوادگی
                             </label>
                             <input type="text" class="form-control  mb-5 " id="recipient-name" required>
-
-
-                            <label for="recipient-name" class="col-form-label col-form-label2">
-                                <span>
-                                    <svg width="8" height="7" viewBox="0 0 8 7" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.66225 6.296L3.31025 4.056L0.68625 3.176L1.00625 2.072L3.63025 3L3.61425 0.2H4.75025L4.73425 3L7.39025 2.072L7.71025 3.176L5.08625 4.056L6.73425 6.296L5.82225 7L4.20625 4.664L2.57425 7L1.66225 6.296Z"
-                                            fill="#E91C41" />
-                                    </svg>
-                                </span>
-                                نام خانوادگی
-                            </label>
-                            <input type="text" class="form-control  mb-5" id="recipient-familyname" required>
 
 
 
@@ -418,56 +404,88 @@
                             <label for="recipient-name" class="col-form-label col-form-label2">
                                 ایمیل
                             </label>
-                            <input type="text" class="form-control  mb-5" id="Email" placeholder="اختیاری">
+                            <input type="number" class="form-control  mb-5" id="Email" placeholder="اختیاری">
+
+
+
+
 
                             <label for="recipient-name" class="col-form-label col-form-label2">
-                                قد
+                                <span>
+                                    <svg width="8" height="7" viewBox="0 0 8 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.66225 6.296L3.31025 4.056L0.68625 3.176L1.00625 2.072L3.63025 3L3.61425 0.2H4.75025L4.73425 3L7.39025 2.072L7.71025 3.176L5.08625 4.056L6.73425 6.296L5.82225 7L4.20625 4.664L2.57425 7L1.66225 6.296Z"
+                                            fill="#E91C41" />
+                                    </svg>
+                                </span>
+                                شماره سفارش
                             </label>
-                            <input type="number" class="form-control  mb-5" id="heigt" placeholder="اختیاری">
-
+                            <input type="number" class="form-control  mb-5" id="orderCode" required>
 
                             <label for="recipient-name" class="col-form-label col-form-label2">
-                                وزن
+                                <span>
+                                    <svg width="8" height="7" viewBox="0 0 8 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.66225 6.296L3.31025 4.056L0.68625 3.176L1.00625 2.072L3.63025 3L3.61425 0.2H4.75025L4.73425 3L7.39025 2.072L7.71025 3.176L5.08625 4.056L6.73425 6.296L5.82225 7L4.20625 4.664L2.57425 7L1.66225 6.296Z"
+                                            fill="#E91C41" />
+                                    </svg>
+                                </span>
+                                علت مرجوعی
                             </label>
-                            <input type="number" class="form-control  mb-5" id="weigt" placeholder="اختیاری">
-                        </div>
-                        <div class="d-flex w-100 flex-column ra-i ">
-                            <p >جنسیت</p>
-                            <div class="d-flex">
-                                <label class="form-control-style radio-info ">
-                                    <input type="radio" name="radio" />
-                                    زن
-                                </label>
-    
-                                <label class="form-control-style radio-info ">
-                                    <input type="radio" name="radio" />
-                                    مرد
-                                </label>
-                            </div>
-                           
-                        </div>
-                        <div class="form-cart-info">
-                            <p>اطلاعات حساب بانکی</p>
-                            <small>شماره شبا و یا شماره کارت برای انجام پروسه مرجوع وجه مورد نیاز است.</small>
+                            <div class=" text-center body">
+                                <div class="col-12 mx-auto">
+                                    
+                                  <select class="ddl-select" id="list" name="list">
+                                    <option>سایز لباس متفاوت بود</option>
+                                    <option value="1">رنگ با عکس محصول فرق داشت</option>
+                                    <option value="2">لباسی که انتخاب کردم این نبود</option>
+                                    <option value="3">پشیمون شدم</option>
+                                  </select>
+                                  
+                                </div>
+                              </div>
+
+                            <label for="message-text" class="col-form-label col-form-label2 ">متن پیام
+                            </label>
+                            <textarea class="form-control mb-5" id="message-text"></textarea>
+
                         </div>
 
-                        <label for="recipient-name" class="col-form-label col-form-label2">
-                            شماره کارت
-                        </label>
-                        <input type="number" class="form-control  mb-5 " id="cart-number" placeholder="____.____.____.۱۲۳۴">
 
-                        <label for="recipient-name" class="col-form-label col-form-label2">
-                            شماره شبا
-                        </label>
-                        <input type="number" class="form-control  mb-5" id="Shaba" placeholder="اختیاری">
+
+
+
+
 
                     </form>
-                    <div class="modal-footer pb-5">
 
-                        <a class=" pull-left add-commnet-btn4 text-center type=" button" class="btn btn-primary"
-                            data-toggle="modal" data-target="#exampleModal">
-                            ثبت اطلاعات و خروج
-                        </a>
+                    <div class="container-upload">
+                        <div class="card">
+                          
+                            <div class="drop_box">
+                                <header>
+                                    <p>عکس و یا ویدیو محصول خود را جهت پیگیری داخل کادر قرار دهید</p>
+                                </header>
+                               
+                                <input  name="photo"  onchange="previewFile(this);"  type="file"  accept=".png,.jpg,.jpeg, .mp4," id="input" style="opacity:0 ;" class="vff" >
+                                <button class="btn-upload">بارگذاری عکس یا ویدیو</button>
+                                <img src="icons/upload folder.png" id="previewImg" class="img-preview">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" d-flex pb-5 w-100 justify-content-between">
+                        <div class="submit-and-exit">
+                            <button class="exit-btn-green ">
+                                ثبت اطلاعات
+                            </button>
+                        </div>
+
+
+
+
                     </div>
                 </div>
 
@@ -540,26 +558,41 @@
 
     <script>
 
-        var sidebar = document.querySelector('.sidebar');
-        var hamber = document.querySelector(".hamber-icon");
-        var Xbtn = document.querySelector(".Xbtn");
+         var sidebar = document.querySelector('.sidebar');
+         var hamber = document.querySelector(".hamber-icon");
+         var Xbtn = document.querySelector(".Xbtn");
 
-        Xbtn.addEventListener('click', function (event) {
-
-
-            sidebar.style.display = "none";
+         Xbtn.addEventListener('click', function (event) {
 
 
+             sidebar.style.display = "none";
 
 
-        })
-
-        hamber.addEventListener('click', function () {
-            sidebar.style.display = "flex";
-            console.log("bb")
-        })
 
 
+         })
+
+         hamber.addEventListener('click', function () {
+             sidebar.style.display = "flex";
+             console.log("bb")
+         })
+
+
+
+
+         function previewFile(input){
+         var file = $("#input").get(0).files[0];
+ 
+         if(file){
+             var reader = new FileReader();
+ 
+             reader.onload = function(){
+                 $("#previewImg").attr("src", reader.result);
+             }
+ 
+             reader.readAsDataURL(file);
+         }
+     }
 
 
 
@@ -572,6 +605,102 @@
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>
+
+
+    <script>
+        function Func(Shahrestanha) {
+            var _Shahrestan = document.getElementById("Shahrestan");
+            _Shahrestan.options.length = 0;
+            if (Shahrestanha != "") {
+                var arr = Shahrestanha.split(",");
+                for (i = 0; i < arr.length; i++) {
+                    if (arr[i] != "") {
+                        _Shahrestan.options[_Shahrestan.options.length] = new Option(arr[i], arr[i]);
+                    }
+                }
+            }
+        }
+
+
+
+    //     const dropArea = document.querySelector(".drop_box"),
+    //         button = dropArea.querySelector("button"),
+    //         dragText = dropArea.querySelector("header"),
+    //         input = dropArea.querySelector("input");
+    //     let file;
+    //     var filename;
+
+    //     button.onclick = () => {
+    //         input.click();
+    //     };
+
+    //     input.addEventListener("change", function (e) {
+    //         var fileName = e.target.files[0].name;
+    //         let filedata = `
+    // <form action="" method="post">
+    // <div class="form">
+    // <h4>${fileName}</h4>
+    // <input type="email" placeholder="Enter email upload file">
+    // <button class="btn">Upload</button>
+    // </div>
+    // </form>`;
+    //         dropArea.innerHTML = filedata;
+    //     });
+
+   
+    $(function () {
+  $(".ddl-select").each(function () {
+    $(this).hide();
+    var $select = $(this);
+    var _id = $(this).attr("id");
+    var wrapper = document.createElement("div");
+    wrapper.setAttribute("class", "ddl ddl_" + _id);
+
+    var input = document.createElement("input");
+    input.setAttribute("type", "text");
+    input.setAttribute("class", "ddl-input");
+    input.setAttribute("id", "ddl_" + _id);
+    input.setAttribute("readonly", "readonly");
+    input.setAttribute(
+      "placeholder",
+      $(this)[0].options[$(this)[0].selectedIndex].innerText
+    );
+
+    $(this).before(wrapper);
+    var $ddl = $(".ddl_" + _id);
+    $ddl.append(input);
+    $ddl.append("<div class='ddl-options ddl-options-" + _id + "'></div>");
+    var $ddl_input = $("#ddl_" + _id);
+    var $ops_list = $(".ddl-options-" + _id);
+    var $ops = $(this)[0].options;
+    for (var i = 0; i < $ops.length; i++) {
+      $ops_list.append(
+        "<div data-value='" +
+          $ops[i].value +
+          "'>" +
+          $ops[i].innerText +
+          "</div>"
+      );
+    }
+
+    $ddl_input.click(function () {
+      $ddl.toggleClass("active");
+    });
+    $ddl_input.blur(function () {
+      $ddl.removeClass("active");
+    });
+    $ops_list.find("div").click(function () {
+      $select.val($(this).data("value")).trigger("change");
+      $ddl_input.val($(this).text());
+      $ddl.removeClass("active");
+    });
+  });
+});
+
+
+
+    </script>
+
 
 
 
