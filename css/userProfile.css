@@ -662,11 +662,13 @@ input[type=number] {
     color: rgb(0, 0, 0) !important;
 
 }
-.submit-and-exit{
+
+.submit-and-exit {
     width: 48%;
 }
+
 .submit-and-exit-btn {
-    width:100%;
+    width: 100%;
     background-color: var(--color-Primary-Black-1);
     color: var(--color-Primary-White-1);
     font-weight: 400;
@@ -677,6 +679,7 @@ input[type=number] {
     border: 1px solid #000;
 
 }
+
 .submit-and-exit-btn:hover {
     background-color: var(--color-Primary-White-1-1);
     color: var(--color-Primary-Black-1-1);
@@ -685,7 +688,7 @@ input[type=number] {
 }
 
 .exit-btn-green {
-    width:100%;
+    width: 100%;
     background-color: var(--color-Semantic-Green);
     color: var(--color-Primary-White-1);
     font-weight: 400;
@@ -696,12 +699,14 @@ input[type=number] {
     border: 1px solid var(--color-Semantic-Green);
 
 }
+
 .exit-btn-green:hover {
     background-color: var(--color-Primary-White-1);
     color: var(--color-Semantic-Green);
     border: 1px solid var(--color-Semantic-Green);
 
 }
+
 .cancel-btn {
     width: 100%;
     background-color: var(--color-Primary-White-1);
@@ -713,12 +718,14 @@ input[type=number] {
     padding: 1.6rem 1rem;
     border: 1px solid #000;
 }
+
 .cancel-btn:hover {
     background-color: var(--color-Primary-Black-1);
     color: var(--color-Primary-White-1);
     border: 1px solid #000;
 }
-.cancel-btn-div{
+
+.cancel-btn-div {
     width: 48%;
 
 }
@@ -732,45 +739,46 @@ input[type=number] {
     justify-content: center;
     background-color: #fcfcfc;
     margin-bottom: 8rem;
-  }
-  
-  .card {
+}
+
+.card {
     width: 100%;
     height: 260px;
-    background-color: #EEEEEE;;
+    background-color: #EEEEEE;
+    ;
     padding: 10px;
-  }
-  
-  .card h3 {
+}
+
+.card h3 {
     font-size: 22px;
     font-weight: 600;
-    
-  }
-  
-  .drop_box {
+
+}
+
+.drop_box {
     margin: 10px 0;
     padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
-  
-  .drop_box h4 {
+}
+
+.drop_box h4 {
     font-size: 16px;
     font-weight: 400;
     color: #2e2e2e;
-  }
-  
-  .drop_box p {
+}
+
+.drop_box p {
     margin-top: 56px;
     margin-bottom: 20px;
 
     font-size: 12px;
     color: #a3a3a3;
-  }
-  
-  .btn-upload {
+}
+
+.btn-upload {
     width: 100%;
     text-decoration: none;
     background-color: #000000;
@@ -781,18 +789,19 @@ input[type=number] {
     transition: 0.3s;
     font-size: 1rem;
     cursor: pointer;
-    
-  }
-  
-  .btn-upload:hover{
+
+}
+
+.btn-upload:hover {
     text-decoration: none;
     background-color: #ffffff;
     color: #000000;
     padding: 16px 20px;
     border: none;
     outline: 1px solid #000000;
-  }
-  .form input {
+}
+
+.form input {
     margin: 10px 0;
     width: 100%;
     background-color: #e2e2e2;
@@ -800,21 +809,22 @@ input[type=number] {
     outline: none;
     padding: 12px 20px;
     border-radius: 4px;
-  }
-  
-  .vff{
+}
+
+.vff {
     position: relative;
-    top:38px;
+    top: 38px;
     width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
- .img-preview{
+}
+
+.img-preview {
     position: absolute;
     top: 0;
-   
+
 }
 
 .img-preview {
@@ -823,58 +833,106 @@ input[type=number] {
     object-fit: cover;
     margin-top: 1rem;
 }
-   
+
 .ddl-select {
-    visibility:hidden;
-  }
-  .ddl {
-    position:relative;
-    height:50px;
-    width:100%;
-    text-align:initial;
-  }
-  
-  .ddl-input {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    cursor:pointer;
-    padding:16px 24px;
-    outline:none;
-    background:#EEEE;
-    border:1px solid var(--color-Primary-White-2);
-   
-  }
-  .ddl.active .ddl-options {
-    visibility:visible;
-    opacity:1;
-  }
-  .ddl .ddl-options {
-    position:absolute;
-    width:100%;
-    top:55px;
-    background:#fff;
-    border-radius:10px;
-    overflow:hidden;
-    visibility:hidden;
-    opacity:0;
-    transition:0.25s;
+    visibility: hidden;
+}
+
+.ddl {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    text-align: initial;
+}
+
+.ddl-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 16px 24px;
+    outline: none;
+    background: #EEEE;
+    border: 1px solid var(--color-Primary-White-2);
+
+}
+
+.ddl.active .ddl-options {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ddl .ddl-options {
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.25s;
     z-index: 999;
-    border:1px solid #e9e9e9;
-    box-shadow: 0 0 5px rgba(0,0,0,0.10);
-  }
-  .ddl .ddl-options > div {
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.10);
+}
+
+.ddl .ddl-options>div {
     padding: 10px 20px;
-    cursor:pointer;
-  }
-  .ddl .ddl-options > div:hover {
+    cursor: pointer;
+}
+
+.ddl .ddl-options>div:hover {
     background: var(--bs-primary);
     color: #fff;
-  }
- 
- 
+}
+
+.code-date {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.code-date p {
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+    font-weight: 400;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #676767;
+}
+
+.code-date span {
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
+    font-weight: 400;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.submit-comment-dashboard {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #32CD8C;
+
+}
+
+.submit-comment-dashboard:hover{
+    color: #32CD8C;
+}
+
+.submit-comment-container{
+    width: 100%;
+    text-align: right;
+    padding: 0 3rem;
+}
 
 @media screen and (min-width: 1024px) {
     .hamber {
@@ -966,18 +1024,19 @@ input[type=number] {
         padding: 1.6rem 9rem 3rem 9rem;
     }
 
-    .submit-and-exit{
+    .submit-and-exit {
         width: 78%;
     }
 
-    .cancel-btn-div{
+    .cancel-btn-div {
         width: 20%;
-    
+
     }
 
     .submit-and-exit-btn {
         font-size: 16px;
     }
+
     .cancel-btn {
         font-size: 16px;
     }
@@ -992,11 +1051,11 @@ input[type=number] {
         outline: none;
         transition: 0.3s;
         font-size: 1.6rem;
-        
-      }
 
-      .exit-btn-green {
-        width:40%;
+    }
+
+    .exit-btn-green {
+        width: 40%;
         background-color: var(--color-Semantic-Green);
         color: var(--color-Primary-White-1);
         font-weight: 400;
@@ -1005,15 +1064,47 @@ input[type=number] {
         letter-spacing: -0.02em;
         padding: 1.6rem 1rem;
         border: 1px solid var(--color-Semantic-Green);
-    
+
     }
 
-    .r-flex{
+    .r-flex {
         display: flex;
         flex-direction: row !important;
     }
 
-    
+    .code-date {
+        padding: 1rem 9rem;
+        flex-direction: row;
+    }
+
+    .code-date p {
+        font-size: 1.8rem;
+        margin-bottom: 1.6rem;
+        font-weight: 400;
+        text-align: right;
+        letter-spacing: -0.02em;
+        color: #676767;
+        padding-top: 1rem;
+        padding-left: 5.4rem;
+    }
+
+    .code-date span {
+        font-size: 1.8rem;
+        margin-bottom: 1.6rem;
+        margin-bottom: 1.6rem;
+        font-weight: 400;
+        text-align: right;
+        letter-spacing: -0.02em;
+        color: #000000;
+    }
+
+    .submit-comment-container{
+        width: 100%;
+        text-align: left;
+        padding-left:9rem ;
+    }
+
+
 
 
 
