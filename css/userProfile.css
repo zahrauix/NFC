@@ -681,9 +681,9 @@ input[type=number] {
 }
 
 .submit-and-exit-btn:hover {
-    background-color: var(--color-Primary-White-1-1);
+    background-color: var(--color-Primary-White-1);
     color: var(--color-Primary-Black-1-1);
-    border: 1px solid var(--color-Semantic-Green);
+    border: 1px solid var(--color-Primary-Black-1);
 
 }
 
@@ -984,6 +984,21 @@ input[type=number] {
     background: #ffffff;
 }
 
+.bg-drop {
+    border-top: 1px solid #EEEEEE;
+    ;
+    padding: 3rem .8rem .8rem .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.mn{
+    border-bottom: 1px solid #EEEEEE;
+
+}
+
+
 @media screen and (min-width: 1024px) {
     .hamber {
         display: none;
@@ -1152,6 +1167,10 @@ input[type=number] {
         width: 100%;
         text-align: left;
         padding-left:9rem ;
+    }
+
+    .civ{
+        padding: 0 3rem;
     }
 
 
@@ -1335,5 +1354,10 @@ input[type=number] {
         bottom: 0;
         right: 32px;
         top: 398px;
+    }
+
+    .Awaiting-Payment-details {
+        
+        border-bottom: none;
     }
 }

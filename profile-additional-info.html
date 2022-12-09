@@ -438,9 +438,7 @@
                             <label for="recipient-name" class="col-form-label col-form-label2">
                                 استان
                             </label>
-                            <div class="select">
-                                        
-                            </div>
+                           
                             <form id="form1" name="FRM" runat="server">
                                 <div dir="rtl" style="text-align: center">
                                     :&nbsp;
@@ -468,7 +466,7 @@
                                         <option
                                             value="  ,اسلام‌شهر ,پاکدشت ,تهران ,دماوند ,رباط‌کریم ,ری ,ساوجبلاغ ,شمیرانات ,شهریار ,فیروزکوه ,کرج ,نظرآباد ,ورامین">
                                             تهران</option>
-                                        <option value="  ,اردل ,بروجن ,شهرکرد ,فارسان ,کوهرنگ ,لردگان">چهارمحال و
+                                        <option value="  ,اردل ,بروجن ,کیار,شهرکرد ,فارسان ,کوهرنگ ,لردگان">چهارمحال و
                                             بختیاری</option>
                                         <option value="  ,بیرجند ,درمیان ,سرایان ,سربیشه ,فردوس ,قائنات,نهبندان">خراسان
                                             جنوبی</option>
@@ -528,7 +526,7 @@
                                             یزد</option>
                                     </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <label for="recipient-name" class="col-form-label col-form-label2 w-100">
-                                        شهر
+                                        شهرستان
                                     </label>
                                     <select id="Shahrestan" runat="server" class="form-control">
                                     </select>
@@ -605,6 +603,21 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/dashboard.js"></script>
+
+    <script>
+        function Func(Shahrestanha) {
+        var _Shahrestan = document.getElementById("Shahrestan");
+        _Shahrestan.options.length = 0;
+        if (Shahrestanha != "") {
+            var arr = Shahrestanha.split(",");
+            for (i = 0; i < arr.length; i++) {
+                if (arr[i] != "") {
+                    _Shahrestan.options[_Shahrestan.options.length] = new Option(arr[i], arr[i]);
+                }
+            }
+        }
+    }
+    </script>
 
    
     
