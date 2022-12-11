@@ -100,39 +100,7 @@ let timer = setInterval(autoSlide, duration)
 progress()
 
 
-//   Search From 
-const searchForm = document.querySelector('.search-form');
-const search = document.querySelector('.search');
 
-const nav1 = document.querySelector('.nav1');
-const mainHeader = document.querySelector('.main-header');
-var show=false;
-
-searchForm.addEventListener('click', function () {
-    search.classList.toggle('show');
-    nav1.style.visibility = "hidden";
-    show=true;
-    setTimeout(function () {
-        mainHeader.style.backgroundColor = "rgba(193, 193, 193, 1)";
-    }, 300);
-
-
-})
-$('.close-i').on('click', closeSearch);
-
- $('section').on('click', function() {
-     if (show) {
-         closeSearch();
-     }
-});
-
-function closeSearch() {
-    search.classList.toggle('show');
-    $(".nav1").css('visibility', 'visible');
-    $(".main-header").css("backgroundColor", "rgba(0, 0, 0, 0.8)");
-    show=false;
-}
-//   Search From 
 
 
 
