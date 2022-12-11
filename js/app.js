@@ -103,6 +103,7 @@ progress()
 //   Search From 
 const searchForm = document.querySelector('.search-form');
 const search = document.querySelector('.search');
+
 const nav1 = document.querySelector('.nav1');
 const mainHeader = document.querySelector('.main-header');
 var show=false;
@@ -132,6 +133,14 @@ function closeSearch() {
     show=false;
 }
 //   Search From 
+
+
+
+
+
+
+
+
 
 
 //   Mega Menu

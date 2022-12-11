@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>سبد خرید</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="styles.css" rel="stylesheet"></head>
+
+<body>
+  <div class="bg-white-2">
+    <div class="max-w-2xl mx-auto py-6 px-4 lg:max-w-7xl lg:px-0">
+
+
+      <!-- HeaderCart Start -->
+      <div class="grid grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-3">
+        <!-- title -->
+        <h1 class="text-t18 font-900 text-black-1 md:text-t24 md:col-span-2">
+          سبد خرید
+          <span class="text-t16 font-400">( 2 محصول )</span>
+        </h1>
+
+        <!-- Steps -->
+        <nav class="cart-steps" aria-label="Progress">
+          <ol role="list" class="flex items-center justify-between text-t16 font-400 text-white-6">
+
+            <li class="flex items-center w-full" aria-hidden="true" x-description="Current Step">
+              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">1</div>
+              <a>محصولات</a>
+              <span class="border-b w-full mx-3"></span>
+            </li>
+
+            <li class="flex items-center w-full" aria-hidden="true" x-description="Upcoming Step">
+              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">2</div>
+              <a>آدرس</a>
+              <span class="border-b w-full mx-3"></span>
+            </li>
+
+            <li class="flex items-center" aria-hidden="true" x-description="Upcoming Step">
+              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">3</div>
+              <a>پرداخت</a>
+            </li>
+
+          </ol>
+        </nav>
+
+      </div>
+      <!-- HeaderCart End -->
+
+
+
+      <form class="mt-12 lg:grid lg:grid-cols-3 lg:gap-x-4 lg:items-start">
+        <section aria-labelledby="cart-heading" class="lg:col-span-2">
+          <h2 id="cart-heading" class="sr-only">محصولات موجود در سبد خرید شما</h2>
+
+          <ul role="list" class="">
+
+            <!-- CartItem Start -->
+            <li class="flex flex-col bg-white-1 mb-4 sm:flex-row">
+              <img src="images/Frame 35.png" alt="" class="w-full sm:w-80 sm:h-360 object-center object-cover">
+              <div class="flex flex-col justify-center w-full py-8 px-4 sm:px-8">
+
+                <div class="flex justify-between border-b border-white-2 pb-8 mb-8">
+                  <div>
+                    <h3 class="text-sm mb-6">
+                      <a href="#" class="text-16 md:text-t18 font-600">
+                        مانتو تابستانه مدل فلان
+                      </a>
+                    </h3>
+                    <ul class="text-t14 font-400">
+                      <li>کد محصول: ۱۲۳۴۵</li>
+                      <li>سایز: XL</li>
+                      <li>رنگ: آبی کاربنی</li>
+                    </ul>
+                  </div>
+
+                  <!-- Product Action Strat -->
+                  <div>
+                    <!-- RemoveCart Button -->
+                    <button type="button" class="text-red">
+                      <svg width="20" height="22" class="inline-block ml-4" viewBox="0 0 20 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M2.63449 6.15883C2.72905 6.05752 2.86142 6 3 6H17C17.1386 6 17.271 6.05752 17.3655 6.15883C17.4601 6.26013 17.5084 6.39615 17.4988 6.5344L16.4988 21.0344C16.4807 21.2966 16.2628 21.5 16 21.5H4C3.73721 21.5 3.51927 21.2966 3.50119 21.0344L2.50119 6.5344C2.49165 6.39615 2.53993 6.26013 2.63449 6.15883ZM3.53567 7L4.46671 20.5H15.5333L16.4643 7H3.53567Z"
+                          fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4.5H0V3.5H20V4.5Z" fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 18V9H10.5V18H9.5Z" fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M6.50098 18.0281L6.00098 9.02813L6.99944 8.97266L7.49944 17.9727L6.50098 18.0281Z"
+                          fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.499 18.0281L13.999 9.02813L13.0006 8.97266L12.5006 17.9727L13.499 18.0281Z"
+                          fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3.5 3C3.5 1.61929 4.61929 0.5 6 0.5H14C15.3807 0.5 16.5 1.61929 16.5 3V4C16.5 4.27614 16.2761 4.5 16 4.5H4C3.72386 4.5 3.5 4.27614 3.5 4V3ZM6 1.5C5.17157 1.5 4.5 2.17157 4.5 3V3.5H15.5V3C15.5 2.17157 14.8284 1.5 14 1.5H6Z"
+                          fill="#E91C41" />
+                      </svg>
+                      <span class="text-t14 font-800">حذف از سبد</span>
+                    </button>
+                    <!-- Quantity -->
+                    <div class="flex justify-between items-center quantity mt-6">
+                      <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 12H12M18 12H12M12 12V6M12 12V18" stroke="black" stroke-width="1.5"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <input type="number" class="appearance-none text-center w-8 h-8 border-white-4" step="1" min="1"
+                        max="" name="quantity" value="1" title="تعداد" size="1" pattern="[0-9]*" inputmode="numeric">
+                      <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 12H12H18" stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Product Action End -->
+                </div>
+
+                <div class="flex justify-between w-full">
+                  <div class="text-t16 font-400">
+                    <p class="text-white-6">
+                      <span class="md:ml-8">قیمت واحد</span>
+                      650,000 تومان
+                    </p>
+                    <p class="text-red mt-2">
+                      <span class="md:ml-8">تخفیف شما</span>
+                      50,000 تومان
+                    </p>
+                  </div>
+
+                  <div class="text-16 md:text-t18 font-600 text-black-1">
+                    قیمت نهایی
+                    <p class="mt-2">600,000 تومان</p>
+                  </div>
+                </div>
+
+              </div>
+              <!--  -->
+            </li>
+            <!-- CartItem End -->
+
+            <!-- CartItem Start -->
+            <li class="flex flex-col bg-white-1 mb-4 sm:flex-row">
+              <img src="images/Frame 36.png" alt="" class="w-full sm:w-80 sm:h-360 object-center object-cover">
+              <div class="flex flex-col justify-center w-full py-8 px-4 sm:px-8">
+            
+                <div class="flex justify-between border-b border-white-2 pb-8 mb-8">
+                  <div>
+                    <h3 class="text-sm mb-6">
+                      <a href="#" class="text-16 md:text-t18 font-600">
+                        مانتو تابستانه مدل فلان
+                      </a>
+                    </h3>
+                    <ul class="text-t14 font-400">
+                      <li>کد محصول: ۱۲۳۴۵</li>
+                      <li>سایز: XL</li>
+                      <li>رنگ: آبی کاربنی</li>
+                    </ul>
+                  </div>
+            
+                  <!-- Product Action Strat -->
+                  <div>
+                    <!-- RemoveCart Button -->
+                    <button type="button" class="text-red">
+                      <svg width="20" height="22" class="inline-block ml-4" viewBox="0 0 20 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M2.63449 6.15883C2.72905 6.05752 2.86142 6 3 6H17C17.1386 6 17.271 6.05752 17.3655 6.15883C17.4601 6.26013 17.5084 6.39615 17.4988 6.5344L16.4988 21.0344C16.4807 21.2966 16.2628 21.5 16 21.5H4C3.73721 21.5 3.51927 21.2966 3.50119 21.0344L2.50119 6.5344C2.49165 6.39615 2.53993 6.26013 2.63449 6.15883ZM3.53567 7L4.46671 20.5H15.5333L16.4643 7H3.53567Z"
+                          fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4.5H0V3.5H20V4.5Z" fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 18V9H10.5V18H9.5Z" fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M6.50098 18.0281L6.00098 9.02813L6.99944 8.97266L7.49944 17.9727L6.50098 18.0281Z" fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.499 18.0281L13.999 9.02813L13.0006 8.97266L12.5006 17.9727L13.499 18.0281Z" fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3.5 3C3.5 1.61929 4.61929 0.5 6 0.5H14C15.3807 0.5 16.5 1.61929 16.5 3V4C16.5 4.27614 16.2761 4.5 16 4.5H4C3.72386 4.5 3.5 4.27614 3.5 4V3ZM6 1.5C5.17157 1.5 4.5 2.17157 4.5 3V3.5H15.5V3C15.5 2.17157 14.8284 1.5 14 1.5H6Z"
+                          fill="#E91C41" />
+                      </svg>
+                      <span class="text-t14 font-800">حذف از سبد</span>
+                    </button>
+                    <!-- Quantity -->
+                    <div class="flex justify-between items-center quantity mt-6">
+                      <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 12H12M18 12H12M12 12V6M12 12V18" stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <input type="number" class="appearance-none text-center w-8 h-8 border-white-4" step="1" min="1" max=""
+                        name="quantity" value="1" title="تعداد" size="1" pattern="[0-9]*" inputmode="numeric">
+                      <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 12H12H18" stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Product Action End -->
+                </div>
+            
+                <div class="flex justify-between w-full">
+                  <dl class="text-t16 font-400">
+                    <div class="flex text-white-6">
+                      <dt class="md:ml-8">قیمت واحد</dt>
+                      <dd>650,000 تومان</dd>
+                    </div>
+                    <div class="flex text-red mt-2">
+                      <dt class="md:ml-8">تخفیف شما</dt>
+                      <dd>50,000 تومان</dd>
+                    </div>
+                  </dl>
+            
+                  <dl class="text-16 md:text-t18 font-600 text-black-1">
+                    <dt>قیمت نهایی</dt>
+                    <dd class="mt-2">600,000 تومان</dd>
+                    </dl>
+                </div>
+            
+              </div>
+              <!--  -->
+            </li>
+            <!-- CartItem End -->
+
+          </ul>
+        </section>
+
+        <!-- Order summary -->
+        <section aria-labelledby="summary-heading"
+          class="mt-6 bg-white-1 px-4 md:px-8 py-6 lg:mt-0 lg:col-span-1">
+          <h2 id="summary-heading" class="sr-only">خلاصه سفارش</h2>
+
+            <dl class="text-t16 font-400 mt-4 space-y-4">
+              <div class="flex justify-between w-full text-white-6">
+                <dt class="md:ml-8">جمع کل محصولات</dt>
+                <dd>650,000 تومان</dd>
+              </div>
+              <div class="flex justify-between w-full text-red mt-2">
+                <dt class="md:ml-8">جمع کل تخفیف ها</dt>
+                <dd>50,000 تومان</dd>
+              </div>
+            </dl>
+          
+            <dl class="flex justify-between w-full text-16 md:text-t18 font-600 text-black-1 my-6 py-6 border-t border-white-2">
+              <dt>قیمت نهایی</dt>
+              <dd class="mt-2">600,000 تومان</dd>
+            </dl>
+
+          <div class="mt-4">
+            <button type="submit"
+              class="fixed inset-x-0 bottom-0 w-full bg-black-1 py-6 px-4 text-t18 font-600 text-white-1 focus:outline-none md:relative">ادامه خرید</button>
+          </div>
+        </section>
+      </form>
+    </div>
+  </div>
+
+
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>

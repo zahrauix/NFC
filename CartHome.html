@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>سبد خرید</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+ <link href="css/cart.css" rel="stylesheet">
+ <link href="css/fonts.css" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.rtl.css" />
+ <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+ <link rel="stylesheet" type="text/css" href="css/uikit.min.css" />
+ <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+
+<body>
+
+    <!-- NavbarStart -->
+    <header class="main-header container1 fixed-top">
+      <nav class="nav1 container2">
+
+
+          <div class="nav1__icon">
+
+              <div class="nav1__toggler"><a onclick="openMenu()"><img src="icons/Hamburger Menu.svg">
+                      <p class="p-icon"></p>
+                  </a>
+              </div>
+              <div class="nav1__search search-form"><a href="#"><img src="icons/Search.svg"></a>
+                  <p class="p-icon">جستجو</p>
+              </div>
+
+              <div class="nav1__shop"><a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.75 6C6.75 3.65279 8.65279 1.75 11 1.75C13.3472 1.75 15.25 3.65279 15.25 6V6.5H6.75V6ZM5.25 8V9.75C5.25 10.1642 5.58579 10.5 6 10.5C6.41421 10.5 6.75 10.1642 6.75 9.75V8H15.25V9.75C15.25 10.1642 15.5858 10.5 16 10.5C16.4142 10.5 16.75 10.1642 16.75 9.75V8H20.1787L19.1684 19.1132C19.1099 19.757 18.5701 20.25 17.9236 20.25H4.07643C3.42992 20.25 2.89009 19.757 2.83156 19.1132L1.82127 8H5.25ZM5.25 6.5V6C5.25 2.82436 7.82436 0.25 11 0.25C14.1756 0.25 16.75 2.82436 16.75 6V6.5H21C21.2107 6.5 21.4117 6.58865 21.5538 6.74425C21.6959 6.89985 21.766 7.10805 21.7469 7.3179L20.6623 19.249C20.5335 20.6654 19.3459 21.75 17.9236 21.75H4.07643C2.65412 21.75 1.46649 20.6654 1.33772 19.249L0.253079 7.3179C0.234002 7.10805 0.304086 6.89985 0.446182 6.74425C0.588279 6.58865 0.789279 6.5 0.999999 6.5H5.25Z"
+                              fill="white" />
+                      </svg></a><span class="shop-badge">۲</span>
+                  <p class="p-icon">سبدخرید</p>
+              </div>
+
+              <div class="nav1__user"><a href="Log in, Sign up.html"><img src="icons/Profile.svg"></a>
+                  <p class="p-icon">ورود/ثبت نام</p>
+              </div>
+
+
+
+          </div>
+          <div class="nav1-logo">
+              <a href="index.html"> <img src="icons/NFC Logo (White).png" class="logo" alt="NFC"></a>
+          </div>
+
+
+          <ul id="res-list" class="list  nav1__list" data-open="close">
+              <li class="nav1-item nav1-item-active"><a href="index.html">خانه</a></li>
+              <div class="cf">
+                  <li class="nav1-item" id="dropdown"><a href="#">زنانه</a></li>
+                  <div class="item-list">
+                      <div class="mega-menu">
+                          <ul class="mega-menu-list-right">
+                              <li class="menu-item"><a href="product.html" class="item-menu">لباس های مجلسی</a></li>
+                              <li class="menu-item"><a href="product.html" class="item-menu">تیشرت</a></li>
+                              <li class="menu-item"><a href="product.html" class="item-menu">ژاکت و پلیور</a></li>
+                              <li class="menu-item"><a href="product.html" class="item-menu">لباس راحتی</a></li>
+                              <li class="menu-item"><a href="product.html" class="item-menu">مانتو،پانچو و رویه</a>
+                              </li>
+                              <li class="menu-item"><a href="product.html" class="item-menu">شومیز</a></li>
+                              <li class="menu-item"><a href="product.html" class="item-menu">تاپ و نیم تنه</a></li>
+                              <li class="menu-item"><a href="product.html" class="item-menu">تونیک</a></li>
+                              <li class="menu-item"><a href="product.html" class="item-menu">سویشرت</a></li>
+                              <li class="menu-item"><a href="product.html" class="item-menu">پالتو</a></li>
+                              <li class="menu-item"><a href="product.html" class="item-menu">شلوار و سرهمی</a></li>
+                              <li class="menu-item"><a href="product.html" class="item-menu">پالتو و بارانی</a></li>
+                          </ul>
+                          <ul class="mega-menu-list-left">
+                              <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item.jpg "
+                                          class="megamenu-img"> </a></li>
+                              <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item1.jpg"
+                                          class="megamenu-img"> </a></li>
+                              <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item2.jpg"
+                                          class="megamenu-img"> </a></li>
+                              <li class="menu-item-img"><a href="" class="item-menu"><img src="images/item3.jpg"
+                                          class="megamenu-img"> </a></li>
+                              <li class="menu-item"><a href="" class="item-menu all-product">مشاهده همه محصولات
+                                      زنانه<span class="Next-i"><img src="icons/Next2.svg"></span></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="cf">
+                  <li class="nav1-item" id="dropdown"><a href="#">مردانه</a>
+                  </li>
+                  <div class="item-list">
+                      <div class="mega-menu">
+
+                          <ul class="mega-menu-list-right">
+                              <li class="menu-item"><a href="" class="item-menu">لباس های مجلسی</a></li>
+                              <li class="menu-item"><a href="" class="item-menu">تیشرت</a></li>
+                              <li class="menu-item"><a href="" class="item-menu">ژاکت و پلیور</a></li>
+                              <li class="menu-item"><a href="" class="item-menu">لباس راحتی</a></li>
+                              <li class="menu-item"><a href="" class="item-menu">مانتو،پانچو و رویه</a></li>
+                              <li class="menu-item"><a href="" class="item-menu">شومیز</a></li>
+                              <li class="menu-item"><a href="" class="item-menu">تاپ و نیم تنه</a></li>
+                              <li class="menu-item"><a href="" class="item-menu">تونیک</a></li>
+                              <li class="menu-item"><a href="" class="item-menu">سویشرت</a></li>
+                              <li class="menu-item"><a href="" class="item-menu">پالتو</a></li>
+                              <li class="menu-item"><a href="" class="item-menu">شلوار و سرهمی</a></li>
+                              <li class="menu-item"><a href="" class="item-menu">پالتو و بارانی</a></li>
+                          </ul>
+                          <ul class="mega-menu-list-left">
+                              <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item.jpg"
+                                          class="megamenu-img"> </a></li>
+                              <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item2.jpg"
+                                          class="megamenu-img"> </a></li>
+                              <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item3.jpg"
+                                          class="megamenu-img"> </a></li>
+                              <li class="menu-item-img"><a href="" class="item-menu"><img src="images/man-item4.jpg"
+                                          class="megamenu-img"> </a></li>
+                              <li class="menu-item"><a href="" class="item-menu all-product">مشاهده همه محصولات
+                                      مردانه<span class="Next-i"><img src="icons/Next2.svg"></span></a></li>
+
+                          </ul>
+
+                      </div>
+
+                  </div>
+              </div>
+              <li class="nav1-item"><a href="about-us.html">درباره</a></li>
+          </ul>
+
+      </nav>
+      <div class="">
+          <div class="shoping-cart-list">
+
+              <div class="shoping-cart-list-header">
+                  <small>2 عدد کالا</small>
+                  <a>مشاهده سبدخرید</a>
+              </div>
+              <!-- product1 -->
+              <div class="main-shopingcart-list">
+                  <div class="shoping-cart-list-img">
+                      <img src="images/3.png">
+                  </div>
+                  <div class="shoping-cart-list-content">
+                      <div class="d-flex">
+                          <div class="w-90 shoping-cart-list-content-text ">
+                              <p>ست ورزشی مردانه اسپرت مدل نایکی 2022 کد 7202</p>
+                          </div>
+                          <div class="w-10 ">
+                              <a href="">
+                                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                          d="M1.33398 1.3335L8.00065 8.00016M14.6673 14.6668L8.00065 8.00016M8.00065 8.00016L14.6673 1.3335M8.00065 8.00016L1.33398 14.6668"
+                                          stroke="#676767" stroke-width="1.5" stroke-linejoin="round" />
+                                  </svg>
+                              </a>
+
+                          </div>
+
+                      </div>
+                      <div class="d-flex">
+                          <div class=" d-flex shoping-cart-list-content-details">
+                              <p>سایز : <span>M</span></p>
+                              <p><span>1</span> عدد </p>
+                          </div>
+                          <div class=" d-flex shoping-cart-list-content-price ">
+                              <p>۵۴۰,۰۰۰ تومان</p>
+                              <span>۲۰٪<span>
+                                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M13.9693 7.58548C14 7.45746 14 7.32142 14 7.04935V1.77979C14 1.1568 14 0.84531 13.8788 0.607362C13.7721 0.398057 13.6019 0.227887 13.3926 0.121241C13.1547 0 12.8432 0 12.2202 0H6.95063C6.67855 0 6.54252 0 6.4145 0.0307348C6.301 0.0579841 6.19249 0.102928 6.09297 0.163918C5.98071 0.232708 5.88452 0.3289 5.69214 0.521283L0.797739 5.4157C0.357224 5.85621 0.136967 6.07647 0.0544429 6.33045C-0.0181476 6.55387 -0.0181476 6.79452 0.0544429 7.01793C0.136967 7.27192 0.357224 7.49218 0.797738 7.93269L6.06729 13.2023C6.5078 13.6428 6.72806 13.863 6.98204 13.9456C7.20545 14.0181 7.44611 14.0181 7.66952 13.9456C7.9235 13.863 8.14376 13.6428 8.58427 13.2023L13.4787 8.30785C13.6711 8.11547 13.7673 8.01927 13.8361 7.90701C13.8971 7.80749 13.942 7.69898 13.9693 7.58548ZM9.91667 5.83333C10.8832 5.83333 11.6667 5.04983 11.6667 4.08333C11.6667 3.11683 10.8832 2.33333 9.91667 2.33333C8.95017 2.33333 8.16667 3.11683 8.16667 4.08333C8.16667 5.04983 8.95017 5.83333 9.91667 5.83333Z"
+                                              fill="#E91C41" />
+                                      </svg>
+                                  </span>
+                                  </p>
+                          </div>
+                      </div>
+
+                  </div>
+
+
+              </div>
+
+              <!-- product2 -->
+              <div class="main-shopingcart-list">
+                  <div class="shoping-cart-list-img">
+                      <img src="images/3.png">
+                  </div>
+                  <div class="shoping-cart-list-content">
+                      <div class="d-flex">
+                          <div class="w-90 shoping-cart-list-content-text ">
+                              <p>ست ورزشی مردانه اسپرت مدل نایکی 2022 کد 7202</p>
+                          </div>
+                          <div class="w-10 ">
+                              <a href="">
+                                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg">
+                                      <path
+                                          d="M1.33398 1.3335L8.00065 8.00016M14.6673 14.6668L8.00065 8.00016M8.00065 8.00016L14.6673 1.3335M8.00065 8.00016L1.33398 14.6668"
+                                          stroke="#676767" stroke-width="1.5" stroke-linejoin="round" />
+                                  </svg>
+                              </a>
+
+                          </div>
+
+                      </div>
+                      <div class="d-flex">
+                          <div class=" d-flex shoping-cart-list-content-details">
+                              <p>سایز : <span>M</span></p>
+                              <p><span>1</span> عدد </p>
+                          </div>
+                          <div class=" d-flex shoping-cart-list-content-price ">
+                              <p>۵۴۰,۰۰۰ تومان</p>
+                              <span>۲۰٪<span>
+                                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M13.9693 7.58548C14 7.45746 14 7.32142 14 7.04935V1.77979C14 1.1568 14 0.84531 13.8788 0.607362C13.7721 0.398057 13.6019 0.227887 13.3926 0.121241C13.1547 0 12.8432 0 12.2202 0H6.95063C6.67855 0 6.54252 0 6.4145 0.0307348C6.301 0.0579841 6.19249 0.102928 6.09297 0.163918C5.98071 0.232708 5.88452 0.3289 5.69214 0.521283L0.797739 5.4157C0.357224 5.85621 0.136967 6.07647 0.0544429 6.33045C-0.0181476 6.55387 -0.0181476 6.79452 0.0544429 7.01793C0.136967 7.27192 0.357224 7.49218 0.797738 7.93269L6.06729 13.2023C6.5078 13.6428 6.72806 13.863 6.98204 13.9456C7.20545 14.0181 7.44611 14.0181 7.66952 13.9456C7.9235 13.863 8.14376 13.6428 8.58427 13.2023L13.4787 8.30785C13.6711 8.11547 13.7673 8.01927 13.8361 7.90701C13.8971 7.80749 13.942 7.69898 13.9693 7.58548ZM9.91667 5.83333C10.8832 5.83333 11.6667 5.04983 11.6667 4.08333C11.6667 3.11683 10.8832 2.33333 9.91667 2.33333C8.95017 2.33333 8.16667 3.11683 8.16667 4.08333C8.16667 5.04983 8.95017 5.83333 9.91667 5.83333Z"
+                                              fill="#E91C41" />
+                                      </svg>
+                                  </span>
+                                  </p>
+                          </div>
+                      </div>
+
+                  </div>
+
+
+              </div>
+              <footer class="shoping-cart-list-Footer">
+                  <div class="shoping-cart-list-Footer-details ">
+                      <p>مبلغ قابل پرداخت :</p>
+                      <span>۵۴۰,۰۰۰ تومان</span>
+                  </div>
+                  <div class="shoping-cart-list-Footer-btn">
+                      <a href="">ثبت سفارش</a>
+                  </div>
+              </footer>
+
+          </div>
+      </div>
+
+
+
+
+      <!-- SearchBar Start-->
+      <div class="search">
+          <div class="search-content">
+              <div class="close-i"> <img src="icons/Close.svg" alt=""></div>
+              <form action="">
+                  <span class="d-flex"><img src="icons/Search.svg" alt=""></span>
+                  <input type="text" placeholder="جستجو میان محصولات، کالکشن ها، دسته بندی ها و...">
+              </form>
+              <!-- محصولات پیشنهادی در قسمت سرچ -->
+              <div class="serach-item d-none">
+                  <p class="p-search-item">محبوب ترین های اخیر</p>
+
+                  <ul class="search-item-list">
+                      <a href="#">
+                          <li class="search-item-list-li">شلوار جین مردانه</li>
+                      </a>
+                      <a href="#">
+                          <li class="search-item-list-li">تیشرت بیسیک</li>
+                      </a>
+                      <a href="#">
+                          <li class="search-item-list-li">مانتو پاییزه</li>
+                      </a>
+                      <a href="#">
+                          <li class="search-item-list-li">تیشرت بیسیک</li>
+                      </a>
+                      <a href="#">
+                          <li class="search-item-list-li">مانتو پاییزه</li>
+                      </a>
+                      <a href="#">
+                          <li class="search-item-list-li">مانتو پاییزه</li>
+                      </a>
+                      <a href="#">
+                          <li class="search-item-list-li">تیشرت بیسیک</li>
+                      </a>
+                      <a href="#">
+                          <li class="search-item-list-li">پیراهن پشمی طرح دار</li>
+                      </a>
+
+                  </ul>
+              </div>
+
+          </div>
+          <!--  محصولات پیشنهادی در قسمت سرچ در زمان تایپ-->
+          <div class="serach-item-typing ">
+              <div class="suggest-search">
+                  <div class="first-suggest">
+                      <img src="icons/Hanger.svg" class="Hanger-i">
+                      <p class="p-search-item-suggest">تمامی محصولات در دسته بندی<span>
+                              <a href="#" class="p-search-item-suggest2">شلوار جین مردانه</a>
+                          </span> </p>
+                  </div>
+
+                  <a href="#" class="p-search-item-suggest"> <span class="p-search-item-suggest2">شلوار جین
+                          مردانه</span>
+                      در کالکشن تابستانه </a>
+                  <a href="#" class="p-search-item-suggest"> <span class="p-search-item-suggest2">شلوار جین
+                          مردانه</span>
+                      در محصولات مردانه </a>
+              </div>
+
+              <div class="suggest-search-products-content">
+                  <div id="Pcarousel" class="owl-carousel sc ">
+                      <div class="suggest-search-products">
+                          <a href="#">
+                              <div class="suggest-search-products-item">
+                                  <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                  <div class="suggest-search-products-item-text">
+                                      <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                      <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                  </div>
+                              </div>
+                          </a>
+
+
+                          <a href="#">
+                              <div class="suggest-search-products-item">
+                                  <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                  <div class="suggest-search-products-item-text">
+                                      <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                      <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                  </div>
+                              </div>
+                          </a>
+
+
+                          <a href="#">
+                              <div class="suggest-search-products-item">
+                                  <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                  <div class="suggest-search-products-item-text">
+                                      <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                      <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                  </div>
+                              </div>
+                          </a>
+
+
+                          <a href="#">
+                              <div class="suggest-search-products-item">
+                                  <img src="images/Frame 10.png" alt="شلوار جین مردانه">
+                                  <div class="suggest-search-products-item-text">
+                                      <p class="p-suggest-search-products">شلوار جین مردانه مدل فلان</p>
+                                      <p class="h5-suggest-search-products">کد ۱۲۳۴۵۶</p>
+                                  </div>
+                              </div>
+                          </a>
+
+
+                      </div>
+                  </div>
+                  <p class="a-suggest-search-products"> <a href="#">مشاهده ۱۰۰+ نتیجه دیگر در تمامی محصولات </a></p>
+              </div>
+          </div>
+
+      </div>
+      <!-- SearchBar End-->
+  </header>
+  <!-- NavbarEnd -->
+
+  <div class="bg-white-2">
+    <div class="max-w-2xl mx-auto py-6 px-4 lg:max-w-7xl lg:px-0">
+
+
+      <!-- HeaderCart Start -->
+      <div class="grid grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-3">
+        <!-- title -->
+        <h1 class="text-t18 font-900 text-black-1 md:text-t24 md:col-span-2">
+          سبد خرید
+          <span class="text-t16 font-400">( 2 محصول )</span>
+        </h1>
+
+        <!-- Steps -->
+        <nav class="cart-steps" aria-label="Progress">
+          <ol role="list" class="flex items-center justify-between text-t16 font-400 text-white-6">
+
+            <li class="flex items-center w-full" aria-hidden="true" x-description="Current Step">
+              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">1</div>
+              <a>محصولات</a>
+              <span class="border-b w-full mx-3"></span>
+            </li>
+
+            <li class="flex items-center w-full" aria-hidden="true" x-description="Upcoming Step">
+              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">2</div>
+              <a>آدرس</a>
+              <span class="border-b w-full mx-3"></span>
+            </li>
+
+            <li class="flex items-center" aria-hidden="true" x-description="Upcoming Step">
+              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">3</div>
+              <a>پرداخت</a>
+            </li>
+
+          </ol>
+        </nav>
+
+      </div>
+      <!-- HeaderCart End -->
+
+
+
+      <form class="mt-12 lg:grid lg:grid-cols-3 lg:gap-x-4 lg:items-start">
+        <section aria-labelledby="cart-heading" class="lg:col-span-2">
+          <h2 id="cart-heading" class="sr-only">محصولات موجود در سبد خرید شما</h2>
+
+          <ul role="list" class="">
+
+            <!-- CartItem Start -->
+            <li class="flex flex-col bg-white-1 mb-4 sm:flex-row">
+              <img src="images/Frame 35.png" alt="" class="w-full sm:w-80 sm:h-360 object-center object-cover">
+              <div class="flex flex-col justify-center w-full py-8 px-4 sm:px-8">
+
+                <div class="flex justify-between border-b border-white-2 pb-8 mb-8">
+                  <div>
+                    <h3 class="text-sm mb-6">
+                      <a href="#" class="text-16 md:text-t18 font-600">
+                        مانتو تابستانه مدل فلان
+                      </a>
+                    </h3>
+                    <ul class="text-t14 font-400">
+                      <li>کد محصول: ۱۲۳۴۵</li>
+                      <li>سایز: XL</li>
+                      <li>رنگ: آبی کاربنی</li>
+                    </ul>
+                  </div>
+
+                  <!-- Product Action Strat -->
+                  <div>
+                    <!-- RemoveCart Button -->
+                    <button type="button" class="text-red">
+                      <svg width="20" height="22" class="inline-block ml-4" viewBox="0 0 20 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M2.63449 6.15883C2.72905 6.05752 2.86142 6 3 6H17C17.1386 6 17.271 6.05752 17.3655 6.15883C17.4601 6.26013 17.5084 6.39615 17.4988 6.5344L16.4988 21.0344C16.4807 21.2966 16.2628 21.5 16 21.5H4C3.73721 21.5 3.51927 21.2966 3.50119 21.0344L2.50119 6.5344C2.49165 6.39615 2.53993 6.26013 2.63449 6.15883ZM3.53567 7L4.46671 20.5H15.5333L16.4643 7H3.53567Z"
+                          fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4.5H0V3.5H20V4.5Z" fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 18V9H10.5V18H9.5Z" fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M6.50098 18.0281L6.00098 9.02813L6.99944 8.97266L7.49944 17.9727L6.50098 18.0281Z"
+                          fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.499 18.0281L13.999 9.02813L13.0006 8.97266L12.5006 17.9727L13.499 18.0281Z"
+                          fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3.5 3C3.5 1.61929 4.61929 0.5 6 0.5H14C15.3807 0.5 16.5 1.61929 16.5 3V4C16.5 4.27614 16.2761 4.5 16 4.5H4C3.72386 4.5 3.5 4.27614 3.5 4V3ZM6 1.5C5.17157 1.5 4.5 2.17157 4.5 3V3.5H15.5V3C15.5 2.17157 14.8284 1.5 14 1.5H6Z"
+                          fill="#E91C41" />
+                      </svg>
+                      <span class="text-t14 font-800">حذف از سبد</span>
+                    </button>
+                    <!-- Quantity -->
+                    <div class="flex justify-between items-center quantity mt-6">
+                      <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 12H12M18 12H12M12 12V6M12 12V18" stroke="black" stroke-width="1.5"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <input type="number" class="appearance-none text-center w-8 h-8 border-white-4" step="1" min="1"
+                        max="" name="quantity" value="1" title="تعداد" size="1" pattern="[0-9]*" inputmode="numeric">
+                      <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 12H12H18" stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Product Action End -->
+                </div>
+
+                <div class="flex justify-between w-full">
+                  <div class="text-t16 font-400">
+                    <p class="text-white-6">
+                      <span class="md:ml-8">قیمت واحد</span>
+                      650,000 تومان
+                    </p>
+                    <p class="text-red mt-2">
+                      <span class="md:ml-8">تخفیف شما</span>
+                      50,000 تومان
+                    </p>
+                  </div>
+
+                  <div class="text-16 md:text-t18 font-600 text-black-1">
+                    قیمت نهایی
+                    <p class="mt-2">600,000 تومان</p>
+                  </div>
+                </div>
+
+              </div>
+              <!--  -->
+            </li>
+            <!-- CartItem End -->
+
+            <!-- CartItem Start -->
+            <li class="flex flex-col bg-white-1 mb-4 sm:flex-row">
+              <img src="images/Frame 36.png" alt="" class="w-full sm:w-80 sm:h-360 object-center object-cover">
+              <div class="flex flex-col justify-center w-full py-8 px-4 sm:px-8">
+            
+                <div class="flex justify-between border-b border-white-2 pb-8 mb-8">
+                  <div>
+                    <h3 class="text-sm mb-6">
+                      <a href="#" class="text-16 md:text-t18 font-600">
+                        مانتو تابستانه مدل فلان
+                      </a>
+                    </h3>
+                    <ul class="text-t14 font-400">
+                      <li>کد محصول: ۱۲۳۴۵</li>
+                      <li>سایز: XL</li>
+                      <li>رنگ: آبی کاربنی</li>
+                    </ul>
+                  </div>
+            
+                  <!-- Product Action Strat -->
+                  <div>
+                    <!-- RemoveCart Button -->
+                    <button type="button" class="text-red">
+                      <svg width="20" height="22" class="inline-block ml-4" viewBox="0 0 20 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M2.63449 6.15883C2.72905 6.05752 2.86142 6 3 6H17C17.1386 6 17.271 6.05752 17.3655 6.15883C17.4601 6.26013 17.5084 6.39615 17.4988 6.5344L16.4988 21.0344C16.4807 21.2966 16.2628 21.5 16 21.5H4C3.73721 21.5 3.51927 21.2966 3.50119 21.0344L2.50119 6.5344C2.49165 6.39615 2.53993 6.26013 2.63449 6.15883ZM3.53567 7L4.46671 20.5H15.5333L16.4643 7H3.53567Z"
+                          fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4.5H0V3.5H20V4.5Z" fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 18V9H10.5V18H9.5Z" fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M6.50098 18.0281L6.00098 9.02813L6.99944 8.97266L7.49944 17.9727L6.50098 18.0281Z" fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.499 18.0281L13.999 9.02813L13.0006 8.97266L12.5006 17.9727L13.499 18.0281Z" fill="#E91C41" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M3.5 3C3.5 1.61929 4.61929 0.5 6 0.5H14C15.3807 0.5 16.5 1.61929 16.5 3V4C16.5 4.27614 16.2761 4.5 16 4.5H4C3.72386 4.5 3.5 4.27614 3.5 4V3ZM6 1.5C5.17157 1.5 4.5 2.17157 4.5 3V3.5H15.5V3C15.5 2.17157 14.8284 1.5 14 1.5H6Z"
+                          fill="#E91C41" />
+                      </svg>
+                      <span class="text-t14 font-800">حذف از سبد</span>
+                    </button>
+                    <!-- Quantity -->
+                    <div class="flex justify-between items-center quantity mt-6">
+                      <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 12H12M18 12H12M12 12V6M12 12V18" stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                      <input type="number" class="appearance-none text-center w-8 h-8 border-white-4" step="1" min="1" max=""
+                        name="quantity" value="1" title="تعداد" size="1" pattern="[0-9]*" inputmode="numeric">
+                      <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 12H12H18" stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <!-- Product Action End -->
+                </div>
+            
+                <div class="flex justify-between w-full">
+                  <dl class="text-t16 font-400">
+                    <div class="flex text-white-6">
+                      <dt class="md:ml-8">قیمت واحد</dt>
+                      <dd>650,000 تومان</dd>
+                    </div>
+                    <div class="flex text-red mt-2">
+                      <dt class="md:ml-8">تخفیف شما</dt>
+                      <dd>50,000 تومان</dd>
+                    </div>
+                  </dl>
+            
+                  <dl class="text-16 md:text-t18 font-600 text-black-1">
+                    <dt>قیمت نهایی</dt>
+                    <dd class="mt-2">600,000 تومان</dd>
+                    </dl>
+                </div>
+            
+              </div>
+              <!--  -->
+            </li>
+            <!-- CartItem End -->
+
+          </ul>
+        </section>
+
+        <!-- Order summary -->
+        <section aria-labelledby="summary-heading"
+          class="mt-6 bg-white-1 px-4 md:px-8 py-6 lg:mt-0 lg:col-span-1">
+          <h2 id="summary-heading" class="sr-only">خلاصه سفارش</h2>
+
+            <dl class="text-t16 font-400 mt-4 space-y-4">
+              <div class="flex justify-between w-full text-white-6">
+                <dt class="md:ml-8">جمع کل محصولات</dt>
+                <dd>650,000 تومان</dd>
+              </div>
+              <div class="flex justify-between w-full text-red mt-2">
+                <dt class="md:ml-8">جمع کل تخفیف ها</dt>
+                <dd>50,000 تومان</dd>
+              </div>
+            </dl>
+          
+            <dl class="flex justify-between w-full text-16 md:text-t18 font-600 text-black-1 my-6 py-6 border-t border-white-2">
+              <dt>قیمت نهایی</dt>
+              <dd class="mt-2">600,000 تومان</dd>
+            </dl>
+
+          <div class="mt-4">
+            <button type="submit"
+              class="fixed inset-x-0 bottom-0 w-full bg-black-1 py-6 px-4 text-t18 font-600 text-white-1 focus:outline-none md:relative">ادامه خرید</button>
+          </div>
+        </section>
+      </form>
+    </div>
+  </div>
+
+
+<script type="text/javascript" src="js/cart.js"></script></body>
+
+</html>

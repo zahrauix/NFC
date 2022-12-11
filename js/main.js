@@ -571,19 +571,7 @@ for (let i = 0; i < dropDownContent.length; i++) {
 
 
 
-//Initialize product gallery
 
-$('.main-carousel').flickity({
-    // options
-    cellAlign: 'left',
-    contain: true
-  });
-
-  $('.main-carousel1').flickity({
-    // options
-    cellAlign: 'left',
-    contain: true
-  });
 
 
 
@@ -728,7 +716,7 @@ $("#height-1 , #weight-1").keyup(()=> {
     }
    
 })
-console.log("tghfbch")
+
 
 // modal 5
 $("#progressB2").css("background-color","#acacac");
@@ -758,18 +746,6 @@ function zoomFunction(src) {
 $(".close").click(()=> {
     $("#myModal2").css("display","none");
 })
-//zoom
-wheelzoom(document.querySelector('#zoom-item'),{maxZoom: 2});
-
-var wheelImg=document.querySelector("#zoom-item");
-wheelImg.addEventListener('wheel', (event) => {
-    
-    if (event.deltaY > 0) {
-        wheelImg.style.cursor = "zoom-out";
-    }else  {
-        wheelImg.style.cursor = "zoom-in";
-    }
-});
 
 
 
@@ -800,7 +776,19 @@ function openCity(evt, cityName) {
   
 
 
-
-
-
   
+$(".nav1__shop").click(function(event) {
+    $(".shoping-cart-list").toggle();
+
+})
+
+  $(document).on('click',function(event){
+    let target=$(event.target).attr('class');
+   
+    if ($(event.target).hasClass("navShop")) {
+        return;
+    }
+    if (!$(event.target).hasClass("jq")) {
+        $(".shoping-cart-list").css("display","none");
+      }
+  })

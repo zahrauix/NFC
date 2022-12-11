@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>انتخاب آدرس</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+<link href="styles.css" rel="stylesheet"></head>
+
+<body>
+    <div class="bg-white-2">
+        <div class="max-w-2xl mx-auto py-6 px-4 lg:max-w-7xl lg:px-0">
+
+
+            <!-- HeaderCart Start -->
+            <div class="grid grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-3">
+                <!-- title -->
+                <h1 class="text-t18 font-900 text-black-1 md:text-t24 md:col-span-2">
+                    سبد خرید
+                    <span class="text-t16 font-400">( 2 محصول )</span>
+                </h1>
+
+                <!-- Steps -->
+                <nav class="cart-steps" aria-label="Progress">
+                    <ol role="list" class="flex items-center justify-between text-t16 font-400 text-white-6">
+
+                        <li class="flex items-center w-full" aria-hidden="true" x-description="Current Step">
+                            <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">1</div>
+                            <a>محصولات</a>
+                            <span class="border-b w-full mx-3"></span>
+                        </li>
+
+                        <li class="flex items-center w-full" aria-hidden="true" x-description="Current Step">
+                            <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">2</div>
+                            <a>آدرس</a>
+                            <span class="border-b w-full mx-3"></span>
+                        </li>
+
+                        <li class="flex items-center" aria-hidden="true" x-description="Upcoming Step">
+                            <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">3</div>
+                            <a>پرداخت</a>
+                        </li>
+
+                    </ol>
+                </nav>
+
+            </div>
+            <!-- HeaderCart End -->
+
+
+
+            <form class="mt-12 lg:grid lg:grid-cols-3 lg:gap-x-4 lg:items-start">
+                <section class="select-address lg:col-span-2">
+                    <div>
+                        <input id="addr-1" type="radio" name="addr" value="addr-1" class="sr-only" checked>
+                        <label for="addr-1" class="block bg-white-1 mb-4 border-2 border-transparent p-4 md:p-8 cursor-pointer focus:outline-none">
+                            <div class="flex justify-between">
+                                <span class="text-t16 font-400 text-black-1">
+                                    <svg class="inline-block ml-2" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.10414 2.9567C4.12808 3.89638 3.5 5.29986 3.5 7.15789C3.5 8.3814 4.15581 9.8845 5.09016 11.3808C6.01287 12.8584 7.15723 14.252 8.03249 15.2382C8.5571 15.8293 9.4429 15.8293 9.96751 15.2382C10.8428 14.252 11.9871 12.8584 12.9098 11.3808C13.8442 9.8845 14.5 8.3814 14.5 7.15789C14.5 5.29986 13.8719 3.89638 12.8959 2.9567C11.9159 2.0133 10.5463 1.5 9 1.5C7.45369 1.5 6.08406 2.0133 5.10414 2.9567ZM4.41058 2.2363C5.60223 1.08905 7.2326 0.5 9 0.5C10.7674 0.5 12.3978 1.08905 13.5894 2.2363C14.7849 3.38726 15.5 5.06274 15.5 7.15789C15.5 8.67799 14.7108 10.3847 13.758 11.9104C12.7936 13.4549 11.6087 14.8955 10.7154 15.902C9.79296 16.9414 8.20704 16.9414 7.28458 15.902C6.39129 14.8955 5.20638 13.4549 4.24196 11.9104C3.28918 10.3847 2.5 8.67799 2.5 7.15789C2.5 5.06274 3.21507 3.38726 4.41058 2.2363Z"
+                                        fill="black" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9 4.5C8.17157 4.5 7.5 5.17157 7.5 6C7.5 6.82843 8.17157 7.5 9 7.5C9.82843 7.5 10.5 6.82843 10.5 6C10.5 5.17157 9.82843 4.5 9 4.5ZM6.5 6C6.5 4.61929 7.61929 3.5 9 3.5C10.3807 3.5 11.5 4.61929 11.5 6C11.5 7.38071 10.3807 8.5 9 8.5C7.61929 8.5 6.5 7.38071 6.5 6Z"
+                                        fill="black" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.9685 13.6816H6.5V14.6816H6.03169C4.60779 14.864 3.42309 15.1704 2.60766 15.5415C2.1958 15.7289 1.90331 15.9216 1.72091 16.1024C1.54 16.2816 1.5 16.4143 1.5 16.4999C1.5 16.612 1.57362 16.8107 1.9258 17.0709C2.26819 17.3239 2.79561 17.5727 3.49228 17.7904C4.87968 18.224 6.82705 18.4999 9 18.4999C11.173 18.4999 13.1203 18.224 14.5077 17.7904C15.2044 17.5727 15.7318 17.3239 16.0742 17.0709C16.4264 16.8107 16.5 16.612 16.5 16.4999C16.5 16.4143 16.46 16.2816 16.2791 16.1024C16.0967 15.9216 15.8042 15.7289 15.3923 15.5415C14.5769 15.1704 13.3922 14.864 11.9683 14.6816H11.5V13.6816H12.0315L12.0627 13.6856C13.5568 13.8746 14.8608 14.201 15.8065 14.6313C16.2782 14.846 16.686 15.0977 16.983 15.3921C17.2815 15.6879 17.5 16.0609 17.5 16.4999C17.5 17.0782 17.1259 17.5372 16.6684 17.8752C16.2012 18.2204 15.557 18.5102 14.806 18.7449C13.298 19.2162 11.2453 19.4999 9 19.4999C6.75468 19.4999 4.70204 19.2162 3.19401 18.7449C2.44297 18.5102 1.79881 18.2204 1.33156 17.8752C0.874099 17.5372 0.5 17.0782 0.5 16.4999C0.5 16.0609 0.718517 15.6879 1.01701 15.3921C1.31401 15.0977 1.7218 14.846 2.19346 14.6313C3.13916 14.201 4.44315 13.8746 5.93725 13.6856L5.9685 13.6816Z"
+                                        fill="black" />
+                                    </svg>
+                                    آدرس ۱ تحویل گیرنده
+                                </span>
+                                <button type="button" class="text-t16 font-400 text-black-2">
+                                    <svg class="inline-block ml-2" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.6465 0.646447C13.8417 0.451184 14.1583 0.451184 14.3536 0.646447L17.3536 3.64645C17.5488 3.84171 17.5488 4.15829 17.3536 4.35355L5.35356 16.3536C5.28948 16.4176 5.20919 16.4631 5.12128 16.4851L1.12128 17.4851C0.950891 17.5277 0.770647 17.4777 0.646457 17.3536C0.522267 17.2294 0.472342 17.0491 0.514939 16.8787L1.51494 12.8787C1.53692 12.7908 1.58238 12.7105 1.64646 12.6464L13.6465 0.646447ZM2.45149 13.2556L1.68719 16.3128L4.74439 15.5485L16.2929 4L14 1.70711L2.45149 13.2556Z"
+                                            fill="#676767" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 20.5H0V19.5H20V20.5Z" fill="#676767" />
+                                    </svg>
+                                    ویرایش
+                                </button>
+                            </div>
+                            <div class="flex flex-col md:flex-row md:justify-between mt-12">
+                                <div>
+                                    <h3 class="text-t16 md:text-t18 font-600 text-black-1 mb-3">استان، شهر، منطقه، خیابان، محله، کوچه، منزل، کدپستی، واحد</h3>
+                                    <span class="text-t14 text-white-6 font-400 pl-6 ml-6 border-l">غزل دامغه</span>
+                                    <span class="text-t14 text-white-6 font-400 pl-6">۰۹۱۲۳۴۵۶۷۸۹</span>
+                                </div>
+                                <button type="button" class="p-6 text-t16 md:text-t18 font-600 text-black-1 bg-white-3 mt-6">
+                                    انتخاب روی نقشه
+                                </button>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input id="addr-2" type="radio" name="addr" value="addr-2" class="sr-only">
+                        <label for="addr-2" class="block bg-white-1 mb-4 border-2 border-transparent p-4 md:p-8 cursor-pointer focus:outline-none">
+                            <div class="flex justify-between">
+                                <span class="text-t16 font-400 text-black-1">
+                                    <svg class="inline-block ml-2" width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.10414 2.9567C4.12808 3.89638 3.5 5.29986 3.5 7.15789C3.5 8.3814 4.15581 9.8845 5.09016 11.3808C6.01287 12.8584 7.15723 14.252 8.03249 15.2382C8.5571 15.8293 9.4429 15.8293 9.96751 15.2382C10.8428 14.252 11.9871 12.8584 12.9098 11.3808C13.8442 9.8845 14.5 8.3814 14.5 7.15789C14.5 5.29986 13.8719 3.89638 12.8959 2.9567C11.9159 2.0133 10.5463 1.5 9 1.5C7.45369 1.5 6.08406 2.0133 5.10414 2.9567ZM4.41058 2.2363C5.60223 1.08905 7.2326 0.5 9 0.5C10.7674 0.5 12.3978 1.08905 13.5894 2.2363C14.7849 3.38726 15.5 5.06274 15.5 7.15789C15.5 8.67799 14.7108 10.3847 13.758 11.9104C12.7936 13.4549 11.6087 14.8955 10.7154 15.902C9.79296 16.9414 8.20704 16.9414 7.28458 15.902C6.39129 14.8955 5.20638 13.4549 4.24196 11.9104C3.28918 10.3847 2.5 8.67799 2.5 7.15789C2.5 5.06274 3.21507 3.38726 4.41058 2.2363Z"
+                                            fill="black" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9 4.5C8.17157 4.5 7.5 5.17157 7.5 6C7.5 6.82843 8.17157 7.5 9 7.5C9.82843 7.5 10.5 6.82843 10.5 6C10.5 5.17157 9.82843 4.5 9 4.5ZM6.5 6C6.5 4.61929 7.61929 3.5 9 3.5C10.3807 3.5 11.5 4.61929 11.5 6C11.5 7.38071 10.3807 8.5 9 8.5C7.61929 8.5 6.5 7.38071 6.5 6Z"
+                                            fill="black" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.9685 13.6816H6.5V14.6816H6.03169C4.60779 14.864 3.42309 15.1704 2.60766 15.5415C2.1958 15.7289 1.90331 15.9216 1.72091 16.1024C1.54 16.2816 1.5 16.4143 1.5 16.4999C1.5 16.612 1.57362 16.8107 1.9258 17.0709C2.26819 17.3239 2.79561 17.5727 3.49228 17.7904C4.87968 18.224 6.82705 18.4999 9 18.4999C11.173 18.4999 13.1203 18.224 14.5077 17.7904C15.2044 17.5727 15.7318 17.3239 16.0742 17.0709C16.4264 16.8107 16.5 16.612 16.5 16.4999C16.5 16.4143 16.46 16.2816 16.2791 16.1024C16.0967 15.9216 15.8042 15.7289 15.3923 15.5415C14.5769 15.1704 13.3922 14.864 11.9683 14.6816H11.5V13.6816H12.0315L12.0627 13.6856C13.5568 13.8746 14.8608 14.201 15.8065 14.6313C16.2782 14.846 16.686 15.0977 16.983 15.3921C17.2815 15.6879 17.5 16.0609 17.5 16.4999C17.5 17.0782 17.1259 17.5372 16.6684 17.8752C16.2012 18.2204 15.557 18.5102 14.806 18.7449C13.298 19.2162 11.2453 19.4999 9 19.4999C6.75468 19.4999 4.70204 19.2162 3.19401 18.7449C2.44297 18.5102 1.79881 18.2204 1.33156 17.8752C0.874099 17.5372 0.5 17.0782 0.5 16.4999C0.5 16.0609 0.718517 15.6879 1.01701 15.3921C1.31401 15.0977 1.7218 14.846 2.19346 14.6313C3.13916 14.201 4.44315 13.8746 5.93725 13.6856L5.9685 13.6816Z"
+                                            fill="black" />
+                                    </svg>
+                                    آدرس ۱ تحویل گیرنده
+                                </span>
+                                <button type="button" class="text-t16 font-400 text-black-2">
+                                    <svg class="inline-block ml-2" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.6465 0.646447C13.8417 0.451184 14.1583 0.451184 14.3536 0.646447L17.3536 3.64645C17.5488 3.84171 17.5488 4.15829 17.3536 4.35355L5.35356 16.3536C5.28948 16.4176 5.20919 16.4631 5.12128 16.4851L1.12128 17.4851C0.950891 17.5277 0.770647 17.4777 0.646457 17.3536C0.522267 17.2294 0.472342 17.0491 0.514939 16.8787L1.51494 12.8787C1.53692 12.7908 1.58238 12.7105 1.64646 12.6464L13.6465 0.646447ZM2.45149 13.2556L1.68719 16.3128L4.74439 15.5485L16.2929 4L14 1.70711L2.45149 13.2556Z"
+                                            fill="#676767" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 20.5H0V19.5H20V20.5Z" fill="#676767" />
+                                    </svg>
+                                    ویرایش
+                                </button>
+                            </div>
+                            <div class="flex flex-col md:flex-row md:justify-between mt-12">
+                                <div>
+                                    <h3 class="text-t16 md:text-t18 font-600 text-black-1 mb-3">استان، شهر، منطقه، خیابان، محله، کوچه، منزل، کدپستی،
+                                        واحد</h3>
+                                    <span class="text-t14 text-white-6 font-400 pl-6 ml-6 border-l">غزل دامغه</span>
+                                    <span class="text-t14 text-white-6 font-400 pl-6">۰۹۱۲۳۴۵۶۷۸۹</span>
+                                </div>
+                                <button type="button" class="p-6 text-t16 md:text-t18 font-600 text-black-1 bg-white-3 mt-6">
+                                    انتخاب روی نقشه
+                                </button>
+                            </div>
+                        </label>
+                    </div>
+                    
+
+                    <div class="mt-12">
+                        <div x-data="{ on: false }">
+                            <button type="button"
+                                class="bg-white-4 relative inline-block align-middle h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200"
+                                role="switch" aria-checked="false" x-ref="switch" x-state:on="Enabled" x-state:off="Not Enabled"
+                                :class="{ 'bg-black-1': on, 'bg-white-4': !(on) }" aria-labelledby="annual-billing-label"
+                                :aria-checked="on.toString()" @click="on = !on">
+                                <span aria-hidden="true"
+                                    class="translate-x-2 pointer-events-none inline-block h-5 w-5 rounded-full bg-white-1 transform ring-0 transition ease-in-out duration-200"
+                                    x-state:on="Enabled" x-state:off="Not Enabled"
+                                    :class="{ '-translate-x-2': on, 'translate-x-0': !(on) }"></span>
+                            </button>
+                            <span class="ml-3 align-middle" id="annual-billing-label" @click="on = !on; $refs.switch.focus()">
+                                <span class="text-t16  font-400 text-black-1 mr-4">ارسال هدیه</span>
+                                <span class="text-t14 text-white-6 font-400 mr-2">( بسته بندی ویژه و فلان )</span>
+                            </span>
+                            <div class="my-10" x-show="on">
+                                <div class="mt-4 grid grid-cols-1 gap-y-10 sm:grid-cols-2 sm:gap-x-4">
+                                    <div>
+                                        <label for="first-name" class="block text-t16 mb-2 font-400 text-white-6"><abbr
+                                                class="text-red ml-1">*</abbr>نام تحویل گیرنده</label>
+                                        <div class="mt-1">
+                                            <input type="text" id="first-name" name="first-name" autocomplete="given-name"
+                                                class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                                        </div>
+                                    </div>
+                            
+                                    <div>
+                                        <label for="last-name" class="block text-t16 mb-2 font-400 text-white-6"><abbr
+                                                class="text-red ml-1">*</abbr>نام خانوادگی تحویل گیرنده</label>
+                                        <div class="mt-1">
+                                            <input type="text" id="last-name" name="last-name" autocomplete="family-name"
+                                                class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="sm:col-span-2">
+                                        <label for="address" class="block text-t16 mb-2 font-400 text-white-6"><abbr
+                                                class="text-red ml-1">*</abbr>ادرس پستی</label>
+                                        <div class="mt-1">
+                                            <input type="text" name="address" id="address" autocomplete="street-address"
+                                                class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                                        </div>
+                                    </div>
+                            
+                                    <div>
+                                        <label for="mobile-phone" class="block text-t16 mb-2 font-400 text-white-6"><abbr
+                                                class="text-red ml-1">*</abbr>شماره تلفن همراه</label>
+                                        <div class="mt-1">
+                                            <input type="text" name="mobile-phone" id="mobile-phone" autocomplete="mobile-phone"
+                                                class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                                        </div>
+                                    </div>
+                            
+                                    <div>
+                                        <label for="phone" class="block text-t16 mb-2 font-400 text-white-6">شماره تلفن ثابت</label>
+                                        <div class="mt-1">
+                                            <input type="text" name="phone" id="phone" autocomplete="phone"
+                                                class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                                        </div>
+                                    </div>
+                            
+                                    <div>
+                                        <label for="state" class="block text-t16 mb-2 font-400 text-white-6"><abbr
+                                                class="text-red ml-1">*</abbr>استان</label>
+                                        <div class="mt-1">
+                                            <select id="state" name="state" autocomplete="state-name"
+                                                class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                                                <option>اصفهان</option>
+                                                <option>تهران</option>
+                                                <option>شیراز</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            
+                                    <div>
+                                        <label for="city" class="block text-t16 mb-2 font-400 text-white-6"><abbr
+                                                class="text-red ml-1">*</abbr>شهر</label>
+                                        <div class="mt-1">
+                                            <select id="city" name="city" autocomplete="city-name"
+                                                class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                                                <option>اصفهان</option>
+                                                <option>گلپایگان</option>
+                                                <option>زرین شهر</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            
+                                    <div>
+                                        <label for="postal-code" class="block text-t16 mb-2 font-400 text-white-6"><abbr
+                                                class="text-red ml-1">*</abbr>کدپستی</label>
+                                        <div class="mt-1">
+                                            <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
+                                                class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                                        </div>
+                                    </div>
+                            
+                                    <div>
+                                        <label for="no" class="block text-t16 mb-2 font-400 text-white-6"><abbr
+                                                class="text-red ml-1">*</abbr>واحد</label>
+                                        <div class="mt-1">
+                                            <input type="text" name="no" id="no" autocomplete="no"
+                                                class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Order summary -->
+                <section aria-labelledby="summary-heading"
+                    class="mt-6 mb-14 bg-white-1 px-4 md:px-8 py-6 lg:mt-0 lg:col-span-1">
+                    <h2 id="summary-heading" class="sr-only">خلاصه سفارش</h2>
+
+                    <dl class="text-t16 font-400 mt-4 space-y-4">
+                        <div class="flex justify-between w-full text-white-6">
+                            <dt class="md:ml-8">جمع کل محصولات</dt>
+                            <dd>650,000 تومان</dd>
+                        </div>
+                        <div class="flex justify-between w-full text-red mt-2">
+                            <dt class="md:ml-8">جمع کل تخفیف ها</dt>
+                            <dd>50,000 تومان</dd>
+                        </div>
+                        <div class="flex justify-between w-full text-white-6">
+                            <dt class="md:ml-8">هزینه ارسال</dt>
+                            <dd>650,000 تومان</dd>
+                        </div>
+                    </dl>
+
+                    <dl
+                        class="flex justify-between w-full text-16 md:text-t18 font-600 text-black-1 my-6 py-6 border-t border-white-2">
+                        <dt>قابل پرداخت</dt>
+                        <dd class="mt-2">600,000 تومان</dd>
+                    </dl>
+
+                    <div class="mt-4">
+                        <button type="submit"
+                            class="fixed z-50 inset-x-0 bottom-0 w-full bg-black-1 py-6 px-4 text-t18 font-600 text-white-1 focus:outline-none md:relative">ثبت
+                            آدرس و ادامه خرید</button>
+                    </div>
+
+                    <!-- Delivery method Start -->
+                    <div class="delivery-method mt-16">
+                        <fieldset>
+                            <legend class="text-t16 md:text-t18 font-600 text-black-1">
+                                <svg class="inline-block ml-4" width="20" height="22" viewBox="0 0 20 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1 6L10 1L14.5 3.5M1 6V16L10 21M1 6L5.5 8.5M19 6V16L10 21M19 6L10 11M19 6L14.5 3.5M10 21V11M10 11L5.5 8.5M5.5 8.5L14.5 3.5M5.5 8.5V13"
+                                        stroke="black" stroke-width="1.2" stroke-linejoin="round" />
+                                </svg>
+
+                                ارسال بسته ها
+                                <p class="text-t16 font-400 mt-4">نحوه ارسال را انتخاب نمایید.</p>
+                            </legend>
+
+                            <div class="mt-4 grid grid-cols-2 gap-x-4">
+                                <input id="pishtaz" type="radio" name="delivery-method" value="pishtaz" class="sr-only" checked>
+                                <label for="pishtaz"
+                                    class="relative bg-white-2 border-2 px-4 py-8 border-transparent cursor-pointer focus:outline-none">
+                                    <div class="flex flex-col items-center">
+                                        <span class="text-t16 md:text-t18 font-600 text-black-1 mb-2">
+                                            پست پیشتاز
+                                        </span>
+                                        <span class="text-t14 text-center text-white-6 font-400">
+                                            ارسال به سراسر ایران
+                                        </span>
+                                        <span class="mt-8 text-t16 font-400 text-black-1">
+                                            35,000 تومان
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <input id="special" type="radio" name="delivery-method" value="special" class="sr-only">
+                                <label for="special"
+                                    class="relative bg-white-2 border-2 px-4 py-8 border-transparent cursor-pointer focus:outline-none">
+                                    <div class="flex flex-col items-center">
+                                        <span class="text-t16 md:text-t18 font-600 text-black-1 mb-2">
+                                            پیک اختصاصی
+                                        </span>
+                                        <span class="text-t14 text-center text-white-6 font-400">
+                                            تهران و شعب شهرستان
+                                        </span>
+                                        <span class="mt-8 text-t16 font-400 text-black-1">
+                                            15,000 تومان
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <p class="text-t16 font-400 mt-8 text-black-2">تحویل سفارشات در تهران ۲ الی ۵ روز کاری پس از
+                            خرید و تحویل به شهرستان ها بسته به مسافت ۷ روزکاری صورت می گیرد.</p>
+                        <p class="text-t16 font-400 mt-6 text-black-2">ارسال سفارشات بالای فلان تومان، به صورت رایگان و
+                            با پست پیشتاز انجام می پذیرد.</p>
+                    </div>
+                    <!-- Delivery method End -->
+                </section>
+            </form>
+        </div>
+    </div>
+
+
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>تسویه حساب</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="css/cart.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg-white-2">
+    <div class="max-w-2xl mx-auto py-6 px-4 lg:max-w-7xl lg:px-0">
+
+
+      <!-- HeaderCart Start -->
+      <div class="grid grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-3">
+        <!-- title -->
+        <h1 class="text-t18 font-900 text-black-1 md:text-t24 md:col-span-2">
+          سبد خرید
+          <span class="text-t16 font-400">( 2 محصول )</span>
+        </h1>
+
+        <!-- Steps -->
+        <nav class="cart-steps" aria-label="Progress">
+          <ol role="list" class="flex items-center justify-between text-t16 font-400 text-white-6">
+
+            <li class="flex items-center w-full" aria-hidden="true" x-description="Current Step">
+              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">1</div>
+              <a>محصولات</a>
+              <span class="border-b w-full mx-3"></span>
+            </li>
+
+            <li class="flex items-center w-full" aria-hidden="true" x-description="Current Step">
+              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">2</div>
+              <a>آدرس</a>
+              <span class="border-b w-full mx-3"></span>
+            </li>
+
+            <li class="flex items-center" aria-hidden="true" x-description="Upcoming Step">
+              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">3</div>
+              <a>پرداخت</a>
+            </li>
+
+          </ol>
+        </nav>
+
+      </div>
+      <!-- HeaderCart End -->
+
+
+
+      <form class="mt-12 lg:grid lg:grid-cols-3 lg:gap-x-4 lg:items-start">
+        <section aria-labelledby="cart-heading" class="lg:col-span-2">
+          <h2 id="cart-heading" class="text-t16 md:text-t18 font-600">شما تا کنون آدرسی را ثبت نکرده اید. لطفا آدرس خود را وارد نمایید.</h2>
+          <div class="mt-10">
+            <div class="mt-4 grid grid-cols-1 gap-y-10 sm:grid-cols-2 sm:gap-x-4">
+              <div>
+                <label for="first-name" class="block text-t16 mb-2 font-400 text-white-6"><abbr class="text-red ml-1">*</abbr>نام تحویل گیرنده</label>
+                <div class="mt-1">
+                  <input type="text" id="first-name" name="first-name" autocomplete="given-name" class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                </div>
+              </div>
+
+              <div>
+                <label for="last-name" class="block text-t16 mb-2 font-400 text-white-6"><abbr class="text-red ml-1">*</abbr>نام خانوادگی تحویل گیرنده</label>
+                <div class="mt-1">
+                  <input type="text" id="last-name" name="last-name" autocomplete="family-name" class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                </div>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label for="address" class="block text-t16 mb-2 font-400 text-white-6"><abbr class="text-red ml-1">*</abbr>ادرس پستی</label>
+                <div class="mt-1">
+                  <input type="text" name="address" id="address" autocomplete="street-address" class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                </div>
+              </div>
+
+              <div>
+                <label for="mobile-phone" class="block text-t16 mb-2 font-400 text-white-6"><abbr class="text-red ml-1">*</abbr>شماره تلفن همراه</label>
+                <div class="mt-1">
+                  <input type="text" name="mobile-phone" id="mobile-phone" autocomplete="mobile-phone" class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                </div>
+              </div>
+
+              <div>
+                <label for="phone" class="block text-t16 mb-2 font-400 text-white-6">شماره تلفن ثابت</label>
+                <div class="mt-1">
+                  <input type="text" name="phone" id="phone" autocomplete="phone" class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                </div>
+              </div>
+
+              <div>
+                <label for="state" class="block text-t16 mb-2 font-400 text-white-6"><abbr class="text-red ml-1">*</abbr>استان</label>
+                <div class="mt-1">
+                    <select id="state" name="state" autocomplete="state-name" class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                        <option>اصفهان</option>
+                        <option>تهران</option>
+                        <option>شیراز</option>
+                      </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="city" class="block text-t16 mb-2 font-400 text-white-6"><abbr class="text-red ml-1">*</abbr>شهر</label>
+                <div class="mt-1">
+                  <select id="city" name="city" autocomplete="city-name" class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                    <option>اصفهان</option>
+                    <option>گلپایگان</option>
+                    <option>زرین شهر</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="postal-code" class="block text-t16 mb-2 font-400 text-white-6"><abbr class="text-red ml-1">*</abbr>کدپستی</label>
+                <div class="mt-1">
+                  <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                </div>
+              </div>
+
+              <div>
+                <label for="no" class="block text-t16 mb-2 font-400 text-white-6"><abbr class="text-red ml-1">*</abbr>واحد</label>
+                <div class="mt-1">
+                  <input type="text" name="no" id="no" autocomplete="no" class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col mt-12 md:flex-row md:justify-between">
+            <div>
+              <h3 class="text-t18 font-600 mb-2">انتخاب روی نقشه</h3>
+              <p class="text-t16 font-400">لطفا موقعیت مکانی خود را از روی نقشه به صورت آنلاین انتخاب و ثبت نمایید.</p>
+            </div>
+            <button type="button" class="w-80 font-600 bg-white-3 mt-6 text-t16 py-6 md:text-t18 md:mt-0">
+              انتخاب روی نقشه
+            </button>
+          </div>
+
+        </section>
+
+        <!-- Order summary -->
+        <section aria-labelledby="summary-heading"
+          class="mt-6 mb-14 bg-white-1 px-4 md:px-8 py-6 lg:mt-0 lg:col-span-1">
+          <h2 id="summary-heading" class="sr-only">خلاصه سفارش</h2>
+
+            <dl class="text-t16 font-400 mt-4 space-y-4">
+              <div class="flex justify-between w-full text-white-6">
+                <dt class="md:ml-8">جمع کل محصولات</dt>
+                <dd>650,000 تومان</dd>
+              </div>
+              <div class="flex justify-between w-full text-red mt-2">
+                <dt class="md:ml-8">جمع کل تخفیف ها</dt>
+                <dd>50,000 تومان</dd>
+              </div>
+              <div class="flex justify-between w-full text-white-6">
+                <dt class="md:ml-8">هزینه ارسال</dt>
+                <dd>650,000 تومان</dd>
+              </div>
+            </dl>
+          
+            <dl class="flex justify-between w-full text-16 md:text-t18 font-600 text-black-1 my-6 py-6 border-t border-white-2">
+              <dt>قابل پرداخت</dt>
+              <dd class="mt-2">600,000 تومان</dd>
+            </dl>
+
+          <div class="mt-4">
+            <button type="submit"
+              class="fixed z-50 inset-x-0 bottom-0 w-full bg-black-1 py-6 px-4 text-t18 font-600 text-white-1 focus:outline-none md:relative">ثبت آدرس و ادامه خرید</button>
+          </div>
+
+          <!-- Delivery method Start -->
+          <div class="delivery-method mt-16">
+            <fieldset>
+              <legend class="text-t16 md:text-t18 font-600 text-black-1">
+                <svg class="inline-block ml-4" width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1 6L10 1L14.5 3.5M1 6V16L10 21M1 6L5.5 8.5M19 6V16L10 21M19 6L10 11M19 6L14.5 3.5M10 21V11M10 11L5.5 8.5M5.5 8.5L14.5 3.5M5.5 8.5V13"
+                    stroke="black" stroke-width="1.2" stroke-linejoin="round" />
+                </svg>
+
+                ارسال بسته ها
+                <p class="text-t16 font-400 mt-4">نحوه ارسال را انتخاب نمایید.</p>
+              </legend>
+          
+              <div class="mt-4 grid grid-cols-2 gap-x-4">
+                <input id="pishtaz" type="radio" name="delivery-method" value="pishtaz" class="sr-only" checked>
+                <label for="pishtaz" class="relative bg-white-2 border-2 px-4 py-8 border-transparent cursor-pointer focus:outline-none">
+                  <div class="flex flex-col items-center">
+                    <span class="text-t16 md:text-t18 font-600 text-black-1 mb-2">
+                      پست پیشتاز
+                    </span>
+                    <span class="text-t14 text-center text-white-6 font-400">
+                      ارسال به سراسر ایران
+                    </span>
+                    <span class="mt-8 text-t16 font-400 text-black-1">
+                      35,000 تومان
+                    </span>
+                  </div>
+                </label>
+
+                <input id="special" type="radio" name="delivery-method" value="special" class="sr-only">
+                <label for="special" class="relative bg-white-2 border-2 px-4 py-8 border-transparent cursor-pointer focus:outline-none">
+                  <div class="flex flex-col items-center">
+                    <span class="text-t16 md:text-t18 font-600 text-black-1 mb-2">
+                      پیک اختصاصی
+                    </span>
+                    <span class="text-t14 text-center text-white-6 font-400">
+                      تهران و شعب شهرستان
+                    </span>
+                    <span class="mt-8 text-t16 font-400 text-black-1">
+                      15,000 تومان
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </fieldset>
+            <p class="text-t16 font-400 mt-8 text-black-2">تحویل سفارشات در تهران ۲ الی ۵ روز کاری پس از خرید و تحویل به شهرستان ها بسته به مسافت ۷ روزکاری صورت می گیرد.</p>
+            <p class="text-t16 font-400 mt-6 text-black-2">ارسال سفارشات بالای فلان تومان، به صورت رایگان و با پست پیشتاز انجام می پذیرد.</p>
+          </div>
+        <!-- Delivery method End -->
+        </section>
+      </form>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="js/cart.js"></script>
+</body>
+
+</html>
