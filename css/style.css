@@ -704,15 +704,14 @@ h5 {
 
 
 
-
 /* responsive Navbar */
 
 @media screen and (min-width: 1024px) {
   .main-footer {
     display: flex;
     flex-direction: row;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+   
+    padding: 5rem 9rem;
   }
 
   .top-footer {

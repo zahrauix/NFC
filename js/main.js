@@ -652,18 +652,18 @@ function changeBg(id) {
 
 
 
-function likeBhChange() {
-    var element=document.querySelector(".likebtn-click")
-    if(element.classList.contains("r-like")){
-        $(".likebtn-click").addClass( "r-like-click" );
-        $(".likebtn-click").removeClass( "r-like" );
-    }else{
-        $(".likebtn-click").addClass( "r-like" );
-        $(".likebtn-click").removeClass( "r-like-click" );
-    }
+// function likeBhChange() {
+//     var element=document.querySelector(".likebtn-click")
+//     if(element.classList.contains("r-like")){
+//         $(".likebtn-click").addClass( "r-like-click" );
+//         $(".likebtn-click").removeClass( "r-like" );
+//     }else{
+//         $(".likebtn-click").addClass( "r-like" );
+//         $(".likebtn-click").removeClass( "r-like-click" );
+//     }
     
     
-}
+// }
 
 
 
@@ -778,7 +778,12 @@ function openCity(evt, cityName) {
 
   
 $(".nav1__shop").click(function(event) {
-    $(".shoping-cart-list").toggle();
+    if ($(window).width() < 1024){
+        window.location.href = "CartHome.html";
+    }else{
+        $(".shoping-cart-list").toggle();
+    }
+   
     
 })
 
