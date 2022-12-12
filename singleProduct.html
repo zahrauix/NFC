@@ -736,7 +736,7 @@
 
                     <div class="single-product-cta btn-order text-center">
                         <div class=" btn-order-a r-cta">
-                            <a class="btn1" onclick="return false">
+                            <a class="btn1" onclick="return false" data-toggle="modal" data-target="#exampleModal5">
                                 <span>
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -750,7 +750,113 @@
 
                             </a>
                             <!-- Modal -->
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                                <div class="modal-dialog modal-dialog-m">
+                                  <div class="modal-content">
+                                    <div class="modal-header modal-header-p ">
+                                      
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body modal-body-p ">
+                                        <div>
+                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.5 12.498H52.5V42.4981C52.5 45.2595 50.2614 47.4981 47.5 47.4981H12.5C9.73858 47.4981 7.5 45.2595 7.5 42.4981V12.498Z" stroke="#32CD8C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.5 12.498L30 34.9981L52.5 12.498" stroke="#32CD8C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
+                                       <h1>سایز و رنگ دلخواه خود را وارد کنید ، در صورت موجود شدن به شما اطلاع رسانی میشود !</h1>
+                                        <div class="d-flex w-100 mt-5">
+                                            <div class="d-flex flex-column massage-product">
+                                                 <p>رنگ موردنظر</p>
+                                                <div class="tt-select ">
+                                                    <select>
+                                                        <option value="1">خردلی</option>
+                                                        <option value="2">بنفش</option>
+                                                        <option value="3"> سبز آبی اقیانوسی</option>
+                                                        <option value="4">نارنجی روشن</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
+                                            <div class="d-flex flex-column massage-product">
+                                                <p>سایز موردنظر</p>
+                                                <div class="tt-select ">
+                                                    <select>
+                                                        <option value="1">XL</option>
+                                                        <option value="2">XXL</option>
+                                                        <option value="3">XXXL </option>
+                                                        <option value="4">M </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer modal-footer-m">
+                                      <button type="button" class="btn btn-pro" data-toggle="modal"
+                                      data-target="#exampleModal6" data-dismiss="modal">موجود شد خبرم کن </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                                <!-- برای ادامه فرایند شماره تلفن همراه خود را وارد کنید! -->
+                            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-m">
+                                  <div class="modal-content">
+                                    <div class="modal-header modal-header-p ">
+                                      
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body modal-body-p ">
+                                        
+                                       <h1>ورود و ثبت نام</h1>
+                                       <smal>برای ادامه فرایند شماره تلفن همراه خود را وارد کنید</smal>
+                                       <div class="mt-5 modal-body-input">
+                                        <input  type="number" class="form-control  mb-5" id="Email" placeholder="شماره موبایل">
+                                       </div>
+                                       
+                                   
+                                       
+                                    </div>
+                                    <div class="modal-footer modal-footer-m">
+                                      <button type="button" class="btn btn-pro"data-toggle="modal"
+                                      data-target="#exampleModal7" data-dismiss="modal"> موجود شد خبرم کن</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                                <!-- موجود شد خبرت میکنیم ! -->
+                            <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-m">
+                                  <div class="modal-content">
+                                    <div class="modal-header modal-header-p ">
+                                      
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body modal-body-p ">
+                                        <div class="mail-bg">
+                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.5 12.498H52.5V42.4981C52.5 45.2595 50.2614 47.4981 47.5 47.4981H12.5C9.73858 47.4981 7.5 45.2595 7.5 42.4981V12.498Z" stroke="#32CD8C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.5 12.498L30 34.9981L52.5 12.498" stroke="#32CD8C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
+                                       <h1>موجود شد خبرت میکنیم !</h1>
+                                       
+                                    </div>
+                                    <div class="modal-footer modal-footer-m">
+                                      <button type="button" class="btn btn-pro"> مشاهده بقیه محصولات</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
 
                         </div>
 
@@ -770,17 +876,13 @@
             <div class="top-column">
 
                 <div>
-                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 product-color">
-                        <span class="product-color-span1">رنگ انتخابی : <span class="product-color-span">سفید</span>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 product-color d-flex ">
+                        <span class="product-color-span1">رنگ انتخابی : <span class="product-color-span"></span>
+                       
                         </span>
                     </div>
                 </div>
-                <div class="available-news-content">
-                    <div class=" available-news ">
-                        <span>موجود شد خبرم کن!
-                        </span>
-                    </div>
-                </div>
+                
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div id="Slider">
