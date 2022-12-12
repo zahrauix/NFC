@@ -248,10 +248,6 @@
 
       </div>
     </div>
-
-
-
-
     <!-- SearchBar Start-->
     <div class="search">
       <div class="search-content">
@@ -369,14 +365,9 @@
     <!-- SearchBar End-->
   </header>
   <!-- NavbarEnd -->
-
-
     <!-- Dashboard Start -->
     <section class="container3 bn">
-
         <div class="sidebar">
-
-
             <div class="sidebar-container">
                 <div class="close-side Xbtn">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -546,26 +537,27 @@
                             <label for="recipient-name" class="col-form-label col-form-label2">
                                 قد
                             </label>
-                            <input type="number" class="form-control  mb-5" id="heigt" placeholder="اختیاری">
+                            <input type="text" class="form-control  mb-5" id="heigt" placeholder="اختیاری" maxlength="3">
 
 
                             <label for="recipient-name" class="col-form-label col-form-label2">
                                 وزن
                             </label>
-                            <input type="number" class="form-control  mb-5" id="weigt" placeholder="اختیاری">
+                            <input type="text"  class="form-control  mb-5" id="weigt" placeholder="اختیاری" maxlength="3">
                         </div>
                         <div class="d-flex w-100 flex-column ra-i ">
                             <p >جنسیت</p>
                             <div class="d-flex">
                                 <label class="form-control-style radio-info ">
                                     <input type="radio" name="radio" />
-                                    زن
+                                    <p class="m-0 p-1">زن</p>
                                 </label>
     
                                 <label class="form-control-style radio-info ">
                                     <input type="radio" name="radio" />
-                                    مرد
-                                </label>
+                                    <p class="m-0 p-1">مرد
+                                    </label></p>
+                                    
                             </div>
                            
                         </div>
@@ -577,7 +569,7 @@
                         <label for="recipient-name" class="col-form-label col-form-label2">
                             شماره کارت
                         </label>
-                        <input type="number" class="form-control  mb-5 " id="cart-number" placeholder="____.____.____.۱۲۳۴">
+                        <input type="number" pattern="\\d{4}(\\s|.){0,2}\\d{4}(\\s|.){0,2}\\d{4}(\\s|.){0,2}\\d{4}(\\s|.){0,2}  " class="form-control  mb-5 " id="cart-number" placeholder="____.____.____.۱۲۳۴">
 
                         <label for="recipient-name" class="col-form-label col-form-label2">
                             شماره شبا

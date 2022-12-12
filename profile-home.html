@@ -27,21 +27,26 @@
     <!-- NavbarStart -->
     <header class="main-header container1 fixed-top">
         <nav class="nav1 container2">
-
-
-            <div class="nav1__icon">
-
+            <div class="nav1__icon ">
                 <div class="nav1__toggler"><a onclick="openMenu()"><img src="icons/Hamburger Menu.svg">
                         <p class="p-icon"></p>
                     </a>
                 </div>
-                <div class="nav1__search search-form"><a href="#"><img src="icons/Search.svg"></a>
+                <div  class="nav1__search search-form"><a href="#"><img src="icons/Search.svg"></a>
                     <p class="p-icon">جستجو</p>
                 </div>
-                <div class="nav1__user"><a href="Log in, Sign up.html"><img src="icons/Profile.svg"></a>
-                    <p class="p-icon">ورود/ثبت نام</p>
+                <div  class="nav1__shop navShop"><a class="navShop" href="#" ><svg class="navShop"  width="22" height="22" viewBox="0 0 22 22" fill="none"
+                           >
+                            <path  fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.75 6C6.75 3.65279 8.65279 1.75 11 1.75C13.3472 1.75 15.25 3.65279 15.25 6V6.5H6.75V6ZM5.25 8V9.75C5.25 10.1642 5.58579 10.5 6 10.5C6.41421 10.5 6.75 10.1642 6.75 9.75V8H15.25V9.75C15.25 10.1642 15.5858 10.5 16 10.5C16.4142 10.5 16.75 10.1642 16.75 9.75V8H20.1787L19.1684 19.1132C19.1099 19.757 18.5701 20.25 17.9236 20.25H4.07643C3.42992 20.25 2.89009 19.757 2.83156 19.1132L1.82127 8H5.25ZM5.25 6.5V6C5.25 2.82436 7.82436 0.25 11 0.25C14.1756 0.25 16.75 2.82436 16.75 6V6.5H21C21.2107 6.5 21.4117 6.58865 21.5538 6.74425C21.6959 6.89985 21.766 7.10805 21.7469 7.3179L20.6623 19.249C20.5335 20.6654 19.3459 21.75 17.9236 21.75H4.07643C2.65412 21.75 1.46649 20.6654 1.33772 19.249L0.253079 7.3179C0.234002 7.10805 0.304086 6.89985 0.446182 6.74425C0.588279 6.58865 0.789279 6.5 0.999999 6.5H5.25Z"
+                                fill="white" />
+                        </svg></a><span class="shop-badge navShop">۲</span>
+                    <p class="p-icon">سبدخرید</p>
                 </div>
 
+                <div class="nav1__user"><a href="profile-home.html"><img src="icons/Profile.svg"></a>
+                    <p class="p-icon">ورود/ثبت نام</p>
+                </div>
 
             </div>
             <div class="nav1-logo">
@@ -52,9 +57,9 @@
             <ul id="res-list" class="list  nav1__list" data-open="close">
                 <li class="nav1-item"><a href="index.html">خانه</a></li>
                 <div class="cf">
-                    <li class="nav1-item" id="dropdown"><a href="#">زنانه</a></li>
+                    <li class="nav1-item dropdownn" id="dropdown-w"><a href="#">زنانه</a></li>
                     <div class="item-list">
-                        <div class="mega-menu">
+                        <div class="mega-menu mega-menu-w">
                             <ul class="mega-menu-list-right">
                                 <li class="menu-item"><a href="product.html" class="item-menu">لباس های مجلسی</a></li>
                                 <li class="menu-item"><a href="product.html" class="item-menu">تیشرت</a></li>
@@ -87,11 +92,10 @@
                 </div>
 
                 <div class="cf">
-                    <li class="nav1-item" id="dropdown"><a href="#">مردانه</a>
+                    <li class="nav1-item dropdownn"  id="dropdown-m"><a href="#">مردانه</a>
                     </li>
                     <div class="item-list">
-                        <div class="mega-menu">
-
+                        <div class="mega-menu mega-menu-m">
                             <ul class="mega-menu-list-right">
                                 <li class="menu-item"><a href="" class="item-menu">لباس های مجلسی</a></li>
                                 <li class="menu-item"><a href="" class="item-menu">تیشرت</a></li>
@@ -128,6 +132,121 @@
             </ul>
 
         </nav>
+       
+        <div  class="shoping-list jqEvent jq">
+            <div  class="shoping-cart-list jq ">
+
+                <div  class="shoping-cart-list-header jq">
+                    <small class="jq" >2 عدد کالا</small>
+                    <a href="CartHome.html" >مشاهده سبدخرید</a>
+                </div>
+                <!-- product1 -->
+                <div  class="main-shopingcart-list jq">
+                    <div  class="shoping-cart-list-img jq">
+                        <img class="jq" src="images/3.png">
+                    </div>
+                    <div  class="shoping-cart-list-content jq">
+                        <div  class="d-flex jq">
+                            <div  class="w-90 shoping-cart-list-content-text jq">
+                                <p class="jq" >ست ورزشی مردانه اسپرت مدل نایکی 2022 کد 7202</p>
+                            </div>
+                            <div  class="w-10 jq ">
+                                <a class="jq" href="" >
+                                    <svg  class="jq" width="12" height="12" viewBox="0 0 16 16" fill="none"
+                                        >
+                                        <path
+                                            d="M1.33398 1.3335L8.00065 8.00016M14.6673 14.6668L8.00065 8.00016M8.00065 8.00016L14.6673 1.3335M8.00065 8.00016L1.33398 14.6668"
+                                            stroke="#676767" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+                        <div  class="d-flex jq">
+                            <div  class=" d-flex shoping-cart-list-content-details jq">
+                                <p class="jq">سایز : <span>M</span></p>
+                                <p class="jq"><span>1</span> عدد </p>
+                            </div>
+                            <div class=" d-flex shoping-cart-list-content-price jq ">
+                                <p class="jq">۵۴۰,۰۰۰ تومان</p>
+                                <span class="jq">۲۰٪<span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M13.9693 7.58548C14 7.45746 14 7.32142 14 7.04935V1.77979C14 1.1568 14 0.84531 13.8788 0.607362C13.7721 0.398057 13.6019 0.227887 13.3926 0.121241C13.1547 0 12.8432 0 12.2202 0H6.95063C6.67855 0 6.54252 0 6.4145 0.0307348C6.301 0.0579841 6.19249 0.102928 6.09297 0.163918C5.98071 0.232708 5.88452 0.3289 5.69214 0.521283L0.797739 5.4157C0.357224 5.85621 0.136967 6.07647 0.0544429 6.33045C-0.0181476 6.55387 -0.0181476 6.79452 0.0544429 7.01793C0.136967 7.27192 0.357224 7.49218 0.797738 7.93269L6.06729 13.2023C6.5078 13.6428 6.72806 13.863 6.98204 13.9456C7.20545 14.0181 7.44611 14.0181 7.66952 13.9456C7.9235 13.863 8.14376 13.6428 8.58427 13.2023L13.4787 8.30785C13.6711 8.11547 13.7673 8.01927 13.8361 7.90701C13.8971 7.80749 13.942 7.69898 13.9693 7.58548ZM9.91667 5.83333C10.8832 5.83333 11.6667 5.04983 11.6667 4.08333C11.6667 3.11683 10.8832 2.33333 9.91667 2.33333C8.95017 2.33333 8.16667 3.11683 8.16667 4.08333C8.16667 5.04983 8.95017 5.83333 9.91667 5.83333Z"
+                                                fill="#E91C41" />
+                                        </svg>
+                                    </span>
+                                    </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!-- product2 -->
+                <div  class="main-shopingcart-list jq">
+                    <div  class="shoping-cart-list-img jq">
+                        <img class="jq" src="images/3.png">
+                    </div>
+                    <div  class="shoping-cart-list-content jq">
+                        <div  class="d-flex jq">
+                            <div  class="w-90 shoping-cart-list-content-text jq">
+                                <p class="jq" >ست ورزشی مردانه اسپرت مدل نایکی 2022 کد 7202</p>
+                            </div>
+                            <div  class="w-10 jq ">
+                                <a class="jq" href="" >
+                                    <svg  class="jq" width="12" height="12" viewBox="0 0 16 16" fill="none"
+                                        >
+                                        <path
+                                            d="M1.33398 1.3335L8.00065 8.00016M14.6673 14.6668L8.00065 8.00016M8.00065 8.00016L14.6673 1.3335M8.00065 8.00016L1.33398 14.6668"
+                                            stroke="#676767" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+
+                            </div>
+
+                        </div>
+                        <div  class="d-flex jq">
+                            <div  class=" d-flex shoping-cart-list-content-details jq">
+                                <p class="jq">سایز : <span>M</span></p>
+                                <p class="jq"><span>1</span> عدد </p>
+                            </div>
+                            <div class=" d-flex shoping-cart-list-content-price jq ">
+                                <p class="jq">۵۴۰,۰۰۰ تومان</p>
+                                <span class="jq">۲۰٪<span>
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M13.9693 7.58548C14 7.45746 14 7.32142 14 7.04935V1.77979C14 1.1568 14 0.84531 13.8788 0.607362C13.7721 0.398057 13.6019 0.227887 13.3926 0.121241C13.1547 0 12.8432 0 12.2202 0H6.95063C6.67855 0 6.54252 0 6.4145 0.0307348C6.301 0.0579841 6.19249 0.102928 6.09297 0.163918C5.98071 0.232708 5.88452 0.3289 5.69214 0.521283L0.797739 5.4157C0.357224 5.85621 0.136967 6.07647 0.0544429 6.33045C-0.0181476 6.55387 -0.0181476 6.79452 0.0544429 7.01793C0.136967 7.27192 0.357224 7.49218 0.797738 7.93269L6.06729 13.2023C6.5078 13.6428 6.72806 13.863 6.98204 13.9456C7.20545 14.0181 7.44611 14.0181 7.66952 13.9456C7.9235 13.863 8.14376 13.6428 8.58427 13.2023L13.4787 8.30785C13.6711 8.11547 13.7673 8.01927 13.8361 7.90701C13.8971 7.80749 13.942 7.69898 13.9693 7.58548ZM9.91667 5.83333C10.8832 5.83333 11.6667 5.04983 11.6667 4.08333C11.6667 3.11683 10.8832 2.33333 9.91667 2.33333C8.95017 2.33333 8.16667 3.11683 8.16667 4.08333C8.16667 5.04983 8.95017 5.83333 9.91667 5.83333Z"
+                                                fill="#E91C41" />
+                                        </svg>
+                                    </span>
+                                    </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <footer class="shoping-cart-list-Footer jq">
+                    <div class="shoping-cart-list-Footer-details jq ">
+                        <p class="jq">مبلغ قابل پرداخت :</p>
+                        <span class="jq">۵۴۰,۰۰۰ تومان</span>
+                    </div>
+                    <div class="shoping-cart-list-Footer-btn jq">
+                        <a class="jq" href="">ثبت سفارش</a>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+
+
+
+
         <!-- SearchBar Start-->
         <div class="search">
             <div class="search-content">
@@ -189,7 +308,7 @@
                 </div>
 
                 <div class="suggest-search-products-content">
-                    <div id="Pcarousel" class="owl-carousel sc ">
+                    <div id="Pcarousel" class="sc ">
                         <div class="suggest-search-products">
                             <a href="#">
                                 <div class="suggest-search-products-item">
@@ -242,15 +361,13 @@
             </div>
 
         </div>
-
         <!-- SearchBar End-->
     </header>
     <!-- NavbarEnd -->
 
 
     <!-- Dashboard Start -->
-    <section class="container3 bn">
-
+    <section class="container3">
         <div class="sidebar">
 
 

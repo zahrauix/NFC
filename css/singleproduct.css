@@ -4,9 +4,24 @@
   /* margin-right: 37px;*/
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 180%;
 }
+.header-link ul{
+  padding-left: 0;
+  
+}
+
+@media only screen and (min-width: 1024px) {
+  .header-link ul li {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 180%;
+  }
+}
+
 
 .header-link {
   margin-top: 40px;
@@ -1938,6 +1953,13 @@ h1 {
   letter-spacing: -0.02em;
   color: #ACACAC;
 }
+.text4-active {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
 
 .user-comment-i {
   width: 100%;
@@ -2402,6 +2424,20 @@ input[type=checkbox]:checked+label::after {
 
 }
 
+.form-control-comment {
+  background: #fff !important;
+  border-radius: 0 !important;
+  padding: 1.6rem 1rem !important;
+  border: 0 !important;
+  font-size: 1.4rem !important;
+  width: 100%;
+}
+.footer-l{
+  display: block !important;
+ 
+}
+
+
 @media screen and (min-width: 420px) {
 
   .carousel-main img {
@@ -2494,6 +2530,12 @@ input[type=checkbox]:checked+label::after {
 }
 
 @media screen and (min-width: 1024px) {
+  .footer-l{
+    display: none !important;
+  }
+  .top-icon2{
+    display: none;
+  }
   .product-img-carosel {
     position: relative;
   }
@@ -3216,11 +3258,15 @@ input[type=checkbox]:checked+label::after {
     letter-spacing: -0.02em;
     color: #ACACAC;
   }
-
-  .text4:hover {
-
+  .text4-active {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: -0.02em;
     color: #000000;
   }
+
+  
 
   .modal-sm {
     max-width: 1104px;

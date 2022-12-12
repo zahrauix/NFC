@@ -70,6 +70,7 @@ body {
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
+    z-index: 1;
 
 
 }
@@ -165,7 +166,7 @@ body {
 }
 
 .bn {
-    height: 100%;
+    height: 100vh;
 }
 
 .main-content {
@@ -383,8 +384,9 @@ body {
     position: absolute;
     bottom: 0;
     right: 64px;
-    top: 95px
+    top: 111px
 }
+
 
 .close-side {
     text-align: left;
@@ -1025,9 +1027,30 @@ input[type=number] {
     border-bottom: 1px solid #EEEEEE;
 
 }
+.ml-2{
+    margin-left: 1rem;
+    width: 50% !important;
+}
 
+.form-control-style-Favortit{
+    background-color: #ffff !important;
+    border-radius: 0 !important;
+    padding: 2.4rem 1rem !important;
+    border: 0 !important;
+    font-size: 1.4rem !important;
+    display: flex;
+
+}
 
 @media screen and (min-width: 1024px) {
+    .ml-2{
+        width: 78% !important;
+    }
+
+    .sidebar-avatar::before {
+       
+        top: 95px
+    }
     .hamber {
         display: none;
     }

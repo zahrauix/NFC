@@ -735,7 +735,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 30%;
+    width: 45%;
   }
 
   .footer-logo {
@@ -1177,6 +1177,7 @@ h5 {
     letter-spacing: -0.02em;
     color: #ACACAC;
     padding-left: 1.6rem;
+    margin-top: 0;
   }
 
   .shoping-cart-list-content-price p {
