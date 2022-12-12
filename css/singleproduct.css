@@ -185,6 +185,7 @@
 
   .modal-body-input{
     width: 60%;
+    
   }
   .btn-pro {
     width: 60%;
@@ -317,9 +318,19 @@
   margin-right: -15px;
   margin-top: 45px;
 }
+.product-color-span1{
+  padding-right: 1rem;
+}
 
-.product-color-span {
+.product-color-span input {
   color: #acacac !important;
+
+  background-color: #F8F8F8;;
+  border: none;
+}
+
+.curser-pointer{
+  cursor: pointer;
 }
 
 .available-news span {
@@ -362,7 +373,8 @@
 
 .height-width {
   height: 77px !important;
-  width: 80px !important;
+  width: 62px !important;
+  margin-left: 1rem;
 }
 
 .next-z {

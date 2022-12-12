@@ -83,7 +83,13 @@ if (window.innerWidth > 1024) {
     $( "#Pcarousel" ).removeClass( "owl-carousel" );
   }
 
-
+var userCommentCart=document.querySelectorAll(".user-comment-cart");
+var userCommentDiv=document.querySelector(".user-comment2");
+if (userCommentCart.length>3) {
+    userCommentDiv.classList.add("owl-carousel");
+    
+    
+}
 
   $('.owl-carousel').owlCarousel({
     rtl: true,
@@ -915,3 +921,19 @@ function closeAllSelect(elmnt) {
     }
 }
 document.addEventListener("click", closeAllSelect);
+
+
+
+
+var firstSelectedColor=$(".pickColorImg").attr('color');
+
+$("#colorInput").val(firstSelectedColor);
+
+$(".pickColorImg").click(function(event){
+  let color=  $(this).attr('color');
+  $(".pickColorImg").css('border','none');
+  $("#colorInput").val(color);
+  $(this).css('border','1px solid black');
+  
+})
+
