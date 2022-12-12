@@ -376,7 +376,7 @@ h5 {
 .suggest-search-products {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
 
 }
@@ -671,7 +671,7 @@ h5 {
 
 }
 
-.title-list p{
+.title-list p {
   font-weight: 800;
   font-size: 14px;
   line-height: 180%;
@@ -710,7 +710,7 @@ h5 {
   .main-footer {
     display: flex;
     flex-direction: row;
-   
+
     padding: 5rem 9rem;
   }
 
@@ -754,7 +754,7 @@ h5 {
 
   }
 
-  
+
 
   .container1 {
     margin: auto;
@@ -1089,13 +1089,18 @@ h5 {
     padding: 1.6rem;
     box-shadow: 0px 4px 46px rgba(0, 0, 0, 0.1);
     display: none;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 
 
   }
 
 
 
-  
+
 
   .shoping-cart-list-header {
     width: 100%;
@@ -1369,8 +1374,15 @@ h5 {
   text-align: right;
   letter-spacing: -0.02em;
   font-weight: 900;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
 }
+
+
 
 .slider-item .item .caption p {
   font-size: 14px;
@@ -1523,6 +1535,7 @@ h5 {
   .slider-button {
     margin-right: 216px;
   }
+ 
 }
 
 
@@ -1585,9 +1598,17 @@ h5 {
     margin-left: 80px;
     font-size: 24px;
     margin-bottom: 40px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 
 
   }
+  
+ 
 
 
 
@@ -2254,6 +2275,28 @@ h5 {
   margin-left: 0;
 }
 
+.cart-like a svg{
+  stroke: #000000;
+}
+.cart-liked {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: #000000;
+  backdrop-filter: blur(88px);
+  -webkit-backdrop-filter: blur(88px);
+  position: absolute;
+  z-index: 1;
+  top: .8rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+.cart-liked a svg{
+  stroke: #ffffff;
+}
+
 .cart-like .heart {
   width: 2rem;
   height: 2rem;
@@ -2533,6 +2576,12 @@ h5 {
   .cart-like {
     width: 6.4rem;
     height: 6.4rem;
+  }
+  .cart-liked {
+    width: 6.4rem;
+    height: 6.4rem;
+    top: 1.6rem;
+    left: 0;
   }
 
   .cart-like .heart {
@@ -3196,6 +3245,24 @@ h5 {
   justify-content: center;
 
 }
+.cart-like-suggest svg {
+  stroke: #000000;
+
+}
+.cart-liked-suggest {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: #000000;
+  backdrop-filter: blur(88px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.cart-liked-suggest svg {
+  stroke: #ffffff;
+
+}
 
 .suggest-cart-img {
   width: 27.2rem;
@@ -3275,6 +3342,20 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: center;
+
+  }
+  .cart-liked-suggest {
+    width: 5rem;
+    height: 5rem;
+    background-color:#000000;
+    backdrop-filter: blur(88px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .cart-liked-suggest svg {
+    stroke: #ffffff;
 
   }
 
@@ -3371,6 +3452,16 @@ h5 {
     width: 6.2rem;
     height: 6.2rem;
     background-color: var(--color-Primary-White-4);
+    backdrop-filter: blur(88px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .cart-liked-suggest {
+    width: 6.2rem;
+    height: 6.2rem;
+    background-color: #000000;
     backdrop-filter: blur(88px);
     display: flex;
     align-items: center;

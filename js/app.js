@@ -111,13 +111,14 @@ progress()
 
 
 
-//   Mega Menu
-const dropdown = document.querySelector('#dropdown');
-const megaenu = document.querySelector('.mega-menu');
 
-dropdown.addEventListener('click', function(){
-    megaenu.classList.toggle('fade')
-})
+//   Mega Menu
+// const dropdown = document.querySelector('#dropdown');
+// const megaenu = document.querySelector('.mega-menu');
+
+// dropdown.addEventListener('click', function(){
+//     megaenu.classList.toggle('fade')
+// })
 //   Mega Menu
 
 

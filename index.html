@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.rtl.css" />
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/singleproduct.css" />
     <link rel="stylesheet" type="text/css" href="css/about-us.css" />
 
-    <title>NFC | اِنـ‌اِفـ‌سی </title>
+    <title>صفحه اصلی | اِنـ‌اِفـ‌سی </title>
 </head>
 
 <body>
@@ -25,10 +25,7 @@
     <!-- NavbarStart -->
     <header class="main-header container1 fixed-top">
         <nav class="nav1 container2">
-
-
             <div class="nav1__icon ">
-
                 <div class="nav1__toggler"><a onclick="openMenu()"><img src="icons/Hamburger Menu.svg">
                         <p class="p-icon"></p>
                     </a>
@@ -36,7 +33,6 @@
                 <div  class="nav1__search search-form"><a href="#"><img src="icons/Search.svg"></a>
                     <p class="p-icon">جستجو</p>
                 </div>
-
                 <div  class="nav1__shop navShop"><a class="navShop" href="#" ><svg class="navShop"  width="22" height="22" viewBox="0 0 22 22" fill="none"
                            >
                             <path  fill-rule="evenodd" clip-rule="evenodd"
@@ -50,8 +46,6 @@
                     <p class="p-icon">ورود/ثبت نام</p>
                 </div>
 
-
-
             </div>
             <div class="nav1-logo">
                 <a href="index.html"> <img src="icons/NFC Logo (White).png" class="logo" alt="NFC"></a>
@@ -61,9 +55,9 @@
             <ul id="res-list" class="list  nav1__list" data-open="close">
                 <li class="nav1-item nav1-item-active"><a href="index.html">خانه</a></li>
                 <div class="cf">
-                    <li class="nav1-item" id="dropdown"><a href="#">زنانه</a></li>
+                    <li class="nav1-item dropdownn" id="dropdown-w"><a href="#">زنانه</a></li>
                     <div class="item-list">
-                        <div class="mega-menu">
+                        <div class="mega-menu mega-menu-w">
                             <ul class="mega-menu-list-right">
                                 <li class="menu-item"><a href="product.html" class="item-menu">لباس های مجلسی</a></li>
                                 <li class="menu-item"><a href="product.html" class="item-menu">تیشرت</a></li>
@@ -96,11 +90,10 @@
                 </div>
 
                 <div class="cf">
-                    <li class="nav1-item" id="dropdown"><a href="#">مردانه</a>
+                    <li class="nav1-item dropdownn"  id="dropdown-m"><a href="#">مردانه</a>
                     </li>
                     <div class="item-list">
-                        <div class="mega-menu">
-
+                        <div class="mega-menu mega-menu-m">
                             <ul class="mega-menu-list-right">
                                 <li class="menu-item"><a href="" class="item-menu">لباس های مجلسی</a></li>
                                 <li class="menu-item"><a href="" class="item-menu">تیشرت</a></li>
@@ -311,9 +304,9 @@
                             مردانه</span>
                         در محصولات مردانه </a>
                 </div>
-
+                  <!-- ماکسیمم تعداد محصولات پیشنهادی در قسمت سرچ ۴ عدد -->
                 <div class="suggest-search-products-content">
-                    <div id="Pcarousel" class="owl-carousel sc ">
+                    <div id="Pcarousel" class=" sc ">
                         <div class="suggest-search-products">
                             <a href="#">
                                 <div class="suggest-search-products-item">
@@ -481,12 +474,13 @@
 
     <!-- Products Start -->
     <section class="cart-slider  owl-carousel ">
-
-
         <div class="p2-cart ">
             <div class="cart-img">
-                <a href="singleProduct.html"><img src="images/Frame 12.png  " class="img-size"></a>
-                <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                <a href="singleProduct.html" ><img src="images/Frame 12.png  " class="img-size"></a>
+                <!-- cart liked class -->
+                <div class="cart-liked "><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.59921 12.4673L12 21L20.4008 12.4673C22.5331 10.3015 22.5331 6.79015 20.4008 4.62439C18.0997 2.28716 14.3093 2.50039 12.2764 5.08143L12 5.43231L11.7236 5.08143C9.69072 2.50039 5.90031 2.28716 3.59921 4.62439C1.46693 6.79015 1.46693 10.3015 3.59921 12.4673Z"  stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg></a></div>
                 <div class="cart-Badge-red">۲۰٪</div>
                 <div class="cart-size">
                     <ul class="size-item">
@@ -543,13 +537,12 @@
 
 
         </div>
-
-
         <div class="p2-cart ">
-
             <div class="cart-img">
                 <a href="singleProduct.html"><img src="images/Frame 11.png  " class="img-size"></a>
-                <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                <div class="cart-like "><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.59921 12.4673L12 21L20.4008 12.4673C22.5331 10.3015 22.5331 6.79015 20.4008 4.62439C18.0997 2.28716 14.3093 2.50039 12.2764 5.08143L12 5.43231L11.7236 5.08143C9.69072 2.50039 5.90031 2.28716 3.59921 4.62439C1.46693 6.79015 1.46693 10.3015 3.59921 12.4673Z"  stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg></a></div>
                 <div class="cart-Badge-red">۲۰٪</div>
                 <div class="cart-size">
                     <ul class="size-item">
@@ -616,14 +609,12 @@
 
 
         </div>
-
-
-
-
         <div class="p2-cart ">
             <div class="cart-img">
                 <a href="singleProduct.html"><img src="images/Frame 12.png  " class="img-size"></a>
-                <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                <div class="cart-like "><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.59921 12.4673L12 21L20.4008 12.4673C22.5331 10.3015 22.5331 6.79015 20.4008 4.62439C18.0997 2.28716 14.3093 2.50039 12.2764 5.08143L12 5.43231L11.7236 5.08143C9.69072 2.50039 5.90031 2.28716 3.59921 4.62439C1.46693 6.79015 1.46693 10.3015 3.59921 12.4673Z"  stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg></a></div>
                 <div class="cart-Badge-red">۲۰٪</div>
                 <div class="cart-size">
                     <ul class="size-item">
@@ -690,13 +681,12 @@
 
 
         </div>
-
-
-
         <div class="p2-cart ">
             <div class="cart-img">
                 <a href="singleProduct.html"><img src="images/Frame 10.png  " class="img-size"></a>
-                <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                <div class="cart-liked "><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.59921 12.4673L12 21L20.4008 12.4673C22.5331 10.3015 22.5331 6.79015 20.4008 4.62439C18.0997 2.28716 14.3093 2.50039 12.2764 5.08143L12 5.43231L11.7236 5.08143C9.69072 2.50039 5.90031 2.28716 3.59921 4.62439C1.46693 6.79015 1.46693 10.3015 3.59921 12.4673Z"  stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg></a></div>
                 <div class="cart-Badge-red">۲۰٪</div>
                 <div class="cart-size">
                     <ul class="size-item">
@@ -763,12 +753,12 @@
 
 
         </div>
-
-
         <div class="p2-cart ">
             <div class="cart-img">
                 <a href="singleProduct.html"><img src="images/Frame 11.png  " class="img-size"></a>
-                <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                <div class="cart-like "><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.59921 12.4673L12 21L20.4008 12.4673C22.5331 10.3015 22.5331 6.79015 20.4008 4.62439C18.0997 2.28716 14.3093 2.50039 12.2764 5.08143L12 5.43231L11.7236 5.08143C9.69072 2.50039 5.90031 2.28716 3.59921 4.62439C1.46693 6.79015 1.46693 10.3015 3.59921 12.4673Z"  stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg></a></div>
                 <div class="cart-Badge-red">۲۰٪</div>
                 <div class="cart-size">
                     <ul class="size-item">
@@ -835,12 +825,12 @@
 
 
         </div>
-
-
         <div class="p2-cart ">
             <div class="cart-img">
                 <a href="singleProduct.html"><img src="images/Frame 12.png  " class="img-size"></a>
-                <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                <div class="cart-like "><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.59921 12.4673L12 21L20.4008 12.4673C22.5331 10.3015 22.5331 6.79015 20.4008 4.62439C18.0997 2.28716 14.3093 2.50039 12.2764 5.08143L12 5.43231L11.7236 5.08143C9.69072 2.50039 5.90031 2.28716 3.59921 4.62439C1.46693 6.79015 1.46693 10.3015 3.59921 12.4673Z"  stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg></a></div>
                 <div class="cart-Badge-red">۲۰٪</div>
                 <div class="cart-size">
                     <ul class="size-item">
@@ -907,12 +897,12 @@
 
 
         </div>
-
-
         <div class="p2-cart ">
             <div class="cart-img">
                 <a href="singleProduct.html"><img src="images/Frame 12.png  " class="img-size"></a>
-                <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                <div class="cart-like "><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.59921 12.4673L12 21L20.4008 12.4673C22.5331 10.3015 22.5331 6.79015 20.4008 4.62439C18.0997 2.28716 14.3093 2.50039 12.2764 5.08143L12 5.43231L11.7236 5.08143C9.69072 2.50039 5.90031 2.28716 3.59921 4.62439C1.46693 6.79015 1.46693 10.3015 3.59921 12.4673Z"  stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg></a></div>
                 <div class="cart-Badge-red">۲۰٪</div>
                 <div class="cart-size">
                     <ul class="size-item">
@@ -979,12 +969,12 @@
 
 
         </div>
-
-
         <div class="p2-cart ">
             <div class="cart-img">
                 <a href="singleProduct.html"><img src="images/Frame 12.png  " class="img-size"></a>
-                <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                <div class="cart-like "><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.59921 12.4673L12 21L20.4008 12.4673C22.5331 10.3015 22.5331 6.79015 20.4008 4.62439C18.0997 2.28716 14.3093 2.50039 12.2764 5.08143L12 5.43231L11.7236 5.08143C9.69072 2.50039 5.90031 2.28716 3.59921 4.62439C1.46693 6.79015 1.46693 10.3015 3.59921 12.4673Z"  stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg></a></div>
                 <div class="cart-Badge-red">۲۰٪</div>
                 <div class="cart-size">
                     <ul class="size-item">
@@ -1051,12 +1041,12 @@
 
 
         </div>
-
-
         <div class="p2-cart ">
             <div class="cart-img">
                 <a href="singleProduct.html"><img src="images/Frame 12.png  " class="img-size"></a>
-                <div class="cart-like"><a href="#"><img src="icons/Heart.svg" class="heart"></a></div>
+                <div class="cart-liked "><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.59921 12.4673L12 21L20.4008 12.4673C22.5331 10.3015 22.5331 6.79015 20.4008 4.62439C18.0997 2.28716 14.3093 2.50039 12.2764 5.08143L12 5.43231L11.7236 5.08143C9.69072 2.50039 5.90031 2.28716 3.59921 4.62439C1.46693 6.79015 1.46693 10.3015 3.59921 12.4673Z"  stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg></a></div>
                 <div class="cart-Badge-red">۲۰٪</div>
                 <div class="cart-size">
                     <ul class="size-item">
@@ -1123,24 +1113,8 @@
 
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </section>
     <!-- Products End -->
-
 
     <!-- sggest set start -->
     <section class="suggest-background-color">
@@ -1166,8 +1140,6 @@
             </div>
 
         </section>
-
-
         <section class="suggest-cart cart-slider d-flex overflow-hidden">
             <!--  کارت اصلی محصولات پیشنهادی در نسخه دسکتاپ-->
             <div id="move-here">
@@ -1183,7 +1155,10 @@
                         </div>
                         <div class="suggest-content">
                             <p class="suggest-cart-details">ست پاییزه مردانه</p>
-                            <div class="cart-like-suggest "><a href="#"><img src="icons/Heart.svg" class="heart"></a>
+                            <!-- cart-liked -->
+                            <div class="cart-liked-suggest "><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.59921 12.4673L12 21L20.4008 12.4673C22.5331 10.3015 22.5331 6.79015 20.4008 4.62439C18.0997 2.28716 14.3093 2.50039 12.2764 5.08143L12 5.43231L11.7236 5.08143C9.69072 2.50039 5.90031 2.28716 3.59921 4.62439C1.46693 6.79015 1.46693 10.3015 3.59921 12.4673Z" stroke-width="1.5" stroke-linejoin="round"/>
+                                </svg></a>
                             </div>
                         </div>
                     </div>
@@ -1484,7 +1459,6 @@
 
 
         </section>
-
         <section class="suggest-cart cart-slider d-flex overflow-hidden">
             <!--  کارت اصلی محصولات پیشنهادی در نسخه دسکتاپ-->
             <div id="move-here2">
@@ -1500,7 +1474,11 @@
                         </div>
                         <div class="suggest-content">
                             <p class="suggest-cart-details">ست پاییزه مردانه</p>
-                            <div class="cart-like-suggest "><a href="#"><img src="icons/Heart.svg" class="heart"></a>
+                            <!-- cart-like -->
+                            <div class="cart-like-suggest "><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.59921 12.4673L12 21L20.4008 12.4673C22.5331 10.3015 22.5331 6.79015 20.4008 4.62439C18.0997 2.28716 14.3093 2.50039 12.2764 5.08143L12 5.43231L11.7236 5.08143C9.69072 2.50039 5.90031 2.28716 3.59921 4.62439C1.46693 6.79015 1.46693 10.3015 3.59921 12.4673Z" stroke-width="1.5" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -1801,8 +1779,6 @@
 
 
         </section>
-
-
         <section class="suggest-cart cart-slider d-flex overflow-hidden">
             <!--  کارت اصلی محصولات پیشنهادی در نسخه دسکتاپ-->
             <div id="move-here3">
@@ -1818,7 +1794,11 @@
                         </div>
                         <div class="suggest-content">
                             <p class="suggest-cart-details">ست پاییزه مردانه</p>
-                            <div class="cart-like-suggest "><a href="#"><img src="icons/Heart.svg" class="heart"></a>
+                            <!-- cart-like -->
+                            <div class="cart-like-suggest "><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.59921 12.4673L12 21L20.4008 12.4673C22.5331 10.3015 22.5331 6.79015 20.4008 4.62439C18.0997 2.28716 14.3093 2.50039 12.2764 5.08143L12 5.43231L11.7236 5.08143C9.69072 2.50039 5.90031 2.28716 3.59921 4.62439C1.46693 6.79015 1.46693 10.3015 3.59921 12.4673Z" stroke-width="1.5" stroke-linejoin="round"/>
+                                </svg></a>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -2119,22 +2099,9 @@
 
 
         </section>
-
-
-
-
-
-
-
-
-
     </section>
     <!-- sggest set End -->
-
-
-
-
-
+    
     <!-- Products Nav Start-->
     <section class="product container2">
         <div class="h-product">

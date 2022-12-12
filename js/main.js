@@ -568,11 +568,24 @@ for (let i = 0; i < dropDownContent.length; i++) {
 
 
 
+//   Mega Menu respnsive
 
+$("#dropdown-w").on("click",function(){
+    $(".mega-menu-w").fadeToggle("fast");
+    $(".mega-menu-m").css("display","none");
+    
 
+    
+})
 
+$("#dropdown-m").on("click",function(){
+    $(".mega-menu-w").css("display","none");
+    $(".mega-menu-m").fadeToggle("fast");
 
+    
+})
 
+//   Mega Menu respnsive
 
 
 
@@ -836,3 +849,7 @@ function closeSearch() {
     show=false;
 }
 //   Search From 
+
+
+
+
