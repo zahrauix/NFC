@@ -569,6 +569,14 @@ h5 {
   z-index: 1;
 }
 
+.empty-state-shop p {
+  font-weight: 800;
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
 .shoping-cart-list {
   display: none;
 }
@@ -1536,7 +1544,7 @@ h5 {
   .slider-button {
     margin-right: 216px;
   }
- 
+
 }
 
 
@@ -1604,12 +1612,12 @@ h5 {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    
+
 
 
   }
-  
- 
+
+
 
 
 
@@ -2276,9 +2284,10 @@ h5 {
   margin-left: 0;
 }
 
-.cart-like a svg{
+.cart-like a svg {
   stroke: #000000;
 }
+
 .cart-liked {
   width: 4.8rem;
   height: 4.8rem;
@@ -2294,7 +2303,8 @@ h5 {
   justify-content: center;
   margin-left: 0;
 }
-.cart-liked a svg{
+
+.cart-liked a svg {
   stroke: #ffffff;
 }
 
@@ -2578,6 +2588,7 @@ h5 {
     width: 6.4rem;
     height: 6.4rem;
   }
+
   .cart-liked {
     width: 6.4rem;
     height: 6.4rem;
@@ -3246,10 +3257,12 @@ h5 {
   justify-content: center;
 
 }
+
 .cart-like-suggest svg {
   stroke: #000000;
 
 }
+
 .cart-liked-suggest {
   width: 4.8rem;
   height: 4.8rem;
@@ -3260,6 +3273,7 @@ h5 {
   justify-content: center;
 
 }
+
 .cart-liked-suggest svg {
   stroke: #ffffff;
 
@@ -3345,16 +3359,18 @@ h5 {
     justify-content: center;
 
   }
+
   .cart-liked-suggest {
     width: 5rem;
     height: 5rem;
-    background-color:#000000;
+    background-color: #000000;
     backdrop-filter: blur(88px);
     display: flex;
     align-items: center;
     justify-content: center;
 
   }
+
   .cart-liked-suggest svg {
     stroke: #ffffff;
 
@@ -3459,6 +3475,7 @@ h5 {
     justify-content: center;
 
   }
+
   .cart-liked-suggest {
     width: 6.2rem;
     height: 6.2rem;

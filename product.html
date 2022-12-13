@@ -455,19 +455,30 @@
           <div class="dropdown" >
             <div class="dropbtn" onclick="toggleSlide('dropdownPriceItem')">قیمت<span><img src="icons/Down Arrow.svg"></div></button></button>
             <div id="dropdownPriceItem" class="dropdown-content">
-             
-                
-              <section class="range-slider" id="facet-price-range-slider">
-  
-                <input name="range-1" value="100000" min="100000" max="1000000" step="50000" type="range">
-                
-                <input name="range-2" value="1000000" min="100000" max="1000000" step="50000" type="range">
-                
-              </section>
 
-            
-         
-
+              <div class="container-price dir-l">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div id="slider-range"></div>
+                  </div>
+                </div>
+                <div class="w-100 slider-labels d-flex flex-row">
+                  <div class="caption w-50 ">
+                    <strong></strong> <span id="slider-range-value1"></span>
+                  </div>
+                  <div class="w-50 d-flex caption justify-content-end">
+                    <strong></strong> <span id="slider-range-value2"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <form>
+                      <input type="hidden" name="min-value" value="">
+                      <input type="hidden" name="max-value" value="">
+                    </form>
+                  </div>
+                </div>
+              </div>
 
               <p class="p-range">تمامی قیمت ها به تومان است. </p>
 
@@ -477,7 +488,7 @@
         </div>
         <div class="left-filter" >
           <div class="dropdown" >
-            <div class="dropbtn" onclick="toggleSlide('dropdownNewestItem')"><span class="p-drp-down">نمایش بر اساس:</span>جدیدترین<span><img
+            <div class="dropbtn" onclick="toggleSlide('dropdownNewestItem')"><span>نمایش بر اساس:<img
                   src="icons/Down Arrow.svg"></span></div>
             <div id="dropdownNewestItem" class="dropdown-content">
               <a href="#">جدید ترین</a>
@@ -1145,14 +1156,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/uikit.min.js"></script>
   <script src="js/main.js"></script>
-
-
-
-
-
-
-
-
+  <script src="js/price-slider.js"></script>
 
 </body>
 
