@@ -802,10 +802,10 @@ select {
   left: 0.75rem;
 }
 
-.buy-continue{
+.buy-continue a{
   text-align: center;
 }
-.buy-continue:hover{
+.buy-continue a:hover{
  color: rgb(255, 255, 255);
 }
 
