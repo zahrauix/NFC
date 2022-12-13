@@ -372,7 +372,7 @@
         <!-- title -->
         <h1 class="text-t18 font-900 text-black-1 md:text-t24 md:col-span-2">
           سبد خرید
-          <span class="text-t16 font-400">( 2 محصول )</span>
+          <span class="text-t16 font-400">( ۲ محصول )</span>
         </h1>
 
         <!-- Steps -->
@@ -380,19 +380,19 @@
           <ol role="list" class="flex items-center justify-between text-t16 font-400 text-white-6">
 
             <li class="flex items-center w-full" aria-hidden="true" x-description="Current Step">
-              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">1</div>
+              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">۱</div>
               <a>محصولات</a>
               <span class="border-b w-full mx-3"></span>
             </li>
 
             <li class="flex items-center w-full" aria-hidden="true" x-description="Current Step">
-              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">2</div>
+              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">۲</div>
               <a>آدرس</a>
               <span class="border-b w-full mx-3"></span>
             </li>
 
             <li class="flex items-center" aria-hidden="true" x-description="Upcoming Step">
-              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">3</div>
+              <div class="w-8 h-8 border border-white-4 text-center leading-8 ml-2 flex-shrink-0">۳</div>
               <a>پرداخت</a>
             </li>
 
@@ -445,26 +445,107 @@
               </div>
 
               <div>
-                <label for="state" class="block text-t16 mb-2 font-400 text-white-6"><abbr class="text-red ml-1">*</abbr>استان</label>
-                <div class="mt-1">
-                    <select id="state" name="state" autocomplete="state-name" class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
-                        <option>اصفهان</option>
-                        <option>تهران</option>
-                        <option>شیراز</option>
-                      </select>
+                <label for="state" class="block text-t16 mb-0 font-400 text-white-6"><abbr
+                        class="text-red ml-1">*</abbr>استان</label>
+                <div style="margin-top: -12px;">
+                   &nbsp;
+           
+            <select id="Ostan" runat="server" onchange="Func(this.value)"
+                class="form-control Choose-province" >
+                <option value="">انتخاب استان</option>
+                <option value=" ,آذرشهر ,اسکو ,اهر ,بستان‌آباد
+                ,بناب ,تبریز ,جلفا ,چاراویماق ,سراب ,شبستر ,عجب‌شیر ,کلیبر ,مراغه ,مرند ,ملکان
+                ,میانه ,ورزقان ,هریس ,هشترود" >آذربایجان شرقی</option>
+                <option
+                    value="  ,ارومیه ,اشنویه ,بوکان ,پیرانشهر ,تکاب ,چالدران ,خوی ,سردشت ,سلماس ,شاهین‌دژ ,ماکو ,مهاباد ,میاندوآب ,نقده">
+                    آذربایجان غربی</option>
+                <option
+                    value="  ,اردبیل ,بیله‌سوار ,پارس‌آباد ,خلخال ,کوثر ,گِرمی ,مِشگین‌شهر ,نَمین ,نیر">
+                    اردبیل</option>
+                <option
+                    value="  ,آران و بیدگل ,اردستان ,اصفهان ,برخوار و میمه ,تیران و کرون ,چادگان ,خمینی‌شهر ,خوانسار ,سمیرم ,شهرضا ,سمیرم سفلی ,فریدن ,فریدون‌شهر ,فلاورجان ,کاشان ,گلپایگان ,لنجان ,مبارکه ,نائین ,نجف‌آباد ,نطنز">
+                    اصفهان</option>
+                <option
+                    value="  ,آبدانان ,ایلام ,ایوان ,دره‌شهر ,دهلران ,شیروان و چرداول ,مهران">
+                    ایلام</option>
+                <option value="  ,بوشهر ,تنگستان ,جم ,دشتستان ,دشتی,دیر ,دیلم ,کنگان ,گناوه">
+                    بوشهر</option>
+                <option
+                    value="  ,اسلام‌شهر ,پاکدشت ,تهران ,دماوند ,رباط‌کریم ,ری ,ساوجبلاغ ,شمیرانات ,شهریار ,فیروزکوه ,کرج ,نظرآباد ,ورامین">
+                    تهران</option>
+                <option value="  ,اردل ,بروجن ,کیار,شهرکرد ,فارسان ,کوهرنگ ,لردگان">چهارمحال و
+                    بختیاری</option>
+                <option value="  ,بیرجند ,درمیان ,سرایان ,سربیشه ,فردوس ,قائنات,نهبندان">خراسان
+                    جنوبی</option>
+                <option
+                    value="  ,بردسکن ,تایباد ,تربت جام ,تربت حیدریه ,چناران ,خلیل‌آباد ,خواف ,درگز ,رشتخوار ,سبزوار ,سرخس ,فریمان ,قوچان ,کاشمر ,کلات ,گناباد ,مشهد ,مه ولات ,نیشابور">
+                    خراسان رضوی</option>
+                <option value="  ,اسفراین ,بجنورد ,جاجرم ,شیروان ,فاروج ,مانه و سملقان">خراسان
+                    شمالی</option>
+                <option
+                    value="  ,آبادان ,امیدیه ,اندیمشک ,اهواز ,ایذه ,باغ‌ملک ,بندر ماهشهر ,بهبهان ,خرمشهر ,دزفول ,دشت آزادگان ,رامشیر ,رامهرمز ,شادگان ,شوش ,شوشتر ,گتوند ,لالی ,مسجد سلیمان,هندیجان ">
+                    خوزستان</option>
+                <option value="  ,ابهر ,ایجرود ,خدابنده ,خرمدره ,زنجان ,طارم ,ماه‌نشان">زنجان
+                </option>
+                <option value="  ,دامغان ,سمنان ,شاهرود ,گرمسار ,مهدی‌شهر">سمنان</option>
+                <option
+                    value="  ,ایرانشهر ,چابهار ,خاش ,دلگان ,زابل ,زاهدان ,زهک ,سراوان ,سرباز ,کنارک ,نیک‌شهر">
+                    سیستان و بلوچستان</option>
+                <option
+                    value="  ,آباده ,ارسنجان ,استهبان ,اقلید ,بوانات ,پاسارگاد ,جهرم ,خرم‌بید ,خنج ,داراب ,زرین‌دشت ,سپیدان ,شیراز ,فراشبند ,فسا ,فیروزآباد ,قیر و کارزین ,کازرون ,لارستان ,لامِرد ,مرودشت ,ممسنی ,مهر ,نی‌ریز">
+                    فارس</option>
+                <option value="  ,آبیک ,البرز ,بوئین‌زهرا ,تاکستان ,قزوین">قزوین</option>
+                <option value="  ,قم">قم</option>
+                <option
+                    value="  ,بانه ,بیجار ,دیواندره ,سروآباد ,سقز ,سنندج ,قروه ,کامیاران ,مریوان">
+                    کردستان</option>
+                <option
+                    value="  ,بافت ,بردسیر ,بم ,جیرفت ,راور ,رفسنجان ,رودبار جنوب ,زرند ,سیرجان ,شهر بابک ,عنبرآباد ,قلعه گنج ,کرمان ,کوهبنان ,کهنوج ,منوجان">
+                    کرمان</option>
+                <option
+                    value="  ,اسلام‌آباد غرب ,پاوه ,ثلاث باباجانی ,جوانرود ,دالاهو ,روانسر ,سرپل ذهاب ,سنقر ,صحنه ,قصر شیرین ,کرمانشاه ,کنگاور ,گیلان غرب ,هرسین">
+                    کرمانشاه</option>
+                <option value="  ,بویراحمد ,بهمئی ,دنا ,کهگیلویه ,گچساران">کهگیلویه و بویراحمد
+                </option>
+                <option
+                    value="  ,آزادشهر ,آق‌قلا ,بندر گز ,ترکمن ,رامیان ,علی‌آباد ,کردکوی ,کلاله ,گرگان ,گنبد کاووس ,مراوه‌تپه ,مینودشت">
+                    گلستان</option>
+                <option
+                    value="  ,آستارا ,آستانه اشرفیه ,اَملَش ,بندر انزلی ,رشت ,رضوانشهر ,رودبار ,رودسر ,سیاهکل ,شَفت ,صومعه‌سرا ,طوالش ,فومَن ,لاهیجان ,لنگرود ,ماسال">
+                    گیلان</option>
+                <option
+                    value="  ,ازنا ,الیگودرز ,بروجرد ,پل‌دختر ,خرم‌آباد ,دورود ,دلفان ,سلسله ,کوهدشت">
+                    لرستان</option>
+                <option
+                    value="  ,آمل ,بابل ,بابلسر ,بهشهر ,تنکابن ,جویبار ,چالوس ,رامسر ,ساری ,سوادکوه ,قائم‌شهر ,گلوگاه ,محمودآباد ,نکا ,نور ,نوشهر">
+                    مازندران</option>
+                <option
+                    value="  ,آشتیان ,اراک ,تفرش ,خمین ,دلیجان ,زرندیه ,ساوه ,شازند ,کمیجان ,محلات">
+                    مرکزی</option>
+                <option
+                    value="  ,ابوموسی ,بستک ,بندر عباس ,بندر لنگه ,جاسک ,حاجی‌آباد ,شهرستان خمیر ,رودان  ,قشم ,گاوبندی ,میناب">
+                    هرمزگان</option>
+                <option
+                    value="  ,اسدآباد ,بهار ,تویسرکان ,رزن ,کبودرآهنگ ,ملایر ,نهاوند ,همدان">
+                    همدان</option>
+                <option
+                    value="  ,ابرکوه ,اردکان ,بافق ,تفت ,خاتم ,صدوق ,طبس ,مهریز ,مِیبُد ,یزد">
+                    یزد</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
-              </div>
+            </div>
 
-              <div>
-                <label for="city" class="block text-t16 mb-2 font-400 text-white-6"><abbr class="text-red ml-1">*</abbr>شهر</label>
+            <div>
+                <label for="city" class="block text-t16 mb-2 font-400 text-white-6"><abbr
+                        class="text-red ml-1">*</abbr>شهر</label>
                 <div class="mt-1">
-                  <select id="city" name="city" autocomplete="city-name" class="block w-full h-14 border-0 focus:ring-indigo-500 focus:border-indigo-500 text-t16 font-400">
-                    <option>اصفهان</option>
-                    <option>گلپایگان</option>
-                    <option>زرین شهر</option>
-                  </select>
+                    <select id="Shahrestan" runat="server" class="form-control Choose-province">
+                        
+                    </select>
+                    &nbsp;
+                    &nbsp;
                 </div>
-              </div>
+            </div>
 
               <div>
                 <label for="postal-code" class="block text-t16 mb-2 font-400 text-white-6"><abbr class="text-red ml-1">*</abbr>کدپستی</label>
@@ -695,6 +776,7 @@
   <script src="js/owl.carousel.js"></script>
   <script type="text/javascript" src="js/cart.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/city.js"></script>
 </body>
 
 </html>

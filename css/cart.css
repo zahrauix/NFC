@@ -751,6 +751,15 @@ select {
   padding-right: 16px;
 }
 
+.Choose-province{
+  background: rgba(255, 255, 255, 0.933) !important;
+    border-radius: 0 !important;
+    padding: 1.6rem 1rem !important;
+    border: 0 !important;
+    font-size: 1.4rem !important;
+}
+
+
 .sr-only{
   position: absolute;
   width: 1px;

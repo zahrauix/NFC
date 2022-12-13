@@ -556,7 +556,7 @@
                            
                             <form id="form1" name="FRM" runat="server">
                                 <div dir="rtl" style="text-align: center">
-                                    :&nbsp;
+                                    &nbsp;
                                    
                                     <select id="Ostan" runat="server" onchange="Func(this.value)"
                                         class="form-control  mb-5 "" >
@@ -718,24 +718,9 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/dashboard.js"></script>
-
-    <script>
-        function Func(Shahrestanha) {
-        var _Shahrestan = document.getElementById("Shahrestan");
-        _Shahrestan.options.length = 0;
-        if (Shahrestanha != "") {
-            var arr = Shahrestanha.split(",");
-            for (i = 0; i < arr.length; i++) {
-                if (arr[i] != "") {
-                    _Shahrestan.options[_Shahrestan.options.length] = new Option(arr[i], arr[i]);
-                }
-            }
-        }
-    }
-    </script>
+    <script src="js/city.js"></script>
 
    
-    
     
 </body>
 
