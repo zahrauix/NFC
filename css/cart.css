@@ -802,6 +802,13 @@ select {
   left: 0.75rem;
 }
 
+.buy-continue{
+  text-align: center;
+}
+.buy-continue:hover{
+ color: rgb(255, 255, 255);
+}
+
 .z-50{
   z-index: 50;
 }
